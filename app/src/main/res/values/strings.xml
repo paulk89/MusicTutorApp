@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">loginregister2</string>
+    <string name="welcome_message">Welcome back</string>
+    <string name="practical_support">Practical Support</string>
+    <string name="plectrum_lesson"><b>Lesson 4 - </b>A plectrum is a small flat tool used to pluck or strum a guitar. A pick (aka plectrum) is used to get the brightest and best sound from a guitar, especially in Pop and Rock music. \n\n
+        Some beginners are very reluctant to use a pick. However, ESPECIALLY in the early days, I really recommend persisting no matter how many times it
+        spins around in your hand or how often you drop it. It is simply the easiest way to get the best sound from your guitar for most pop and rock styles.
+        Once you have a solid foundation of chords and rhythm, you can always learn folk ‘finger style’ playing at a later date.</string>
+    <string name="chord_lesson"><b>Lesson 5 - </b>Chord boxes show us where to put our fingers for each chord. Here is the chord box for the E Chord (E major). The black dots show where to place your fingers. And the numbers show which finger you should use (1 is index finger, 2 is middle finger etc). In this chord above, we strum all 6 strings on the guitar.</string>
+    <string name="question_example"><b>Question 10 - </b> What is a plectrum used for with the guitar?</string>
+
+</resources>
