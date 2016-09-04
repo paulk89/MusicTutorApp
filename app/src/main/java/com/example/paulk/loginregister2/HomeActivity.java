@@ -14,6 +14,7 @@ public class HomeActivity extends Activity {
     Button btnSignIn, btnSignUp;
     DatabaseHandler db;
     //LoginDatabaseAdaptor loginDataBaseAdapter;
+    //test comment
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
