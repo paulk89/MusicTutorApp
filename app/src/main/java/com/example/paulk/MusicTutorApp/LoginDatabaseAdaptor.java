@@ -1,4 +1,4 @@
-package com.example.paulk.loginregister2;
+package com.example.paulk.MusicTutorApp;
 
 import android.content.ContentValues;
 import android.content.Context;

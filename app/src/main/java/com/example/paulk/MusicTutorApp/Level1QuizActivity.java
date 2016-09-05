@@ -1,7 +1,8 @@
-package com.example.paulk.loginregister2;
+package com.example.paulk.MusicTutorApp;
 
 import android.app.Activity;
 import android.os.Bundle;
+
 
 /**
  * Created by paulk on 28/06/2016.

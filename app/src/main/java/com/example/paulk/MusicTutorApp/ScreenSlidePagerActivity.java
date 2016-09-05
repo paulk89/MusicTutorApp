@@ -1,4 +1,4 @@
-package com.example.paulk.loginregister2;
+package com.example.paulk.MusicTutorApp;
 
 
 import android.content.Intent;
@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.KeyEvent;
 import android.view.View;
+
 
 import java.util.List;
 import java.util.Vector;
@@ -80,7 +80,7 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
 
     @Override
     public void onBackPressed() {
-            super.onBackPressed();
+        super.onBackPressed();
     }
 
     public void level1Test(View view){

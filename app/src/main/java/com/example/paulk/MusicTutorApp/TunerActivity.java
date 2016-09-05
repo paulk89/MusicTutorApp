@@ -1,4 +1,4 @@
-package com.example.paulk.loginregister2;
+package com.example.paulk.MusicTutorApp;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 
 /**
  * Created by paulk on 27/06/2016.
