@@ -28,10 +28,30 @@
 
         </activity>
 
-        <activity android:name="com.example.paulk.MusicTutorApp.ScreenSlidePagerActivity"
+        <activity android:name=".L1LessonsActivity"
         android:label="@string/app_name">
 
     </activity>
+
+        <activity
+            android:name="lessons.L2LessonsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <activity
+            android:name="lessons.L3LessonsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <activity
+            android:name="lessons.L4LessonsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <activity
+            android:name="lessons.L5LessonsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
 
         <activity
             android:name="com.example.paulk.MusicTutorApp.PracticalSupportActivity"
