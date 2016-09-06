@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import lessons.L2LessonsActivity;
+import lessons.L3LessonsActivity;
+import lessons.L4LessonsActivity;
+import lessons.L5LessonsActivity;
+
 
 /**
  * Created by paulk on 01/06/2016.
@@ -42,12 +47,12 @@ public class MainMenuActivity extends Activity {
         /*Bundle extras = getIntent().getExtras();
         final String currentUser = extras.getString("currentUser");*/
 
-            if (currentLevel < 2) {
+           /* if (currentLevel < 2) {
                 level2.setEnabled(false);
                 level3.setEnabled(false);
                 level4.setEnabled(false);
                 level5.setEnabled(false);
-            }
+            }*/
 
         logout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -70,7 +75,71 @@ public class MainMenuActivity extends Activity {
                         .show();
 
                 Intent i = new Intent(MainMenuActivity.this,
-                        ScreenSlidePagerActivity.class);
+                        L1LessonsActivity.class);
+                startActivity(i);
+                //finish();
+
+
+            }
+        });
+
+        level2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Level 2 button clicked!", Toast.LENGTH_LONG)
+                        .show();
+
+                Intent i = new Intent(MainMenuActivity.this,
+                        L2LessonsActivity.class);
+                startActivity(i);
+                //finish();
+
+
+            }
+        });
+
+        level3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Level 2 button clicked!", Toast.LENGTH_LONG)
+                        .show();
+
+                Intent i = new Intent(MainMenuActivity.this,
+                        L3LessonsActivity.class);
+                startActivity(i);
+                //finish();
+
+
+            }
+        });
+
+        level4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Level 2 button clicked!", Toast.LENGTH_LONG)
+                        .show();
+
+                Intent i = new Intent(MainMenuActivity.this,
+                        L4LessonsActivity.class);
+                startActivity(i);
+                //finish();
+
+
+            }
+        });
+
+        level5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Level 2 button clicked!", Toast.LENGTH_LONG)
+                        .show();
+
+                Intent i = new Intent(MainMenuActivity.this,
+                        L5LessonsActivity.class);
                 startActivity(i);
                 //finish();
 
