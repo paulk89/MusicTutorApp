@@ -18,7 +18,7 @@ import java.util.Vector;
 /**
  * Created by paulk on 25/06/2016.
  */
-public class ScreenSlidePagerActivity extends FragmentActivity {
+public class L1LessonsActivity extends FragmentActivity {
 
     /**
      * The number of pages (wizard steps) to show in this demo.
@@ -84,7 +84,7 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
     }
 
     public void level1Test(View view){
-        Intent i = new Intent(ScreenSlidePagerActivity.this,
+        Intent i = new Intent(L1LessonsActivity.this,
                 Level1QuizActivity.class);
         startActivity(i);
         finish();
