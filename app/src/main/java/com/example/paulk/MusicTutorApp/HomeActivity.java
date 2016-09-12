@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,8 +23,10 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        db = new DatabaseHandler(getApplicationContext());
+        db = new DatabaseHandler(this);
+        db.getWritableDatabase();
 
+        Log.i("TAG", "OnCreate fired in Home activity!!");
 /*
         loginDataBaseAdapter = new LoginDatabaseAdaptor(this);
         loginDataBaseAdapter = loginDataBaseAdapter.open();*/
@@ -60,6 +63,7 @@ public class HomeActivity extends Activity {
                 String userName = editTextUserName.getText().toString();
                 String password = editTextPassword.getText().toString();
                 String storedPassword = db.getPassword(userName);
+                Log.i("TAG", "Getting password for user : " + userName + ". Password is : " + storedPassword);
                 if (password.equals(storedPassword)) {
                     Toast.makeText(HomeActivity.this,
                             "Congrats: Login Successful", Toast.LENGTH_LONG)

@@ -2,10 +2,10 @@ package com.example.paulk.MusicTutorApp;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.Entity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by paulk on 28/06/2016.
@@ -19,12 +19,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     // Database Name
-    private static final String DATABASE_NAME = "musicTutorDatabase";
+    private static final String DATABASE_NAME = "musicTutorDatabase.db";
 
     // Table Names
     private static final String TABLE_USER = "user";
     private static final String TABLE_LEVEL = "level";
     private static final String TABLE_TESTQUESTION = "testQuestion";
+    private static final String TABLE_SCORE = "score";
+    private static final String TABLE_TESTIMAGEQUESTION = "testImageQuestion";
 
     // Common column names
     private static final String KEY_ID = "id";
@@ -40,15 +42,23 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_LEVELID = "levelID";
     private static final String KEY_LEVELNAME = "levelName";
 
-    // TESTQUESTION Table - column names
+    // TESTQUESTION and IMAGETESTQUESTION Table - column names
     private static final String KEY_QUESTIONID = "questionID";
     private static final String KEY_QUESTION = "question";
+    private static final String KEY_IMAGEQID = "imageQID";
+    private static final String KEY_IMAGE = "image";
     private static final String KEY_ANSWER1 = "a1";
     private static final String KEY_ANSWER2 = "a2";
     private static final String KEY_ANSWER3 = "a3";
     private static final String KEY_ANSWER4 = "a4";
     private static final String KEY_CORRECT = "correct";
     private static final String KEY_QUESTIONLEVELID = "levelID";
+
+    // SCORE Table - column names
+    private static final String KEY_SCOREID = "scoreID";
+    private static final String KEY_SCORE = "score";
+    private static final String KEY_LEVEL = "level";
+    private static final String KEY_SCOREUSERID = "userID";
 
 
     // Table Create Statements
@@ -66,7 +76,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             + KEY_LEVELNAME + " TEXT)";
 
     // todo_tag table create statement
-    private static final String CREATE_TABLE_QUESTION = "CREATE TABLE "
+    private static final String CREATE_TABLE_TESTQUESTION = "CREATE TABLE "
             + TABLE_TESTQUESTION + "(" + KEY_QUESTIONID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + KEY_QUESTION + " TEXT, "
             + KEY_ANSWER1 + " TEXT, "
@@ -77,19 +87,53 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             + KEY_QUESTIONLEVELID + " INTEGER, "
             + "FOREIGN KEY ("+KEY_QUESTIONLEVELID+") REFERENCES "+TABLE_LEVEL+"("+KEY_LEVELID+"))";
 
+    private static final String CREATE_TABLE_TESTIMAGEQUESTION = "CREATE TABLE "
+            + TABLE_TESTIMAGEQUESTION + "(" + KEY_IMAGEQID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + KEY_IMAGE + " INTEGER, "
+            + KEY_QUESTION + " TEXT, "
+            + KEY_ANSWER1 + " TEXT, "
+            + KEY_ANSWER2 + " TEXT, "
+            + KEY_ANSWER3 + " TEXT, "
+            + KEY_ANSWER4 + " TEXT, "
+            + KEY_CORRECT + " TEXT, "
+            + KEY_QUESTIONLEVELID + " INTEGER, "
+            + "FOREIGN KEY ("+KEY_QUESTIONLEVELID+") REFERENCES "+TABLE_LEVEL+"("+KEY_LEVELID+"))";
+
+    private static final String CREATE_TABLE_SCORE = "CREATE TABLE "
+            + TABLE_SCORE + "(" + KEY_SCOREID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + KEY_SCORE + " INTEGER, "
+            + KEY_LEVEL + " INTEGER, "
+            + KEY_SCOREUSERID + " INTEGER, "
+            + "FOREIGN KEY ("+KEY_SCOREUSERID+") REFERENCES "+TABLE_USER+"("+KEY_USERID+"))";
+
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        Log.i("TAG", "Constructor fired in Database handler!!!");
     }
+
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+
         db.execSQL(CREATE_TABLE_LEVEL);
         db.execSQL(CREATE_TABLE_USER);
-        db.execSQL(CREATE_TABLE_QUESTION);
+        db.execSQL(CREATE_TABLE_TESTQUESTION);
+        db.execSQL(CREATE_TABLE_TESTIMAGEQUESTION);
+        db.execSQL(CREATE_TABLE_SCORE);
         db.execSQL("INSERT OR REPLACE INTO " + TABLE_LEVEL
                 + "(" + KEY_LEVELID + "," + KEY_LEVELNAME + ") VALUES (1, 'complete beginner')");
         db.execSQL("INSERT OR REPLACE INTO " + TABLE_LEVEL
                 + "(" + KEY_LEVELID + "," + KEY_LEVELNAME + ") VALUES (2, 'beginner')");
+        db.execSQL("INSERT OR REPLACE INTO " + TABLE_LEVEL
+                + "(" + KEY_LEVELID + "," + KEY_LEVELNAME + ") VALUES (3, 'novice')");
+        db.execSQL("INSERT OR REPLACE INTO " + TABLE_LEVEL
+                + "(" + KEY_LEVELID + "," + KEY_LEVELNAME + ") VALUES (4, 'Intermediate')");
+        db.execSQL("INSERT OR REPLACE INTO " + TABLE_LEVEL
+                + "(" + KEY_LEVELID + "," + KEY_LEVELNAME + ") VALUES (5, 'Expert')");
+        Log.i("TAG", "OnCreate fired in Database handler!!! YAY!!!!!!!!!!!!!!");
+
+
+
     }
 
     @Override
@@ -97,11 +141,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // on upgrade drop older tables
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_TESTQUESTION);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_TESTIMAGEQUESTION);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_LEVEL);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_SCORE);
 
         // create new tables
         onCreate(db);
     }
+
+    @Override
+    public void onOpen(SQLiteDatabase db){
+        Log.i("TAG", "onOpen called!");
+    }
+
 
     void addUser(String username, String password, int level) {
         SQLiteDatabase db = this.getWritableDatabase();
