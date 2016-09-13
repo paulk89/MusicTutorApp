@@ -45,10 +45,11 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_1"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
                 android:layout_marginRight="1dp"
                 android:src="@drawable/cmajorthumb"
                 android:scaleType="centerCrop"
@@ -56,13 +57,168 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_2"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
                 android:src="@drawable/cmajorthumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 2" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_3"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 3" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_4"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                grid:layout_rowWeight="1"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 4" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_5"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 5" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_6"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 6" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_7"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 7" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_8"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 8" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_9"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                grid:layout_rowWeight="1"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 9" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_10"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 10" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_11"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 11" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_12"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 12" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_13"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 13" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_14"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                grid:layout_rowWeight="1"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 14" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_15"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                grid:layout_rowWeight="1"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 15" />
+
+            <ImageButton
+                android:id="@+id/thumb_button_16"
+                android:layout_width="@dimen/chord_activity_button_horizontal"
+                android:layout_height="@dimen/chord_activity_button_vertical"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="fill_horizontal"
+                grid:layout_rowWeight="1"
+                android:src="@drawable/cmajorthumb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Aye 16" />
 
         </android.support.v7.widget.GridLayout>
 

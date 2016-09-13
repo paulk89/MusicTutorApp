@@ -61,6 +61,120 @@ public class ChordChartActivity extends FragmentActivity {
             }
         });
 
+        final View thumb3View = findViewById(R.id.thumb_button_3);
+        thumb3View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb3View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb4View = findViewById(R.id.thumb_button_4);
+        thumb4View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb4View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb5View = findViewById(R.id.thumb_button_5);
+        thumb5View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb5View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb6View = findViewById(R.id.thumb_button_6);
+        thumb6View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb6View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb7View = findViewById(R.id.thumb_button_7);
+        thumb7View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb7View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb8View = findViewById(R.id.thumb_button_8);
+        thumb8View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb8View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb9View = findViewById(R.id.thumb_button_9);
+        thumb9View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb9View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb10View = findViewById(R.id.thumb_button_10);
+        thumb10View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb10View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb11View = findViewById(R.id.thumb_button_11);
+        thumb11View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb11View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb12View = findViewById(R.id.thumb_button_12);
+        thumb12View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb12View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb13View = findViewById(R.id.thumb_button_13);
+        thumb13View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb13View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb14View = findViewById(R.id.thumb_button_14);
+        thumb14View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb14View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb15View = findViewById(R.id.thumb_button_15);
+        thumb15View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb15View, R.drawable.cmajorchord);
+            }
+        });
+
+        final View thumb16View = findViewById(R.id.thumb_button_16);
+        thumb16View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb16View, R.drawable.cmajorchord);
+            }
+        });
+
+
+
         // Retrieve and cache the system's default "short" animation time.
         mShortAnimationDuration = getResources().getInteger(android.R.integer.config_shortAnimTime);
     }
