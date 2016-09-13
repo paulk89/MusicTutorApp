@@ -18,7 +18,6 @@ public class SignUpActivity extends Activity{
     Button btnCreateAccount;
     Context context = this;
     DatabaseHandler db;
-    //LoginDatabaseAdaptor loginDataBaseAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +25,6 @@ public class SignUpActivity extends Activity{
         setContentView(R.layout.activity_signup);
 
         db = new DatabaseHandler(getApplicationContext());
-
-        /*loginDataBaseAdapter = new LoginDatabaseAdaptor(this);
-        loginDataBaseAdapter = loginDataBaseAdapter.open();*/
 
         editTextUserName = (EditText) findViewById(R.id.editTextUserName);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);

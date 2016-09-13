@@ -15,8 +15,6 @@ import android.widget.Toast;
 public class HomeActivity extends Activity {
     Button btnSignIn, btnSignUp;
     DatabaseHandler db;
-    //LoginDatabaseAdaptor loginDataBaseAdapter;
-    //test comment
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +25,7 @@ public class HomeActivity extends Activity {
         db.getWritableDatabase();
 
         Log.i("TAG", "OnCreate fired in Home activity!!");
-/*
-        loginDataBaseAdapter = new LoginDatabaseAdaptor(this);
-        loginDataBaseAdapter = loginDataBaseAdapter.open();*/
+
 
         btnSignIn = (Button) findViewById(R.id.buttonSignIN);
         btnSignUp = (Button) findViewById(R.id.buttonSignUP);
