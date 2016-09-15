@@ -47,12 +47,39 @@ public class MainMenuActivity extends Activity {
         /*Bundle extras = getIntent().getExtras();
         final String currentUser = extras.getString("currentUser");*/
 
-           /* if (currentLevel < 2) {
+        switch (currentLevel){
+
+            case 1:
                 level2.setEnabled(false);
                 level3.setEnabled(false);
                 level4.setEnabled(false);
                 level5.setEnabled(false);
-            }*/
+                break;
+
+            case 2:
+                level3.setEnabled(false);
+                level4.setEnabled(false);
+                level5.setEnabled(false);
+                break;
+
+            case 3:
+                level4.setEnabled(false);
+                level5.setEnabled(false);
+                break;
+
+            case 4:
+                level5.setEnabled(false);
+                break;
+            default:
+                break;
+        }
+
+           if (currentLevel < 2) {
+                level2.setEnabled(false);
+                level3.setEnabled(false);
+                level4.setEnabled(false);
+                level5.setEnabled(false);
+            }
 
         logout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

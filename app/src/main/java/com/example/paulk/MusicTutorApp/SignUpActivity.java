@@ -44,13 +44,11 @@ public class SignUpActivity extends Activity{
 
                     Toast.makeText(getApplicationContext(), "Field Vaccant",
                             Toast.LENGTH_LONG).show();
-                    return;
                 }
                 if (!password.equals(confirmPassword)) {
                     Toast.makeText(getApplicationContext(),
                             "Password does not match", Toast.LENGTH_LONG)
                             .show();
-                    return;
                 } else {
 
                     db.addUser(userName, password, 1);
