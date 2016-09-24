@@ -21,6 +21,8 @@ import java.util.Vector;
 import fragments.Level1IntroFragment;
 import fragments.Level1Lesson1Fragment;
 import fragments.Level1Lesson2Fragment;
+import fragments.Level1Lesson3Fragment;
+import fragments.Level1Lesson4Fragment;
 
 /**
  * Created by paulk on 25/06/2016.
@@ -30,7 +32,7 @@ public class L1LessonsActivity extends FragmentActivity {
     /**
      * The number of pages (wizard steps) to show in this demo.
      */
-    private static final int NUM_PAGES = 3;
+    private static final int NUM_PAGES = 5;
 
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
@@ -69,6 +71,8 @@ public class L1LessonsActivity extends FragmentActivity {
         fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
         fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
         fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
+        fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
+        fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), fragments);
         //
         mPager = (ViewPager) findViewById(R.id.pager);

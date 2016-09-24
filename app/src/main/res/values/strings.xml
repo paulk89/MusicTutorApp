@@ -38,4 +38,28 @@
                                         \n\n<b>Tone Knobs: </b>These knobs adjust precisely how the pickups sound (treble and bass). Depending on which way you turn them, your guitar may sound bright and tinny, or dark and muffled.
                                         \n\n<b>Output Jack:</b> The output jack is where you insert the power cable that connects to your amplifier. This jack is how the electronic signals from the pickups travel out of the guitar, through an amplifier and into our ears.</string>
 
+
+    <string name="level1_lesson3_title">Lesson 3: How to Hold the Guitar</string>
+    <string name="level1_lesson3_tv1">Learning the correct way to hold your guitar can mean the difference between making something easier to play and making something harder to play on guitar. Once you learn how to properly position your guitar, learning to play will feel intuitive and natural.</string>
+    <string name="level1_lesson3_tv2"><b>Step 1: </b>Find a comfortable chair without arms. This will give you more freedom to move around while you\'re playing the guitar.
+                                    \n\n<b>Step 2: </b>Place the guitar on the top of your right knee. If you were left handed, you would place the guitar on the top of your left knee.
+                                    \n\n<b>Step 3: </b>Tilt the guitar back towards you slightly. This limits the amount of stretching your left hand has to do while playing and therefore making the instrument easier to play than if it were tilted away from you.
+                                    \n\n<b>Step 4: </b>Your strumming hand should rest comfortably on the guitar in such a way that your wrist is poised right above the pickups (or sound hole on acoustics).
+                                    \n\n<b>Step 5: </b>The neck should be parallel to the floor. You will get the most comfort and playing versatility out of holding the guitar this way.
+                                    \n\n<b>Step 6: </b>Make sure that the thickest string is the string that\'s closest to you. This holds true for both right and left handed guitars.
+                                    \n\n<b>Step 7: </b>With your left hand (or right hand if you\'re left handed), place your thumb on the back of the guitar neck, right in the middle. This way, your fingers will curl around the neck easily and comfortably to put you in the correct playing position.</string>
+
+    <string name="level1_lesson4_title">Lesson 4: How to Hold a Guitar Pick</string>
+    <string name="level1_lesson4_tv1"><b>1.</b>	Hold your picking hand (the one that holds the pick) so that the back of the thumb is facing upwards.
+                                        \n\n<b>2.</b> Relax the hand completely, this should allow the fingers to curl up.
+                                        \n\n<b>3.</b> Place the pick on to the side of your index finger. The pointed end of the pick should face toward the nail of your index finger.
+                                        \n\n<b>4.</b> Place your thumb onto the pick to keep it clamped between your thumb and finger.
+</string>
+    <string name="level1_lesson4_tv2">Make sure your grip on the pick is relaxed. Do not squeeze the pick. Have the pick positioned at a 10% angle to the string, not completely parallel. How you hold the pick is a matter of personal taste, however, there are guidelines on how to hold a pick. Fast lead playing requires small, consistent motions so only 2mm of the tip of the pick should be used (as a rough guideline), whereas strumming requires a more open grip on the pick.
+                                        \n\nShould I Use a Pick?
+                                        \n\nNot every one will chose to use a pick, especially folk guitarists and similar style players. Non pick users will use either finger picking or hybrid picking (both pick and fingers). Using fingerpicks and thumbpicks should be referred to as finger picking because using them employs the same movements and style.
+                                        \n\nPicks come in all shapes and sizes, ranging from 0.36mm to 3mm in thickness and from the size of a thumbnail to a 50p piece. Strumming chords favours a thin pick but thickness is a clear advantage for single-note pieces. Beginners tend to favour thinner picks but usually use thicker picks as they get used to the feel of them. A 0.9mm pick is a good all-rounder.
+</string>
+
+
 </resources>
