@@ -9,4 +9,10 @@
     <string name="chord_lesson"><b>Lesson 5 - </b>Chord boxes show us where to put our fingers for each chord. Here is the chord box for the E Chord (E major). The black dots show where to place your fingers. And the numbers show which finger you should use (1 is index finger, 2 is middle finger etc). In this chord above, we strum all 6 strings on the guitar.</string>
     <string name="question_example"><b>Question 10 - </b> What is a plectrum used for with the guitar?</string>
 
+    <string name="level1_intro_welcome_title">Level 1</string>
+    <string name="level1_intro_welcome">Welcome to the first level of GuitarPal! The lessons, tips and tools in this app will introduce you to the basics of the guitar and start you on your way to becoming an accomplished guitar player. \nThere is a knowledge test at the end of each level that you must pass in order to unlock the next level. \n\nYou must get at least 80% on each test to pass! Sounds tricky? FEAR NOT! Read through the lessons and you will pass with flying colours!\nYou can easily swipe through each lesson from left to right and scroll up and down throughout each lesson in every level!</string>
+
+    <string name="level1_intro">In level 1, you will be introduced to the various parts of the guitar, how to hold a guitar and hold a plectrum. So swipe the screen to the left and lets begin!</string>
+    <string name="swipe_left">Swipe left to begin!</string>
+
 </resources>
