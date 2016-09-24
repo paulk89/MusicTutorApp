@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import lessons.L1LessonsActivity;
 import lessons.L2LessonsActivity;
 import lessons.L3LessonsActivity;
 import lessons.L4LessonsActivity;

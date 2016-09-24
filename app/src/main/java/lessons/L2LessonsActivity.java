@@ -12,11 +12,10 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 
-import com.example.paulk.MusicTutorApp.L1LessonsActivity;
-import com.example.paulk.MusicTutorApp.Level1Lesson1Fragment;
+import fragments.Level1Lesson1Fragment;
 import com.example.paulk.MusicTutorApp.Level1QuizActivity;
 import com.example.paulk.MusicTutorApp.R;
-import com.example.paulk.MusicTutorApp.ScreenSlidePageFragment;
+import fragments.ScreenSlidePageFragment;
 
 import java.util.List;
 import java.util.Vector;

@@ -1,4 +1,4 @@
-package com.example.paulk.MusicTutorApp;
+package lessons;
 
 
 import android.content.Intent;
@@ -12,8 +12,14 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 
+import com.example.paulk.MusicTutorApp.Level1QuizActivity;
+import com.example.paulk.MusicTutorApp.R;
+
 import java.util.List;
 import java.util.Vector;
+
+import fragments.Level1Lesson1Fragment;
+import fragments.ScreenSlidePageFragment;
 
 /**
  * Created by paulk on 25/06/2016.
