@@ -1,7 +1,6 @@
 package fragments;
 
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +20,7 @@ public class Level1Lesson1Fragment extends android.support.v4.app.Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.level1_lesson1_fragment, container, false);
+                R.layout.fragment_level1_lesson1, container, false);
 
         return rootView;
     }

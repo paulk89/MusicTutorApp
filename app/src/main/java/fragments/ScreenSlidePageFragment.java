@@ -16,7 +16,7 @@ public class ScreenSlidePageFragment  extends android.support.v4.app.Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.level1_intro_fragment, container, false);
+                R.layout.fragment_level1_intro, container, false);
 
         return rootView;
     }
