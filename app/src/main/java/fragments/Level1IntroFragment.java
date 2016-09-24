@@ -11,7 +11,7 @@ import com.example.paulk.MusicTutorApp.R;
 /**
  * Created by paulk on 25/06/2016.
  */
-public class ScreenSlidePageFragment  extends android.support.v4.app.Fragment{
+public class Level1IntroFragment extends android.support.v4.app.Fragment{
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

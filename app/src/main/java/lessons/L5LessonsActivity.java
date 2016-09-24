@@ -13,7 +13,7 @@ import android.view.View;
 import fragments.Level1Lesson1Fragment;
 import com.example.paulk.MusicTutorApp.Level1QuizActivity;
 import com.example.paulk.MusicTutorApp.R;
-import fragments.ScreenSlidePageFragment;
+import fragments.Level1IntroFragment;
 
 import java.util.List;
 import java.util.Vector;
@@ -63,7 +63,7 @@ public class L5LessonsActivity extends FragmentActivity {
     private void initialisePaging() {
 
         List<Fragment> fragments = new Vector<Fragment>();
-        fragments.add(Fragment.instantiate(this, ScreenSlidePageFragment.class.getName()));
+        fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
         fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), fragments);
         //
@@ -109,7 +109,7 @@ public class L5LessonsActivity extends FragmentActivity {
     }*/
 
     /**
-     * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
+     * A simple pager adapter that represents 5 Level1IntroFragment objects, in
      * sequence.
      */
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {

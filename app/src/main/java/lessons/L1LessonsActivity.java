@@ -18,8 +18,9 @@ import com.example.paulk.MusicTutorApp.R;
 import java.util.List;
 import java.util.Vector;
 
+import fragments.Level1IntroFragment;
 import fragments.Level1Lesson1Fragment;
-import fragments.ScreenSlidePageFragment;
+import fragments.Level1Lesson2Fragment;
 
 /**
  * Created by paulk on 25/06/2016.
@@ -29,7 +30,7 @@ public class L1LessonsActivity extends FragmentActivity {
     /**
      * The number of pages (wizard steps) to show in this demo.
      */
-    private static final int NUM_PAGES = 2;
+    private static final int NUM_PAGES = 3;
 
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
@@ -65,8 +66,9 @@ public class L1LessonsActivity extends FragmentActivity {
     private void initialisePaging() {
 
         List<Fragment> fragments = new Vector<Fragment>();
-        fragments.add(Fragment.instantiate(this, ScreenSlidePageFragment.class.getName()));
+        fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
         fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
+        fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), fragments);
         //
         mPager = (ViewPager) findViewById(R.id.pager);
@@ -111,7 +113,7 @@ public class L1LessonsActivity extends FragmentActivity {
     }*/
 
     /**
-     * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
+     * A simple pager adapter that represents 5 Level1IntroFragment objects, in
      * sequence.
      */
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {

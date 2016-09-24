@@ -4,4 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="chord_activity_button_horizontal">80dp</dimen>
     <dimen name="chord_activity_button_vertical">100dp</dimen>
+    <dimen name="padding_between_views">10dp</dimen>
 </resources>

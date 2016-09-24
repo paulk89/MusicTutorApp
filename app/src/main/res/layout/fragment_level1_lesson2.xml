@@ -11,11 +11,11 @@
         android:padding="5dp">
 
         <TextView
-            android:id="@+id/lv_lesson1_title"
+            android:id="@+id/lv_lesson2_title"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="@string/level1_lesson1_title"
+            android:text="@string/level1_lesson2_title"
             android:textColor="#ffffff"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:textSize="30sp"/>
@@ -24,14 +24,14 @@
             android:id="@+id/lv1_l1_tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lv_lesson1_title"
-            android:text="@string/level1_lesson1_tv1"
+            android:layout_below="@id/lv_lesson2_title"
+            android:text="@string/level1_lesson2_tv1"
             android:textColor="#ffffff"
             android:textSize="17sp"/>
 
         <ImageView
             android:id="@+id/lv1_l1_iv1"
-            android:src="@drawable/parts_of_acoustic"
+            android:src="@drawable/parts_of_electric"
             android:layout_marginTop="@dimen/padding_between_views"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:layout_below="@+id/lv1_l1_tv2"
@@ -45,7 +45,26 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/lv1_l1_iv1"
             android:textColor="#ffffff"
-            android:text="@string/level1_lesson1_tv2"
+            android:text="@string/level1_lesson2_tv2"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/lv1_l1_iv2"
+            android:src="@drawable/parts_of_electric2"
+            android:layout_marginTop="@dimen/padding_between_views"
+            android:layout_marginBottom="@dimen/padding_between_views"
+            android:layout_below="@+id/lv1_l1_tv3"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+        <TextView
+            android:id="@+id/lv1_l1_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv1_l1_iv2"
+            android:textColor="#ffffff"
+            android:text="@string/level1_lesson2_tv3"
             android:textSize="17sp"/>
 
     </RelativeLayout>
