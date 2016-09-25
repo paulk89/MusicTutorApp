@@ -56,7 +56,26 @@
     <string name="level1_lesson4_tv2">Make sure your grip on the pick is relaxed. Do not squeeze the pick. Have the pick positioned at a 10% angle to the string, not completely parallel. How you hold the pick is a matter of personal taste, however, there are guidelines on how to hold a pick. Fast lead playing requires small, consistent motions so only 2mm of the tip of the pick should be used (as a rough guideline), whereas strumming requires a more open grip on the pick.
                                         \n\nShould I Use a Pick?
                                         \n\nNot every one will chose to use a pick, especially folk guitarists and similar style players. Non pick users will use either finger picking or hybrid picking (both pick and fingers). Using fingerpicks and thumbpicks should be referred to as finger picking because using them employs the same movements and style.
-                                        \n\nPicks come in all shapes and sizes, ranging from 0.36mm to 3mm in thickness and from the size of a thumbnail to a 50p piece. Strumming chords favours a thin pick but thickness is a clear advantage for single-note pieces. Beginners tend to favour thinner picks but usually use thicker picks as they get used to the feel of them. A 0.9mm pick is a good all-rounder.
+                                        \n\nPicks come in all shapes and sizes, ranging from 0.36mm to 3mm in thickness and from the size of a thumbnail to a 50p piece. Strumming chords favours a thin pick but thickness is a clear advantage for single-note pieces. Beginners tend to favour thinner picks but usually use thicker picks as they get used to the feel of them. A 0.9mm pick is a good all-rounder.</string>
+
+    <string name="level1_lesson5_title">Lesson 5: Names of the Guitar Strings</string>
+    <string name="level1_lesson5_tv1">In order to be a guitarist, it\'s absolutely crucial that you memorize the 6 strings on a guitar. Well then, what are they?</string>
+    <string name="level1_lesson5_tv2">The thickest string is called the 6th string. In standard guitar tuning, this is tuned to E. We often refer to this as the \‘low E string\‘. This is the deepest/lowest guitar note you can play.
+                                        \n\nThe 5th string is tuned to A, so it\’s usually referred to as the A string.
+                                        \n\nThe 4th string is tuned to D, so it\’s usually referred to as the D string.
+                                        \n\nThe 3rd string is tuned to G, so it\’s usually referred to as the G string.
+                                        \n\nThe 2nd string is tuned to B, so it\’s usually referred to as the B string.
+                                        \n\nThe 1st string is tuned to E. This is the thinnest of all the strings. We often refer to this as the \‘high E string\’.</string>
+     <string name="level1_lesson5_tv3">\n\nHow to remember the guitar string names? The easiest way to remember the guitar string names is to use a mnemonic. The sillier the better! Here\’s a couple of fun ways to remember this:
+
+                                        \n\n(Going from the thickest string to the thinnest…)
+
+                                        \n\n<b>Elephants</b>
+                                        \n\n<b>And</b>
+                                        \n\n<b>Donkeys</b>
+                                        \n\n<b>Grow</b>
+                                        \n\n<b>Big</b>
+                                        \n\n<b>Ears</b>
 </string>
 
 
