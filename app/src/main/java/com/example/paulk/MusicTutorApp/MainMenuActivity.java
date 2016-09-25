@@ -97,16 +97,16 @@ public class MainMenuActivity extends Activity {
 
         level1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+/*
                 Toast.makeText(getApplicationContext(),
                         "Level 1 button clicked!", Toast.LENGTH_LONG)
-                        .show();
+                        .show();*/
 
                 Intent i = new Intent(MainMenuActivity.this,
                         L1LessonsActivity.class);
+                i.putExtra("buttonclick", 1);
                 startActivity(i);
                 //finish();
-
 
             }
         });
@@ -114,12 +114,9 @@ public class MainMenuActivity extends Activity {
         level2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "Level 2 button clicked!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent i = new Intent(MainMenuActivity.this,
-                        L2LessonsActivity.class);
+                        L1LessonsActivity.class);
+                i.putExtra("buttonclick", 2);
                 startActivity(i);
                 //finish();
 
@@ -130,12 +127,9 @@ public class MainMenuActivity extends Activity {
         level3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "Level 2 button clicked!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent i = new Intent(MainMenuActivity.this,
-                        L3LessonsActivity.class);
+                        L1LessonsActivity.class);
+                i.putExtra("buttonclick", 3);
                 startActivity(i);
                 //finish();
 
@@ -146,12 +140,9 @@ public class MainMenuActivity extends Activity {
         level4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "Level 2 button clicked!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent i = new Intent(MainMenuActivity.this,
-                        L4LessonsActivity.class);
+                        L1LessonsActivity.class);
+                i.putExtra("buttonclick", 4);
                 startActivity(i);
                 //finish();
 
@@ -162,12 +153,9 @@ public class MainMenuActivity extends Activity {
         level5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "Level 2 button clicked!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent i = new Intent(MainMenuActivity.this,
-                        L5LessonsActivity.class);
+                        L1LessonsActivity.class);
+                i.putExtra("buttonclick", 5);
                 startActivity(i);
                 //finish();
 

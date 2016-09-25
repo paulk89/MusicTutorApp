@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.widget.Toast;
 
 
 import com.example.paulk.MusicTutorApp.Level1QuizActivity;
@@ -62,25 +63,98 @@ public class L1LessonsActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_screen_slide);
+        int buttonLevelClicked = getIntent().getExtras().getInt("buttonclick");
+        Toast.makeText(getApplicationContext(),"You came here by clicking level " + buttonLevelClicked, Toast.LENGTH_LONG).show();
         //initialsie the pager
-        this.initialisePaging();
+        this.initialisePaging(buttonLevelClicked);
     }
 
-    private void initialisePaging() {
+    private void initialisePaging(int buttonClicked) {
 
-        List<Fragment> fragments = new Vector<Fragment>();
-        fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
-        fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
-        fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
-        fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
-        fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
-        fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
-        mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), fragments);
-        //
-        mPager = (ViewPager) findViewById(R.id.pager);
-        mPager.setAdapter(mPagerAdapter);
+        switch (buttonClicked) {
+
+            case 1:
+
+                List<Fragment> level1_fragments = new Vector<Fragment>();
+                level1_fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
+                level1_fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
+                level1_fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
+                level1_fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
+                level1_fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
+                level1_fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
+                mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), level1_fragments);
+                //
+                mPager = (ViewPager) findViewById(R.id.pager);
+                mPager.setAdapter(mPagerAdapter);
+
+                break;
+
+            case 2:
+
+                List<Fragment> level2_fragments = new Vector<Fragment>();
+                level2_fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
+                level2_fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
+                level2_fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
+                level2_fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
+                level2_fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
+                level2_fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
+                mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), level2_fragments);
+                //
+                mPager = (ViewPager) findViewById(R.id.pager);
+                mPager.setAdapter(mPagerAdapter);
+
+                break;
+
+            case 3:
+
+                List<Fragment> level3_fragments = new Vector<Fragment>();
+                level3_fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
+                mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), level3_fragments);
+                //
+                mPager = (ViewPager) findViewById(R.id.pager);
+                mPager.setAdapter(mPagerAdapter);
+
+                break;
+
+            case 4:
+
+                List<Fragment> level4_fragments = new Vector<Fragment>();
+                level4_fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
+                level4_fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
+                level4_fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
+                level4_fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
+                level4_fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
+                level4_fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
+                mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), level4_fragments);
+                //
+                mPager = (ViewPager) findViewById(R.id.pager);
+                mPager.setAdapter(mPagerAdapter);
+
+                break;
+
+            case 5:
+
+                List<Fragment> level5_fragments = new Vector<Fragment>();
+                level5_fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
+                level5_fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
+                level5_fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
+                level5_fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
+                level5_fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
+                level5_fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
+                mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), level5_fragments);
+                //
+                mPager = (ViewPager) findViewById(R.id.pager);
+                mPager.setAdapter(mPagerAdapter);
+
+                break;
+
+            }
     }
-
    /* @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {

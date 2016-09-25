@@ -57,5 +57,12 @@
             android:text="@string/level1_lesson5_tv3"
             android:textSize="17sp"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Level 1 test"
+            android:onClick="level1Test"
+            android:layout_below="@id/lv1_l5_tv4"/>
+
     </RelativeLayout>
 </ScrollView>
