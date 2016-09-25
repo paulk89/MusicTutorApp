@@ -31,6 +31,12 @@ import fragments.Level2Lesson2Fragment;
 import fragments.Level2Lesson3Fragment;
 import fragments.Level2Lesson4Fragment;
 import fragments.Level2Lesson5Fragment;
+import fragments.Level3IntroFragment;
+import fragments.Level3Lesson1Fragment;
+import fragments.Level3Lesson2Fragment;
+import fragments.Level3Lesson3Fragment;
+import fragments.Level3Lesson4Fragment;
+import fragments.Level3Lesson5Fragment;
 
 /**
  * Created by paulk on 25/06/2016.
@@ -114,12 +120,12 @@ public class LessonsActivity extends FragmentActivity {
             case 3:
 
                 List<Fragment> level3_fragments = new Vector<Fragment>();
-                level3_fragments.add(Fragment.instantiate(this, Level1IntroFragment.class.getName()));
-                level3_fragments.add(Fragment.instantiate(this, Level1Lesson1Fragment.class.getName()));
-                level3_fragments.add(Fragment.instantiate(this, Level1Lesson2Fragment.class.getName()));
-                level3_fragments.add(Fragment.instantiate(this, Level1Lesson3Fragment.class.getName()));
-                level3_fragments.add(Fragment.instantiate(this, Level1Lesson4Fragment.class.getName()));
-                level3_fragments.add(Fragment.instantiate(this, Level1Lesson5Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level3IntroFragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level3Lesson1Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level3Lesson2Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level3Lesson3Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level3Lesson4Fragment.class.getName()));
+                level3_fragments.add(Fragment.instantiate(this, Level3Lesson5Fragment.class.getName()));
                 mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), level3_fragments);
                 //
                 mPager = (ViewPager) findViewById(R.id.pager);

@@ -137,4 +137,49 @@
     \n\nMost guitar tabs you\'ll come across online will look like this (see below):
     </string>
 
+
+    <string name="level3_intro_title">Level 3: Introduction</string>
+    <string name="level3_intro_tv1">Welcome to the third level of GuitarPal!</string>
+    <string name="level3_intro_tv2">\nIn this level, you will be introduced to some basic chords. There are two main types of chords, Major and Minor. Major chords sound happy and Minor chords sound sad. Once you learn these chords, try and switch between these chords and play around with them. The chords shown in this level are in the same key of Gmajor so it will sound perfectly fine to jam around between these chords and you can even write 1000s of songs with these chords! So swipe the screen to the left and lets begin!</string>
+
+    <string name="level3_lesson1_title">Lesson 1: G Major Chord</string>
+    <string name="level3_lesson1_tv1">Remember from the previous level that the \'o\' means this string is played open. So here\'s how to play a GMajor chord:</string>
+    <string name="level3_lesson1_tv2">\n1. Place your 2nd finger on the 3rd fret of the 6th string.
+                                        \n2. Place your 1st finger on the 2nd fret of the 5th string.
+                                        \n3. Place your 4th finger on the 3rd fret of the 1st string.
+                                        \n4. Strum down from the 6th string. .
+                                        </string>
+
+
+    <string name="level3_lesson2_title">Lesson 2: D Major Chord</string>
+    <string name="level3_lesson2_tv1">Remember from the previous level that the \'X\' means this string is not played. So here\'s how to play a DMajor chord:</string>
+    <string name="level3_lesson2_tv2">\n1. Place your 1st finger on the 2nd fret of the 3rd string.
+                                        \n2. Place your 3rd finger on the 3rd fret of the 2nd string.
+                                        \n3. Place your 2nd finger on the 2nd fret of the 1st string.
+                                        \n4. Strum down from the 4th string.</string>
+
+
+    <string name="level3_lesson3_title">Lesson 3: C Major Chord</string>
+    <string name="level3_lesson3_tv1">So here\'s how to play a CMajor chord:</string>
+    <string name="level3_lesson3_tv2">\n1. Place your 1st finger on the 1st fret of the 2nd string.
+                                        \n2. Place your 2nd finger on the 2nd fret of the 4th string.
+                                        \n3. Place your 3rd finger on the 3rd fret of the 5th string.
+                                        \n4. Strum down from the 5th string.</string>
+
+    <string name="level3_lesson4_title">Lesson 4: E Minor Chord</string>
+    <string name="level3_lesson4_tv1">So here\'s how to play a EMinor chord:</string>
+    <string name="level3_lesson4_tv2">\n1. Place your 2nd finger on the 2nd fret of the 5th string.
+                                        \n2. Place your 3rd finger on the 2nd fret of the 4th string.
+                                        \n3. Strum down from the 6th string
+                                        </string>
+
+    <string name="level3_lesson5_title">Lesson 5: A Minor Chord</string>
+    <string name="level3_lesson5_tv1">So here\'s how to play a AMinor chord:</string>
+    <string name="level3_lesson5_tv2">\n1. Place your 2nd finger on the 2nd fret of the 4th string.
+                                        \n2. Place your 3rd finger on the 2nd fret of the 3rd string.
+                                        \n3. Place your 1st finger on the 1st fret of the 2nd string.
+                                        \n4. Strum down from the 5th string.
+                                        </string>
+
+
 </resources>
