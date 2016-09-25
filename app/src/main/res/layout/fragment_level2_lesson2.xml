@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/lv2_lesson2_title"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/level2_lesson2_title"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="@dimen/padding_between_views"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/lv2_lesson2_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv2_lesson2_title"
+            android:text="@string/level2_lesson2_tv1"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/lv2_lesson2_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv2_lesson2_tv1"
+            android:textColor="#ffffff"
+            android:text="@string/level2_lesson2_tv2"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+</ScrollView>

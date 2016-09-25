@@ -67,16 +67,74 @@
                                         \n\nThe 2nd string is tuned to B, so it\’s usually referred to as the B string.
                                         \n\nThe 1st string is tuned to E. This is the thinnest of all the strings. We often refer to this as the \‘high E string\’.</string>
      <string name="level1_lesson5_tv3">\n\nHow to remember the guitar string names? The easiest way to remember the guitar string names is to use a mnemonic. The sillier the better! Here\’s a couple of fun ways to remember this:
-
                                         \n\n(Going from the thickest string to the thinnest…)
-
                                         \n\n<b>Elephants</b>
                                         \n\n<b>And</b>
                                         \n\n<b>Donkeys</b>
                                         \n\n<b>Grow</b>
                                         \n\n<b>Big</b>
-                                        \n\n<b>Ears</b>
-</string>
+                                        \n\n<b>Ears</b></string>
 
+    <string name="level2_intro_title">Level 2: Introduction</string>
+    <string name="level2_intro_tv1">Welcome to the second level of GuitarPal!</string>
+    <string name="level2_intro_tv2">\nIn this level, you will be introduced to various extremely important aspects of playing guitar such as how to tune a guitar, getting to know the fretboard and how to read chord charts and guitar tabs. So swipe the screen to the left and lets begin!</string>
+
+    <string name="level2_lesson1_title">Lesson 1: How to Tune a Guitar</string>
+    <string name="level2_lesson1_tv1">It is essential for any guitarist to keep their guitar in tune. This app has a tuner which can help you tune your guitar to standard EADGBe tuning. But you may be in situations where you need to tune the guitar manually without a tuner. As a beginner you may find that manual tuning is very difficult and very frustrating.</string>
+    <string name="level2_lesson1_tv2"><b>Fifth fret trick</b>
+                                    \n\nThe fifth fret trick is the most common method of relative tuning and is outlined below:
+                                    \n\n1.	Estimate the pitch of the 6th string (the thickest string). There are lots of ways you can do this, the easiest way being just use you ear alone and guess. Alternatively, your ear can be guided by a pitch pipe, tuning fork, audio tuning guide, or the E on another instrument, such as a keyboard.
+                                    \n\n2.	Place and hold a finger on the 5th fret of the 6th string then pluck the 6th string followed by the 5th string. These two notes should be the same (A). Once you\'ve tuned the open A (5th string) you can continue with the rest of the strings.
+                                    \n\n3.	Play the 5th fret of the 5th string (the note should be D) and tune the 4th string to the same pitch.
+                                    \n\n4.	Play the 5th fret of the 4th string (G) and tune the 3rd string accordingly.
+                                    \n\n5.	Play the 4th fret of the 3rd string (B) and tune the 2nd string accordingly.
+                                    \n\n6.	Play the 5th of the 2nd string (E) and tune the 1st string accordingly.
+                                    \n\nTip - When using an amplifier you can make tuning easier by turning the volume up. Listen out for a wobbling sound; notice how this sound slows down as you get closer to the right tuning. This wobbling sound should stop when you are in tune and is easier to hear on the higher sounding strings.
+                                    </string>
+
+    <string name="level2_lesson2_title">Lesson 2: How to Restring a Guitar</string>
+    <string name="level2_lesson2_tv1">You may need to restring your guitar from time to time. This may because a string may break or maybe the strings just need changing if they get dull and dirty. Here we look at how to change strings for both an electric and an acoustic guitar.</string>
+    <string name="level2_lesson2_tv2">\n<b>Standard electric guitars</b>
+                                \n\n1.	Unwind all of the machineheads and remove the old strings. This can be made easier with string winders and string cutters.
+                                \n\n2.	Place the new string through the hole in the bridge. This is usually accessed on the reverse side of the body.
+                                \n\n3.	Thread the string through the string-post then cut the string, leaving 5cm (approx.) of length spare.
+                                \n\n4.	Wrap the string around the tuning peg then tighten the machinehead, leaving some slack on the string. Tighten until the string supports itself.
+                                \n\n5.	Repeat steps 2-4 for all of the strings.
+                                \n\n6.	Tune each string to the correct pitch.
+                                \n\n7.	Stretch each string by pulling it away from the fretboard.
+                                \n\n8.	Tune each string to the correct pitch again. If you find that the strings are slipping out of tune repeat steps 7 and 8. This should stabilise the tuning.
+                                \n\n<b>Acoustic/classical guitars</b>
+                                \n\n1.	Unwind one of the machineheads and remove the old string. This can be made easier with string winders and string cutters.
+                                \n\n2.	Tie the new string to the bridge, making sure you mimic the method used to tie the old strings (this is why you should change just one string to start with).
+                                \n\n3.	Thread the new string through the string-post then cut the string, leaving 5cm (approx.) of length spare.
+                                \n\n4.	Wrap the string around the tuning peg then tighten the machinehead, leaving some slack on the string. Tighten until the string supports itself.
+                                \n\n5.	Repeat steps 1-4 for all of the strings.
+                                \n\n6.	Tune each string to the correct pitch.
+                                \n\n7.	Stretch each string.
+                                \n\n8.	To ensure stable tuning repeat steps 6 and 7.</string>
+
+    <string name="level2_lesson3_title">Lesson 3: Getting to know the Fretboard</string>
+    <string name="level2_lesson3_tv1">Frets are the silver strips of metal that run up and down the entire length of (most) guitar fretboards, or the front face of the guitar neck. If you hold down a string between different frets while plucking that same string throughout, you\'ll notice the pitch of your notes change each time you go over a new fret wire. This is because the main job of frets is to control the intonation of each string, helping guitarists select which notes and chords they play.</string>
+    <string name="level2_lesson3_tv2">The inlaid dots on the fretboard are fret markers that indicate specific fret numbers. The double dot indicates that it is one octave above the open string, therefore restarting the notes in the series. Typically, these dots follow this pattern:
+                                    \n\n1st single dot = 3rd fret
+                                    \n2nd single dot = 5th fret
+                                    \n3rd single dot = 7th fret
+                                    \n4th single dot = 9th fret
+                                    \nDouble dot = 12th fret
+                                    \n5th single dot = 15th fret
+                                    \n6th single dot = 17th fret
+                                    \n7th single dot = 19th fret
+                                    \n8th single dot = 21st fret
+                                    </string>
+
+    <string name="level2_lesson4_title">Lesson 4: How to Read Guitar Chord Charts</string>
+    <string name="level2_lesson4_tv1">A trick to learning chord charts is to stand your guitar so that the headstock is pointing directly up. Then look at 4 frets. That\'s your basic chord chart. The 6 vertical lines represent 6 strings, although, the names of the strings rarely ever appear on the actual chord chart itself. The 5 horizontal lines represent the metal frets, but again, these numbers usually don\'t appear on the chord chart. The black dots represent where you put your fingers. In the example, left, you would put a finger on the 3rd fret of the 5th string and on the 2nd fret of the 3rd string.</string>
+    <string name="level2_lesson4_tv2">If you see an "0" above one of the vertical lines, it means that the open string is played. No finger should be placed on that string. If you see an "X" above one of the vertical lines, it means that particular string shouldn\'t be played at all. If you see a number next to the top horizontal line, it means that you should start forming the chord based on that numbered fret. In the example, left, you would start on the 7th fret (imagine the 7th fret as the nut of the guitar), putting a finger on the 8th fret of the 4th string and another finger on the 10th fret of the 3rd string.</string>
+
+    <string name="level2_lesson5_title">Lesson 5: How to Read Guitar Tabs</string>
+    <string name="level2_lesson5_tv1">Reading tablature (guitar tab) is quite simple, and the main advantage of learning to read tabs is that you can find tabs of almost any song or guitar solo online for free.</string>
+    <string name="level2_lesson5_tv2">The way tabs are displayed is the same as if you rotated your guitar neck so that it\'s facing you. The letters all the way to the left are the names of the six strings from highest to lowest, and the dashes running horizontally are there to represent the strings themselves. The numbers represent which fret to play, the 0\'s represent that you play an open string, and the x\'s represent a string that isn\'t played. It\'s a lot like reading chord charts in that way. Most of the time you won\'t find x\'s in tabs, but they are occasionally used to represent chords. The diagram above shows how a D major chord is written in tablature.
+    \n\nMost guitar tabs you\'ll come across online will look like this (see below):
+    </string>
 
 </resources>

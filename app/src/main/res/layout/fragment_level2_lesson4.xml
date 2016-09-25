@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/level2_lesson4_title"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/level2_lesson4_title"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="@dimen/padding_between_views"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/level2_lesson4_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/level2_lesson4_title"
+            android:text="@string/level2_lesson4_tv1"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/level2_lesson4_iv1"
+            android:src="@drawable/chord_chart_lesson_1"
+            android:layout_marginTop="@dimen/padding_between_views"
+            android:layout_marginBottom="@dimen/padding_between_views"
+            android:layout_below="@+id/level2_lesson4_tv1"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+        <TextView
+            android:id="@+id/level2_lesson4_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/level2_lesson4_iv1"
+            android:textColor="#ffffff"
+            android:text="@string/level2_lesson4_tv2"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/level2_lesson4_iv2"
+            android:src="@drawable/chord_chart_lesson_2"
+            android:layout_marginTop="@dimen/padding_between_views"
+            android:layout_marginBottom="@dimen/padding_between_views"
+            android:layout_below="@+id/level2_lesson4_tv2"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+    </RelativeLayout>
+</ScrollView>
