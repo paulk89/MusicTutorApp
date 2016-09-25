@@ -29,7 +29,7 @@ import fragments.Level1Lesson5Fragment;
 /**
  * Created by paulk on 25/06/2016.
  */
-public class L1LessonsActivity extends FragmentActivity {
+public class LessonsActivity extends FragmentActivity {
 
     /**
      * The number of pages (wizard steps) to show in this demo.
@@ -172,7 +172,7 @@ public class L1LessonsActivity extends FragmentActivity {
     }
 
     public void level1Test(View view){
-        Intent i = new Intent(L1LessonsActivity.this,
+        Intent i = new Intent(LessonsActivity.this,
                 Level1QuizActivity.class);
         startActivity(i);
         finish();

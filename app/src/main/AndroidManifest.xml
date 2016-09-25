@@ -34,7 +34,7 @@
         </activity>
 
         <activity
-            android:name="lessons.L1LessonsActivity"
+            android:name="lessons.LessonsActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
@@ -43,26 +43,6 @@
             android:name=".ChordChartActivity"
             android:screenOrientation="sensorPortrait"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-
-        <activity
-            android:name="lessons.L2LessonsActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-
-        <activity
-            android:name="lessons.L3LessonsActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-
-        <activity
-            android:name="lessons.L4LessonsActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
-
-        <activity
-            android:name="lessons.L5LessonsActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
 

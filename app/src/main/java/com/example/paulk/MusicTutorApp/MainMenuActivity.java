@@ -8,11 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import lessons.L1LessonsActivity;
-import lessons.L2LessonsActivity;
-import lessons.L3LessonsActivity;
-import lessons.L4LessonsActivity;
-import lessons.L5LessonsActivity;
+import lessons.LessonsActivity;
 
 
 /**
@@ -103,7 +99,7 @@ public class MainMenuActivity extends Activity {
                         .show();*/
 
                 Intent i = new Intent(MainMenuActivity.this,
-                        L1LessonsActivity.class);
+                        LessonsActivity.class);
                 i.putExtra("buttonclick", 1);
                 startActivity(i);
                 //finish();
@@ -115,7 +111,7 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
 
                 Intent i = new Intent(MainMenuActivity.this,
-                        L1LessonsActivity.class);
+                        LessonsActivity.class);
                 i.putExtra("buttonclick", 2);
                 startActivity(i);
                 //finish();
@@ -128,7 +124,7 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
 
                 Intent i = new Intent(MainMenuActivity.this,
-                        L1LessonsActivity.class);
+                        LessonsActivity.class);
                 i.putExtra("buttonclick", 3);
                 startActivity(i);
                 //finish();
@@ -141,7 +137,7 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
 
                 Intent i = new Intent(MainMenuActivity.this,
-                        L1LessonsActivity.class);
+                        LessonsActivity.class);
                 i.putExtra("buttonclick", 4);
                 startActivity(i);
                 //finish();
@@ -154,7 +150,7 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
 
                 Intent i = new Intent(MainMenuActivity.this,
-                        L1LessonsActivity.class);
+                        LessonsActivity.class);
                 i.putExtra("buttonclick", 5);
                 startActivity(i);
                 //finish();
