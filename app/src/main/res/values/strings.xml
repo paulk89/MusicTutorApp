@@ -12,7 +12,7 @@
     <string name="level1_intro_welcome_title">Level 1: Introduction</string>
     <string name="level1_intro_welcome">Welcome to the first level of GuitarPal! The lessons, tips and tools in this app will introduce you to the basics of the guitar and start you on your way to becoming an accomplished guitar player. \nThere is a knowledge test at the end of each level that you must pass in order to unlock the next level. \n\nYou must get at least 80% on each test to pass! Sounds tricky? FEAR NOT! Read through the lessons and you will pass with flying colours!\nYou can easily swipe through each lesson from left to right and scroll up and down throughout each lesson in every level!</string>
 
-    <string name="level1_intro">In level 1, you will be introduced to the various parts of the guitar, how to hold a guitar and hold a plectrum. So swipe the screen to the left and lets begin!</string>
+    <string name="level1_intro">In level 1, we will be introduced to the various parts of the guitar, how to hold a guitar and hold a plectrum. So swipe the screen to the left and lets begin!</string>
     <string name="swipe_left">Swipe left to begin!</string>
     <string name="level1_lesson1_title">Lesson 1: Parts of an Acoustic Guitar</string>
     <string name="level1_lesson1_tv1">Welcome to Lesson 1 of GuitarPal! Once you\'ve purchased your guitar, it\'s time to learn all the parts that comprise the acoustic guitar. This information will come in handy when it comes time for repairs or general maintenance, which are always essential to being a guitar player.</string>
@@ -77,7 +77,7 @@
 
     <string name="level2_intro_title">Level 2: Introduction</string>
     <string name="level2_intro_tv1">Welcome to the second level of GuitarPal!</string>
-    <string name="level2_intro_tv2">\nIn this level, you will be introduced to various extremely important aspects of playing guitar such as how to tune a guitar, getting to know the fretboard and how to read chord charts and guitar tabs. So swipe the screen to the left and lets begin!</string>
+    <string name="level2_intro_tv2">\nIn this level, we will be introduced to various extremely important aspects of playing guitar such as how to tune a guitar, getting to know the fretboard and how to read chord charts and guitar tabs. So swipe the screen to the left and lets begin!</string>
 
     <string name="level2_lesson1_title">Lesson 1: How to Tune a Guitar</string>
     <string name="level2_lesson1_tv1">It is essential for any guitarist to keep their guitar in tune. This app has a tuner which can help you tune your guitar to standard EADGBe tuning. But you may be in situations where you need to tune the guitar manually without a tuner. As a beginner you may find that manual tuning is very difficult and very frustrating.</string>
@@ -181,5 +181,55 @@
                                         \n4. Strum down from the 5th string.
                                         </string>
 
+    <string name="level4_intro_title">Level 4: Introduction</string>
+    <string name="level4_intro_tv1">Welcome to the 4th level of Guitar Pal! You are certainly making excellent progress!</string>
+    <string name="level4_intro_tv2">\nIn this level, we are going to have a look at some more advanced aspects of learning guitar such as learning strumming patterns and in particular, scales. We we also have a look at some good practice techniques to start taking note of and start getting into the habit of practicing. So swipe left and lets begin! </string>
+
+    <string name="level4_lesson1_title">Lesson 1: Strumming Patterns</string>
+    <string name="level4_lesson1_tv1">Strumming patterns are extremely important and are often overlooked. If you learn one particular strumming pattern, you can then apply it to so many songs or even use the pattern to write your own songs. You can then experiment with the pattern by changing the speed, volume, varying the dynamics of your playing or by adding and removing strums in certain areas, they are just great to play around with. And once you learn one, you can move onto various other patterns. In the Practical Support section of this app, there is a strumming pattern chart with 8 common patterns to get you going!
+                                        \n\nHave a go at the ones below. You can keep a steady beat in your by counting 1-2-3-4 over and over in your head or out loud as you play the pattern.  If you struggle with the beats in between, you can use the word \‘and\’ to fill these gaps.
+                                        \nSo you can count: 1-and-2-and-3-and-4 over and over to help keep time. Once you know the strumming pattern in your head without looking at the chart, you can play it along with the Metronome in this app
+                                        </string>
+    <string name="level4_lesson1_tv2">Tip: Be sure to keep your strumming forearm and wrist relaxed while strumming. Keep the motions fluid and avoid stiffness. 
+                                    \n\nTip: Make sure that you are hitting both your downstrokes and upstrokes with the same amount of intensity and volume. This will definitely take some practice to get the technique just right.</string>
+
+    <string name="level4_lesson2_title">Lesson 2: Power Chords</string>
+    <string name="level4_lesson2_tv1">Power chords are quite easy to play and they sound especially great on an electric guitar with distortion chords, countless songs use them this way. They give you the heavy and powerful sound, hence the name Power Chord. Here\'s how to play the power chord shape:
+                                       \n\n 1. Place your 1st finger on the 2nd fret of the 6th string.
+                                        \n2. Place your 3rd finger on the 4th fret of the 5th string.
+                                        \n3. Place your 4th finger on the 4th fret of the 4th string.
+                                        \n4. Strum down from the 6th string, do not play bottom three strings.
+                                        </string>
+    <string name="level4_lesson2_tv2">You can play this shape anywhere along the low E string on the fretboard and you can move all three finger down a string and do the same along the A string to get every type of power chord!</string>
+
+    <string name="level4_lesson3_title">Lesson 3: The Chromatic Scale</string>
+    <string name="level4_lesson3_tv1">A scale is simply a set of notes arranged in order of pitch. They are named by the first note of the sequence. This is called the root note. Scales can ascend in pitch or descend in pitch. There are only 12 different notes that you can play on the guitar. They are labelled as:
+                                        \n<b>A	A#	B	C	C#	D	D#	E	F	F#	G	G#</b>
+                                        \nYour guitar has a chromatic layout. Each open string on a guitar is tuned to a certain note, as shown below:
+                                        \n\nYour guitar has a chromatic layout. This basically means it goes up and down in semi-tones. The chromatic scale is basically made up of these semi tone notes. Each fret produces the next note in the chromatic scale. For example the notes on the E string are shown below:
+                                        </string>
+    <string name="level4_lesson3_tv2">And that’s all there is to the chromatic scale. Sounds simple but if you try and use all four fingers playing 4 notes on each string and then change between strings, it can be tricky but it is great to practice for the dexterity of your fingers!</string>
+
+    <string name="level4_lesson4_title">Lesson 4: The Major Scale</string>
+    <string name="level4_lesson4_tv1">Before we can explain how the major scale is formed, you must understand the intervals between the named notes. There are whole steps between A-B, C-D, D-E, F-G, G-A and half steps between B-C, E-F. You can see here below:</string>
+    <string name="level4_lesson4_tv2">Each major scale is related to a major key.  For example, the key of C (major) corresponds to the C Major Scale.  When indicating a major key, you can omit the word major. When you first practice scales, I recommend playing from root not to root note ascending and descending.  The notes, in order are:
+    \n\n<b>C–D–E–F–G–A-B–C–B-A-G-F–E–D–C</b>
+    \n\nYou can see below this is the Cmajor scale. It starts on the 8th fret on the 6th string. Have a go playing this to the last string and then back again in the same order. You can move this scale position up and down the fret board to get other scales too! For example, more this entire scale one fret to the left and you get the BMajor scale!</string>
+
+    <string name="level4_lesson5_title">Lesson 5: 9 Practicing Techniques</string>
+    <string name="level4_lesson5_tv1">Now that you have started learning chords and scales, its time to take note of these 9 very useful practicing techniques and tips!</string>
+    <string name="level4_lesson5_tv2">\n1.Have your guitar close to hand in your bedroom because it encourages practice!
+                                   \n\n 2.	Have a comfortable practise environment. Keep your wrist, hand and back posture correct and you will be able to practice for longer.
+                                    \n\n3.	Keeping your wrists relaxed helps stamina and speed and will help prevent cramp.
+                                    \n\n4.	Keep trying to push yourself mentally and physically but do not strain your wrists too much. Repetitive strain injury is possible from playing guitar and it can interfere with practice, and it hurts.
+                                    \n\n5.	Take regular breaks when you practice (around 5 minutes every half an hour). This enables you to mentally record progress and music you have made, reflecting on what you have done also gives your wrists a break.
+                                    \n\n6.	Don\'t play the same material every day otherwise you will develop a "comfort zone" and you will be useless at all music outside that zone.
+                                    \n\n7.	Don\'t be afraid to try out different tunings. Sometimes new creative ideas come from playing in different tunings. Also, invest in buying a capo! You won\t regret it and allows you to change key very quickly!
+                                    \n\n8.	Warm-ups are essential. They help you play for longer and keep your wrists healthy. Jumping straight into fast and difficult music can be damaging to your wrist and your confidence. Don\'t forget, even professional guitarists can sound terrible without a proper warm up. Or if they haven\'t played in a while.
+                                    \n\n9.	Use the metronome in this app regularly. Use it to warm-up with scales.</string>
+
+    <string name="level5_intro_title">Level 5: Introduction</string>
+    <string name="level5_intro_tv1">Welcome to the final level of GuitarPal! You have made fantastic progress to get here! You're knowledge of the guitar is clearly growing. Now let\s keep going for the final stretch and complete the course!</string>
+    <string name="level5_intro_tv2">In this final level, we will look at some more advanced techniques that beginners can learn. These are very useful and are essential to any guitarist. This level includes lessons on palm muting, slide, vibrato, arpeggiated chords, hammer-ons and pull-offs. So lets begin the final level and complete the course with style!</string>
 
 </resources>
