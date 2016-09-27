@@ -229,7 +229,52 @@
                                     \n\n9.	Use the metronome in this app regularly. Use it to warm-up with scales.</string>
 
     <string name="level5_intro_title">Level 5: Introduction</string>
-    <string name="level5_intro_tv1">Welcome to the final level of GuitarPal! You have made fantastic progress to get here! You're knowledge of the guitar is clearly growing. Now let\s keep going for the final stretch and complete the course!</string>
-    <string name="level5_intro_tv2">In this final level, we will look at some more advanced techniques that beginners can learn. These are very useful and are essential to any guitarist. This level includes lessons on palm muting, slide, vibrato, arpeggiated chords, hammer-ons and pull-offs. So lets begin the final level and complete the course with style!</string>
+    <string name="level5_intro_tv1">Welcome to the final level of GuitarPal! You have made fantastic progress to get here! Your knowledge of the guitar is clearly growing. Now let\'s keep going for the final stretch and complete the course!</string>
+    <string name="level5_intro_tv2">\nIn this final level, we will look at some more advanced techniques that beginners can learn. These are very useful and are essential to any guitarist. This level includes lessons on palm muting, slide, vibrato, arpeggiated chords, hammer-ons and pull-offs. So lets begin the final level and complete the course with style!</string>
+
+    <string name="level5_lesson1_title">Lesson 1: Palm Muting</string>
+    <string name="level5_lesson1_tv1">Palm muting is a technique where the picking hand mutes the strings whilst they are being struck. The strings are muted just in front of the bridge with the edge of the palm. Despite the name, palm muting does not produce the same effect as fret hand muting. Fret hand muting involves dampening the strings so that a percussive click is produced instead of a pitch. With palm muting it is possible to hold down frets and produce pitches, although they are more percussive than normal.
+                                        \n\n1. The area on the edge of your palm (opposite the thumb) should lie across the string(s) within two inches of the bridge. The closer you are to the bridge, the lighter the palm mute will be.
+                                        \n2. You don\'t need to press down with your palm. Just the weight of your hand relaxing on the strings should apply enough pressure. Remember, if you press down too hard then you\'ll completely mute the strings, if you press down too lightly then some strings may ring out.
+                                        \n3. If you want to be a good rock guitarist you must be able to apply palm muting to power chords, so don\'t just practice palm muting single notes.
+                                        \n4. If you\’re using an electric guitar, to get a good sound it helps to add distortion and turn up the bass on the tone control.
+                                        \n\nThere are loads of ways that you can practice your palm muting. You could learn riffs that use palm muting, play your regular warm ups and exercises palm muted or play scales palm muted. Below is a good exercise for you to try:
+                                        </string>
+
+    <string name="level5_lesson2_title">Lesson 2: Slide</string>
+    <string name="level5_lesson2_tv1">Sliding is a form of legato (smooth playing) that is similar to hammer-ons and pull-offs. The technique involves playing a note and then moving the finger to a different fret (keeping the finger pressed firmly against the fretboard as you move).</string>
+    <string name="level5_lesson2_tv2"><b>Instructions:</b>
+                                    \n\n1. Place your 1st finger on the 5th fret of the 1st string (the highest, thinnest string)
+                                    \n\n2. Pluck the string
+                                    \n\n3. Whilst holding your finger firmly against the fretboard, drag your finger up to the 7th fret (passing the 6th fret along the way)
+                                    \n\nThe slide should sound like a swift transition from the 5th fret through to the 7th fret. The finger should remain pressed against the fretboard at all times, otherwise the sound will be cut.
+                                    </string>
+
+    <string name="level5_lesson3_title">Lesson 3: Vibrato</string>
+    <string name="level5_lesson3_tv1">Vibrato is a wavering/wobbling effect from sudden changes in pitch. This is achieved by wiggling the finger whilst a note is fretted. Vibrato can also be added with the whammy bar. The example below shows vibrato on the 12th fret of the B-string, followed by wide vibrato:</string>
+
+    <string name="level5_lesson4_title">Lesson 4: Arpeggiated Chords</string>
+    <string name="level5_lesson4_tv1">The term arpeggiated chords is sometimes used to describe chords that are played with anarpeggio. However, guitarists tend to use the term to describe a different technique altogether.
+                                    \nAn arpeggiated chord is where the plectrum or thumb is rolled across the strings slowly to articulate each individual note of the chord. The effect produced shouldn\'t sound like a strum or an arpeggio, more like a cross between the two. Below you will see an arpeggiated chord in published tablature:
+                                    </string>
+
+    <string name="level5_lesson5_title">Lesson 5: Hammer-ons and Pull-offs</string>
+    <string name="level5_lesson5_tv1">A hammer-on is a form of legato (smooth playing) that is achieved by using a fretting hand finger to slam down onto a fret to sound a note without the need for plucking. Below is an example:</string>
+    <string name="level5_lesson5_tv2"><b>Instructions:</b>
+                                    \n\n1. Place the 1st finger (index finger) of your fretting hand on 5th fret of the high E-string.
+                                       \n\n2.	Pluck the high E-string.
+                                        \n\n3. Whilst the note is sounding, press the tip of your second finger (middle finger) down onto the 6th fret.
+                                        \n\n4. The note on fret 6 should sound as you hammer on.
+                                    </string>
+
+    <string name="level5_lesson5_tv3">\nA pull-off is the opposite of a hammer-on. Quickly taking a finger off a fret to sound a note below it (on the same string).</string>
+    <string name="level5_lesson5_tv4"><b>Instructions:</b>
+                                    \n\n1. With your 2nd finger hold down the 6th fret of the high E-string.
+                                        \n2. Whilst holding the 6th fret, use your 1st finger to hold down the 5th fret on the same string.
+                                        \n3. Pluck the high E-string.
+                                        \n4. Whilst the note is sounding, remove the 2nd finger from the string really quickly. The 5th fret should now sound.
+                                        \n\nMake sure the pulled note is the same volume as the picked note. Pulling tip of your finger down slightly as you pull off will produce a louder tone.
+                                        \n\nRemember - hammer-ons and pull-offs can both involve open strings. Try out various slurs (hammer-ons and pull-offs) all around the fretboard. Use different fingers and try stretching between frets that are far apart.
+                                    </string>
 
 </resources>
