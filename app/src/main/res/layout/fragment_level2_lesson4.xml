@@ -25,13 +25,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/level2_lesson4_title"
-            android:text="@string/level2_lesson4_tv1"
+            android:text="@string/level2_lesson4_tv3"
             android:textColor="#ffffff"
             android:textSize="17sp"/>
 
         <ImageView
             android:id="@+id/level2_lesson4_iv1"
-            android:src="@drawable/chord_chart_lesson_1"
+            android:src="@drawable/finger_numbers"
             android:layout_marginTop="@dimen/padding_between_views"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:layout_below="@+id/level2_lesson4_tv1"
@@ -50,7 +50,7 @@
 
         <ImageView
             android:id="@+id/level2_lesson4_iv2"
-            android:src="@drawable/chord_chart_lesson_2"
+            android:src="@drawable/d_major_chord"
             android:layout_marginTop="@dimen/padding_between_views"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:layout_below="@+id/level2_lesson4_tv2"

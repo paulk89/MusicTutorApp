@@ -31,7 +31,7 @@
 
         <ImageView
             android:id="@+id/level4_lesson4_iv1"
-            android:src="@drawable/fretboard_chromatic"
+            android:src="@drawable/note_intervals"
             android:layout_marginTop="@dimen/padding_between_views"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:layout_below="@+id/level4_lesson4_tv1"

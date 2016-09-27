@@ -31,7 +31,7 @@
 
         <ImageView
             android:id="@+id/level4_lesson2_iv1"
-            android:src="@drawable/lesson_strumming_patterns"
+            android:src="@drawable/power_chord"
             android:layout_marginTop="@dimen/padding_between_views"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:layout_below="@+id/level4_lesson2_tv1"
