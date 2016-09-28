@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/testContainer"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -12,17 +13,35 @@
         android:orientation="vertical"
         android:padding="20dp">
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/QuestionNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_example"
-            android:paddingBottom="30dp"
+            android:text="Question"
+            android:paddingBottom="10dp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/question"
+            android:text="What what what"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuestionNumber"/>
+
+        <ImageView
+            android:id="@+id/questionImage"
+            android:text="What what what"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/question"/>
+
         <RadioGroup
             android:id="@+id/radioGroup1"
+            android:layout_below="@id/questionImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.04" >
+            android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/radio0"
                 android:layout_width="match_parent"
@@ -47,9 +66,11 @@
         </RadioGroup>
         <Button
             android:id="@+id/button1"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup1"
             android:text="Finish Test"
-            android:layout_gravity="center"/>
-    </LinearLayout>
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 </RelativeLayout>

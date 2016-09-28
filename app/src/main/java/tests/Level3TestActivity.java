@@ -13,7 +13,7 @@ public class Level3TestActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.level1_quiz);
+        setContentView(R.layout.quiz_layout);
     }
 
     public void onBackPressed() {
