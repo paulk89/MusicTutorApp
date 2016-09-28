@@ -12,8 +12,8 @@
     <string name="level1_intro_welcome_title">Level 1: Introduction</string>
     <string name="level1_intro_welcome">Welcome to the first level of GuitarPal! The lessons, tips and tools in this app will introduce you to the basics of the guitar and start you on your way to becoming an accomplished guitar player. \nThere is a knowledge test at the end of each level that you must pass in order to unlock the next level. \n\nYou must get at least 80% on each test to pass! Sounds tricky? FEAR NOT! Read through the lessons and you will pass with flying colours!\nYou can easily swipe through each lesson from left to right and scroll up and down throughout each lesson in every level!</string>
 
-    <string name="level1_intro">In level 1, we will be introduced to the various parts of the guitar, how to hold a guitar and hold a plectrum. So swipe the screen to the left and lets begin!</string>
-    <string name="swipe_left">Swipe left to begin!</string>
+    <string name="level1_intro">In level 1, we will be introduced to the various parts of the guitar, how to hold a guitar and hold a plectrum. So swipe the screen to the left and lets begin! Or alternatively you can take the level 1 test now!</string>
+    <string name="swipe_left">Swipe left to begin! Or alternatively you can take the level 1 test now!</string>
     <string name="level1_lesson1_title">Lesson 1: Parts of an Acoustic Guitar</string>
     <string name="level1_lesson1_tv1">Welcome to Lesson 1 of GuitarPal! Once you\'ve purchased your guitar, it\'s time to learn all the parts that comprise the acoustic guitar. This information will come in handy when it comes time for repairs or general maintenance, which are always essential to being a guitar player.</string>
     <string name="level1_lesson1_tv2"><b>Body:</b> The body of the acoustic guitar is what gives the instrument its sound and beauty. Its the big hollow shape, or sound box, that resonates when you play the strings. Its what makes the guitar sound like a guitar.
@@ -77,7 +77,7 @@
 
     <string name="level2_intro_title">Level 2: Introduction</string>
     <string name="level2_intro_tv1">Welcome to the second level of GuitarPal!</string>
-    <string name="level2_intro_tv2">\nIn this level, we will be introduced to various extremely important aspects of playing guitar such as how to tune a guitar, getting to know the fretboard and how to read chord charts and guitar tabs. So swipe the screen to the left and lets begin!</string>
+    <string name="level2_intro_tv2">\nIn this level, we will be introduced to various extremely important aspects of playing guitar such as how to tune a guitar, getting to know the fretboard and how to read chord charts and guitar tabs. So swipe the screen to the left and lets begin!\n\n Or alternatively you can take the level 2 test now!</string>
 
     <string name="level2_lesson1_title">Lesson 1: How to Tune a Guitar</string>
     <string name="level2_lesson1_tv1">It is essential for any guitarist to keep their guitar in tune. This app has a tuner which can help you tune your guitar to standard EADGBe tuning. But you may be in situations where you need to tune the guitar manually without a tuner. As a beginner you may find that manual tuning is very difficult and very frustrating.</string>
@@ -143,7 +143,7 @@
 
     <string name="level3_intro_title">Level 3: Introduction</string>
     <string name="level3_intro_tv1">Welcome to the third level of GuitarPal!</string>
-    <string name="level3_intro_tv2">\nIn this level, you will be introduced to some basic chords. There are two main types of chords, Major and Minor. Major chords sound happy and Minor chords sound sad. Once you learn these chords, try and switch between these chords and play around with them. The chords shown in this level are in the same key of Gmajor so it will sound perfectly fine to jam around between these chords and you can even write 1000s of songs with these chords! So swipe the screen to the left and lets begin!</string>
+    <string name="level3_intro_tv2">\nIn this level, you will be introduced to some basic chords. There are two main types of chords, Major and Minor. Major chords sound happy and Minor chords sound sad. Once you learn these chords, try and switch between these chords and play around with them. The chords shown in this level are in the same key of Gmajor so it will sound perfectly fine to jam around between these chords and you can even write 1000s of songs with these chords! So swipe the screen to the left and lets begin!\n\n Or alternatively you can take the level 3 test now!</string>
 
     <string name="level3_lesson1_title">Lesson 1: G Major Chord</string>
     <string name="level3_lesson1_tv1">Remember from the previous level that the \'o\' means this string is played open. So here\'s how to play a GMajor chord:</string>
@@ -186,7 +186,7 @@
 
     <string name="level4_intro_title">Level 4: Introduction</string>
     <string name="level4_intro_tv1">Welcome to the 4th level of Guitar Pal! You are certainly making excellent progress!</string>
-    <string name="level4_intro_tv2">\nIn this level, we are going to have a look at some more advanced aspects of learning guitar such as learning strumming patterns and in particular, scales. We we also have a look at some good practice techniques to start taking note of and start getting into the habit of practicing. So swipe left and lets begin! </string>
+    <string name="level4_intro_tv2">\nIn this level, we are going to have a look at some more advanced aspects of learning guitar such as learning strumming patterns and in particular, scales. We we also have a look at some good practice techniques to start taking note of and start getting into the habit of practicing. So swipe left and lets begin!\n\n Or alternatively you can take the level 4 test now!</string>
 
     <string name="level4_lesson1_title">Lesson 1: Strumming Patterns</string>
     <string name="level4_lesson1_tv1">Strumming patterns are extremely important and are often overlooked. If you learn one particular strumming pattern, you can then apply it to so many songs or even use the pattern to write your own songs. You can then experiment with the pattern by changing the speed, volume, varying the dynamics of your playing or by adding and removing strums in certain areas, they are just great to play around with. And once you learn one, you can move onto various other patterns. In the Practical Support section of this app, there is a strumming pattern chart with 8 common patterns to get you going!
@@ -233,7 +233,7 @@
 
     <string name="level5_intro_title">Level 5: Introduction</string>
     <string name="level5_intro_tv1">Welcome to the final level of GuitarPal! You have made fantastic progress to get here! Your knowledge of the guitar is clearly growing. Now let\'s keep going for the final stretch and complete the course!</string>
-    <string name="level5_intro_tv2">\nIn this final level, we will look at some more advanced techniques that beginners can learn. These are very useful and are essential to any guitarist. This level includes lessons on palm muting, slide, vibrato, arpeggiated chords, hammer-ons and pull-offs. So lets begin the final level and complete the course with style!</string>
+    <string name="level5_intro_tv2">\nIn this final level, we will look at some more advanced techniques that beginners can learn. These are very useful and are essential to any guitarist. This level includes lessons on palm muting, slide, vibrato, arpeggiated chords, hammer-ons and pull-offs. So lets begin the final level and complete the course with style! \n\n Or alternatively you can take the final level 5 test now!</string>
 
     <string name="level5_lesson1_title">Lesson 1: Palm Muting</string>
     <string name="level5_lesson1_tv1">Palm muting is a technique where the picking hand mutes the strings whilst they are being struck. The strings are muted just in front of the bridge with the edge of the palm. Despite the name, palm muting does not produce the same effect as fret hand muting. Fret hand muting involves dampening the strings so that a percussive click is produced instead of a pitch. With palm muting it is possible to hold down frets and produce pitches, although they are more percussive than normal.
@@ -279,5 +279,12 @@
                                         \n\nMake sure the pulled note is the same volume as the picked note. Pulling tip of your finger down slightly as you pull off will produce a louder tone.
                                         \n\nRemember - hammer-ons and pull-offs can both involve open strings. Try out various slurs (hammer-ons and pull-offs) all around the fretboard. Use different fingers and try stretching between frets that are far apart.
                                     </string>
+
+    <string name="level1_test">Level 1 Test</string>
+    <string name="level2_test">Level 2 Test</string>
+    <string name="level3_test">Level 3 Test</string>
+    <string name="level4_test">Level 4 Test</string>
+    <string name="level5_test">Level 5 Test</string>
+
 
 </resources>

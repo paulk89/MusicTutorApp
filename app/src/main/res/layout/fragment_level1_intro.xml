@@ -29,20 +29,30 @@
                 android:textColor="#ffffff"
                 android:textSize="17sp"/>
 
-        <TextView
-            android:id="@+id/lv1_intro_tv3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/lv1_intro_tv2"
-            android:textColor="#ffffff"
-            android:text="@string/level1_intro"
-            android:textSize="17sp"/>
-
         <ImageView
+            android:id="@+id/lv1_intro_iv1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/swipeleft"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/lv1_intro_tv2"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/lv1_intro_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv1_intro_iv1"
+            android:textColor="#ffffff"
+            android:text="@string/level1_intro"
+            android:textSize="17sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="level1Test"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/level1_test"
             android:layout_below="@+id/lv1_intro_tv3"
             android:layout_centerInParent="true"/>
 

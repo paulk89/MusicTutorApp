@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import com.example.paulk.MusicTutorApp.Level1QuizActivity;
+import tests.Level1TestActivity;
 import com.example.paulk.MusicTutorApp.R;
 
 import java.util.List;
@@ -197,7 +197,7 @@ public class LessonsActivity extends FragmentActivity {
 
     public void level1Test(View view){
         Intent i = new Intent(LessonsActivity.this,
-                Level1QuizActivity.class);
+                Level1TestActivity.class);
         startActivity(i);
         finish();
     }

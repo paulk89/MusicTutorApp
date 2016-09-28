@@ -1,13 +1,14 @@
-package com.example.paulk.MusicTutorApp;
+package tests;
 
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.example.paulk.MusicTutorApp.R;
 
 /**
- * Created by paulk on 28/06/2016.
+ * Created by paulk on 28/09/2016.
  */
-public class Level1QuizActivity extends Activity {
+public class Level2TestActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
