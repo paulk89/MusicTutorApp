@@ -39,7 +39,7 @@
             android:textSize="17sp"/>
 
         <ImageView
-            android:src="@drawable/c_major_chord"
+            android:src="@drawable/e_minor_chord"
             android:layout_marginTop="@dimen/padding_between_views"
             android:layout_marginBottom="@dimen/padding_between_views"
             android:layout_below="@+id/level3_lesson4_tv2"

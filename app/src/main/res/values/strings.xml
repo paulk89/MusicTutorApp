@@ -207,8 +207,8 @@
 
     <string name="level4_lesson3_title">Lesson 3: The Chromatic Scale</string>
     <string name="level4_lesson3_tv1">A scale is simply a set of notes arranged in order of pitch. They are named by the first note of the sequence. This is called the root note. Scales can ascend in pitch or descend in pitch. There are only 12 different notes that you can play on the guitar. They are labelled as:
-                                        \n<b>A	A#	B	C	C#	D	D#	E	F	F#	G	G#</b>
-                                        \nYour guitar has a chromatic layout. Each open string on a guitar is tuned to a certain note, as shown below:
+                                        \n\n<b>A	A#	B	C	C#	D	D#	E	F	F#	G	G#</b>
+                                        \n\nYour guitar has a chromatic layout. Each open string on a guitar is tuned to a certain note, as shown below:
                                         \n\nYour guitar has a chromatic layout. This basically means it goes up and down in semi-tones. The chromatic scale is basically made up of these semi tone notes. Each fret produces the next note in the chromatic scale. For example the notes on the E string are shown below:
                                         </string>
     <string name="level4_lesson3_tv2">And that’s all there is to the chromatic scale. Sounds simple but if you try and use all four fingers playing 4 notes on each string and then change between strings, it can be tricky but it is great to practice for the dexterity of your fingers!</string>
