@@ -10,6 +10,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.paulk.MusicTutorApp.DatabaseHandler;
 import com.example.paulk.MusicTutorApp.R;
 
 import java.io.ByteArrayInputStream;
@@ -26,6 +27,10 @@ public class Level1TestActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_layout);
         ImageView imageView = (ImageView)findViewById(R.id.questionImage);
+
+      /*  DatabaseHandler db = new DatabaseHandler(this);
+        db.getReadableDatabase();*/
+
 
         //convert image to byte array
         Bitmap image = BitmapFactory.decodeResource(getResources(),R.drawable.parts_of_acoustic);

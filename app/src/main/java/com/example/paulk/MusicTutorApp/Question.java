@@ -15,10 +15,23 @@ public class Question {
     private String a4;
     private String correct;
     private int levelID;
-    private int imageResource;
+    private byte[] imageResource;
 
     public Question(String question, String a1, String a2, String a3, String a4,
-                    String correct, int levelID, int imageResource){
+                    String correct, int levelID){
+
+        this.question = question;
+        this.a1 = a1;
+        this.a2 = a2;
+        this.a3 = a3;
+        this.a4 = a4;
+        this.correct = correct;
+        this.levelID = levelID;
+
+    }
+
+    public Question(String question, String a1, String a2, String a3, String a4,
+                    String correct, int levelID, byte[] imageResource){
 
         this.question = question;
         this.a1 = a1;
@@ -95,11 +108,11 @@ public class Question {
         this.levelID = levelID;
     }
 
-    public int getImageResource() {
+    public byte[] getImageResource() {
         return imageResource;
     }
 
-    public void setImageResource(int imageResource) {
+    public void setImageResource(byte[] imageResource) {
         this.imageResource = imageResource;
     }
 }

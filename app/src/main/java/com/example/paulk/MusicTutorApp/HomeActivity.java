@@ -4,12 +4,16 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.io.ByteArrayOutputStream;
 
 
 public class HomeActivity extends Activity {
@@ -23,6 +27,15 @@ public class HomeActivity extends Activity {
 
         db = new DatabaseHandler(this);
         db.getWritableDatabase();
+
+        /*Bitmap image = BitmapFactory.decodeResource(getResources(),R.drawable.android);
+        BitmapFactory.decodeFile()
+
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+
+        byte imageInByte[] = stream.toByteArray();*/
 
         Log.i("TAG", "OnCreate fired in Home activity!!");
 
