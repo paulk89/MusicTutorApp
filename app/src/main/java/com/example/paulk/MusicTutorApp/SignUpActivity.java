@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class SignUpActivity extends Activity{
     EditText editTextUserName, editTextPassword, editTextConfirmPassword;
     Button btnCreateAccount;
-    Context context = this;
+    Context context;
     DatabaseHandler db;
 
     @Override
@@ -24,7 +24,7 @@ public class SignUpActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        db = new DatabaseHandler(getApplicationContext());
+        db = new DatabaseHandler(this);
 
         editTextUserName = (EditText) findViewById(R.id.editTextUserName);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);

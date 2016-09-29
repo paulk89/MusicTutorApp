@@ -15,6 +15,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Logcat tag
     private static final String LOG = "DatabaseHelper";
 
+    private SQLiteDatabase dBase;
+
     // Database Version
     private static final int DATABASE_VERSION = 1;
 
@@ -114,6 +116,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        dBase = db;
 
         db.execSQL(CREATE_TABLE_LEVEL);
         db.execSQL(CREATE_TABLE_USER);
@@ -131,9 +134,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL("INSERT OR REPLACE INTO " + TABLE_LEVEL
                 + "(" + KEY_LEVELID + "," + KEY_LEVELNAME + ") VALUES (5, 'Expert')");
         Log.i("TAG", "OnCreate fired in Database handler!!! YAY!!!!!!!!!!!!!!");
-
-
-
+        addQuestions();
     }
 
     @Override
@@ -165,7 +166,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         // Inserting Row
         db.insert(TABLE_USER, null, values);
-        db.close(); // Closing database connection
     }
 
     public String getPassword(String username) {
@@ -186,6 +186,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return password;*/
 
         SQLiteDatabase db = this.getReadableDatabase();
+
+
 
         Cursor cursor = db.query(TABLE_USER, null, " USERNAME=?",
                 new String[] { username }, null, null, null);
@@ -230,4 +232,109 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return currentLevel;
     }
 
+    public void addQuestions() {
+
+       // Text Questions
+        Question q1=new Question("Where does the sound come out of on the body of an acoustic guitar?",
+                "Fretboard", "Neck", "Pickguard", "Sound hole", "Sound hole", 1, 0);
+        this.addQuestion(q1);
+        Question q2=new Question("What part of the guitar holds the strings firmly on the body?",
+                "Neck", "Pickguard", "Bridge", "Pick", "Bridge", 1, 0);
+        this.addQuestion(q2);
+        Question q3=new Question("What is the 5th string usually tuned to in standard tuning?",
+                "A", "B", "G", "D", "A", 1, 0);
+        this.addQuestion(q3);
+        Question q4=new Question("What are the thin metal strips on the fretboard called?",
+                "Nuts", "Pins", "Strap buttons", "Frets", "Frets", 1, 0);
+        this.addQuestion(q4);
+        Question q5=new Question("What part protects the body from wear and tear of strumming the guitar?",
+                "Bridge", "Pick", "Pickguard", "Neck", "Pickguard", 1, 0);
+        this.addQuestion(q5);
+        Question q6=new Question("What must you unwind to take the strings off a guitar?",
+                "Nuts", "Body", "Neck", "Tuners", "Tuners", 2, 0);
+        this.addQuestion(q6);
+        Question q7=new Question("What do the dots mean on the fretboard?",
+                "They indicate specific fret numbers", "They are broken", "They are there for style",
+                "They tune the strings", "They indicate specific fret numbers", 2, 0);
+        this.addQuestion(q7);
+        Question q8=new Question("What fret does the double dot usually appear?",
+                "8th", "4th", "15th", "12th", "12th", 2, 0);
+        this.addQuestion(q8);
+        Question q9=new Question("What are the horizontal lines on a chord chart?",
+                "Strings", "Nuts", "Frets", "Bolts", "Frets", 2, 0);
+        this.addQuestion(q9);
+        Question q10=new Question("What do the numbers on guitar tabs mean?",
+                "Fret number", "Neck size", "Nut size", "Body size", "Fret number", 2, 0);
+        this.addQuestion(q10);
+       Question q11=new Question("Where does your 1st finger go in a D Major chord?",
+                "2nd fret of the 3rd string", "4th fret of the 2nd string", "1st fret of the 6th string",
+                "2nd fret of the 4th string", "2nd fret of the 3rd string", 3, 0);
+        this.addQuestion(q11);
+        Question q12=new Question("Where does your 1st finger go in a C Major chord?",
+                "2nd fret of the 3rd string", "4th fret of the 2nd string", "1st fret of the 2nd string",
+                "2nd fret of the 4th string", "1st fret of the 2nd string", 3, 0);
+        this.addQuestion(q12);
+        Question q13=new Question("Where does your 3rd finger go in a G Major chord?",
+                "2nd fret of the 3rd string", "4th fret of the 2nd string",
+                "1st fret of the 2nd string", "3rd fret of the 1st string",
+                "3rd fret of the 1st string", 3, 0);
+        this.addQuestion(q13);
+        Question q14=new Question("Where does your 3rd finger go in A Minor chord?","2nd fret of the 3rd string",
+                "4th fret of the 2nd string", "1st fret of the 2nd string", "3rd fret of the 1st string", "2nd fret of the 3rd string", 3, 0);
+        this.addQuestion(q14);
+        Question q15=new Question("Where does your 2nd finger go in E Minor chord?","4th fret of the 2nd string",
+                "1st fret of the 2nd string", "2nd fret of the 5th string",
+                "3rd fret of the 1st string", "2nd fret of the 5th string", 3, 0);
+        this.addQuestion(q15);
+        Question q16=new Question("Where should you rest your elbow when strumming?",
+                "Neck", "Headstock", "On the Fret", "Top of the body", "Top of the body", 4, 0);
+        this.addQuestion(q16);
+        Question q17=new Question("What scale is made up of semi tone notes and has 12 notes?",
+                "Major", "Bridge", "Chromatic", "Interval", "Chromatic", 4, 0);
+        this.addQuestion(q17);
+        Question q18=new Question("What type of chords have a heavy sound and will mostly be heard on an electric with distortion?",
+                "Neck", "Power", "Table", "Strap", "Power", 4, 0);
+        this.addQuestion(q18);
+        Question q19=new Question("How many notes are in a major scale?",
+                "6", "7", "8", "9", "7", 4, 0);
+        this.addQuestion(q19);
+        Question q20=new Question("How many notes does the chromatic scale have?",
+                "10", "11", "12", "13", "13", 4, 0);
+        this.addQuestion(q20);
+        Question q21=new Question("What is the technique where the guitarist mutes the strings just in front of the bridge?",
+                "String mute", "Palm mute", "Power mute", "Bend mute", "Palm mute", 5, 0);
+        this.addQuestion(q21);
+        Question q22=new Question("What technique involves playing a note and moving your finger to a different fret whilst keeping the finger firmly pressed against the fretboard as you move?",
+                "Mute", "Slide", "Bend", "Power", "Slide", 5, 0);
+        this.addQuestion(q22);
+        Question q23=new Question("What technique involves a wavering/wobbling effect from sudden changes in pitch?",
+                "Mute", "Slide", "Vibrato", "Power", "Vibrato", 5, 0);
+        this.addQuestion(q23);
+        Question q24=new Question("What is the chordal technique where the plectrum or thumb is rolled across the strings slowly to articulate each individual note of the chord?",
+                "Power chord", "Bend", "Vibrato", "Arpeggiated chord", "Arpeggiated chord", 5, 0);
+        this.addQuestion(q24);
+        Question q25=new Question("What technique is achieved by using a fretting hand finger to slam down onto a fret to sound a note without the need for plucking?",
+                "Pull off", "Hammer on", "Bend", "Vibrato", "Hammer on", 5, 0);
+        this.addQuestion(q25);
+
+        Log.i("AYE", "Questions added!");
+    }
+
+    public void addQuestion(Question question){
+
+        //SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(KEY_QUESTION, question.getQuestion());
+        values.put(KEY_ANSWER1, question.getA1());
+        values.put(KEY_ANSWER2, question.getA2());
+        values.put(KEY_ANSWER3, question.getA3());
+        values.put(KEY_ANSWER4, question.getA4());
+        values.put(KEY_CORRECT, question.getCorrect());
+        values.put(KEY_CORRECT, question.getCorrect());
+        values.put(KEY_CORRECT, question.getCorrect());
+        values.put(KEY_QUESTIONLEVELID, question.getLevelID());
+
+        dBase.insert(TABLE_TESTQUESTION, null, values);
+
+    }
 }
