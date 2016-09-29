@@ -10,6 +10,8 @@ import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by paulk on 28/06/2016.
@@ -321,7 +323,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 "Pull off", "Hammer on", "Bend", "Vibrato", "Hammer on", 5);
         this.addQuestion(q25);
 
-        Bitmap image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_electric_fretsgone);
+        Bitmap image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_acoustic_hstockgone);
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
         byte imageInByte[] = stream.toByteArray();
@@ -334,63 +336,63 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         //Image questions
         Question q26=new Question("Name the missing label in this image:",
-                "Bridge", "Pick", "Neck", "Headstock", "Headstock", 1, 0);
+                "Bridge", "Pick", "Neck", "Headstock", "Headstock", 1, imageInByte);
         this.addQuestion(q26);
         Question q27=new Question("Name the missing label in this image:",
-                "Nuts", "Frets", "Tuners", "Neck", "Tuners ", 1, 0);
+                "Nuts", "Frets", "Tuners", "Neck", "Tuners ", 1, imageInByte);
         this.addQuestion(q27);
         Question q28=new Question("Name the missing label in this image:",
-                "Nuts", "Frets", "Tuners", "Neck", "Frets", 1, 0);
+                "Nuts", "Frets", "Tuners", "Neck", "Frets", 1, imageInByte);
         this.addQuestion(q28);
         Question q29=new Question("Name the missing label in this image:",
-                "Bridge", "Pick", "Pickguard", "Neck", "Bridge", 1, 0);
+                "Bridge", "Pick", "Pickguard", "Neck", "Bridge", 1, imageInByte);
         this.addQuestion(q29);
         Question q30=new Question("Name the missing label in this image:",
-                "Bridge", "Pick", "Pickguard", "Neck", "Pickguard", 1, 0);
+                "Bridge", "Pick", "Pickguard", "Neck", "Pickguard", 1, imageInByte);
         this.addQuestion(q30);
         Question q31=new Question("Name the fret in this image:",
-                "4th fret", "7th fret", "10th fret ", "9th fret", "9th fret", 2, 0);
+                "4th fret", "7th fret", "10th fret ", "9th fret", "9th fret", 2, imageInByte);
         this.addQuestion(q31);
         Question q32=new Question("Name the fret in this image:",
-                "3rd fret", "7th fret", "5th fret ","12th fret", "5th fret", 2, 0);
+                "3rd fret", "7th fret", "5th fret ","12th fret", "5th fret", 2, imageInByte);
         this.addQuestion(q32);
         Question q33=new Question("What finger number is this?",
-                "1", "2", "3", "4", "4", 2, 0);
+                "1", "2", "3", "4", "4", 2, imageInByte);
         this.addQuestion(q33);
         Question q34=new Question("What kind of musical notation is this?",
-                "Tab", "Treble", "Rock", "Jazz", "Tab", 2, 0);
+                "Tab", "Treble", "Rock", "Jazz", "Tab", 2, imageInByte);
         this.addQuestion(q34);
         Question q35=new Question("What do the x’s mean in this picture?",
                 "The note should note be played", "The string should be tapped",
                 "The string should be strummed lightly", "The string should be strummed hard",
-                "The note should note be played", 2, 0);
+                "The note should note be played", 2, imageInByte);
         this.addQuestion(q35);
         Question q36=new Question("What is the name of this chord?",
-                "D Major", "G Major", "A Minor", "E Minor", "G Major", 3, 0);
+                "D Major", "G Major", "A Minor", "E Minor", "G Major", 3, imageInByte);
         this.addQuestion(q36);
         Question q37=new Question("What is the name of this chord?",
-                "D Major", "G Major", "A Minor", "E Minor", "D Major", 3, 0);
+                "D Major", "G Major", "A Minor", "E Minor", "D Major", 3, imageInByte);
         this.addQuestion(q37);
         Question q38=new Question("What is the name of this chord?",
-                "D Major", "A Minor", "E Minor", "C Major", "C Major", 3, 0);
+                "D Major", "A Minor", "E Minor", "C Major", "C Major", 3, imageInByte);
         this.addQuestion(q38);
         Question q39=new Question("What is the name of this chord?",
-                "D Major", "A Minor", "E Minor", "C Major", "E Minor", 3, 0);
+                "D Major", "A Minor", "E Minor", "C Major", "E Minor", 3, imageInByte);
         this.addQuestion(q39);
         Question q40=new Question("What is the name of this chord?",
-                "D Major", "A Minor", "E Minor", "C Major", "A Minor", 3, 0);
+                "D Major", "A Minor", "E Minor", "C Major", "A Minor", 3, imageInByte);
         this.addQuestion(q40);
         Question q41=new Question("What type of chord is this?",
-                "Power", "Chromatic", "Major", "Minor", "Power", 4, 0);
+                "Power", "Chromatic", "Major", "Minor", "Power", 4, imageInByte);
         this.addQuestion(q41);
         Question q42=new Question("What type of scale is this?",
-                "Major", "Power", "Chromatic", "Interval", "Major", 4, 0);
+                "Major", "Power", "Chromatic", "Interval", "Major", 4, imageInByte);
         this.addQuestion(q42);
         Question q43=new Question("What scale is this?",
-                "C Major", "C Chromatic", "D Power", "G Minor", "C Major", 4, 0);
+                "C Major", "C Chromatic", "D Power", "G Minor", "C Major", 4, imageInByte);
         this.addQuestion(q43);
         Question q44=new Question("What is the name of the gaps between the notes?",
-                "Nuts", "Intervals", "Powers", "Majors", "Intervals", 4, 0);
+                "Nuts", "Intervals", "Powers", "Majors", "Intervals", 4, imageInByte);
         this.addQuestion(q44);
         Question q45=new Question("What size is the interval between B and C?",
                 "Half step", "Whole step", "Power step", "Slow step", "Half step", 4, 0);
@@ -447,5 +449,31 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         dBase.insert(TABLE_TESTIMAGEQUESTION, null, values);
 
+    }
+
+    public List<Question> getAllQuestions() {
+        List<Question> quesList = new ArrayList<Question>();
+// Select All Query
+        String selectQuery = "SELECT * FROM " + TABLE_TESTIMAGEQUESTION;
+        dBase=this.getReadableDatabase();
+        Cursor cursor = dBase.rawQuery(selectQuery, null);
+// looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setQuestionID(cursor.getInt(0));
+                quest.setImageResource(cursor.getBlob(1));
+                quest.setQuestion(cursor.getString(2));
+                quest.setA1(cursor.getString(3));
+                quest.setA2(cursor.getString(4));
+                quest.setA3(cursor.getString(5));
+                quest.setA4(cursor.getString(6));
+                quest.setCorrect(cursor.getString(7));
+                quesList.add(quest);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+// return quest list
+        return quesList;
     }
 }

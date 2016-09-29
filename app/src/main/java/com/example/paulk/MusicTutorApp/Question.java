@@ -17,6 +17,8 @@ public class Question {
     private int levelID;
     private byte[] imageResource;
 
+    public Question(){}
+
     public Question(String question, String a1, String a2, String a3, String a4,
                     String correct, int levelID){
 

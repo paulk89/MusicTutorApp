@@ -11,10 +11,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.paulk.MusicTutorApp.DatabaseHandler;
+import com.example.paulk.MusicTutorApp.Question;
 import com.example.paulk.MusicTutorApp.R;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.util.List;
 
 
 /**
@@ -22,17 +24,25 @@ import java.io.ByteArrayOutputStream;
  */
 public class Level1TestActivity extends Activity {
 
+    List<Question> questionList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_layout);
         ImageView imageView = (ImageView)findViewById(R.id.questionImage);
 
-      /*  DatabaseHandler db = new DatabaseHandler(this);
-        db.getReadableDatabase();*/
+        DatabaseHandler db = new DatabaseHandler(this);
+        db.getReadableDatabase();
 
+        questionList = db.getAllQuestions();
+        byte [] imageInByte = questionList.get(0).getImageResource();
 
-        //convert image to byte array
+        ByteArrayInputStream imageStream = new ByteArrayInputStream(imageInByte);
+        Bitmap theImage = BitmapFactory.decodeStream(imageStream);
+        imageView.setImageBitmap(theImage);
+
+       /* //convert image to byte array
         Bitmap image = BitmapFactory.decodeResource(getResources(),R.drawable.parts_of_acoustic);
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
@@ -41,7 +51,7 @@ public class Level1TestActivity extends Activity {
         //convert image from byte array to bitmap
         ByteArrayInputStream imageStream = new ByteArrayInputStream(imageInByte);
         Bitmap theImage = BitmapFactory.decodeStream(imageStream);
-        imageView.setImageBitmap(theImage);
+        imageView.setImageBitmap(theImage);*/
 
         imageView.setVisibility(View.VISIBLE);
         //imageView.setVisibility(View.GONE);
