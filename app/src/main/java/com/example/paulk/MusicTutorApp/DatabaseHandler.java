@@ -317,6 +317,89 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 "Pull off", "Hammer on", "Bend", "Vibrato", "Hammer on", 5, 0);
         this.addQuestion(q25);
 
+/*
+
+        //Image questions
+        Question q26=new Question("Name the missing label in this image:",
+                "Bridge", "Pick", "Neck", "Headstock", "Headstock", 1, 0);
+        this.addQuestion(q26);
+        Question q27=new Question("Name the missing label in this image:",
+                "Nuts", "Frets", "Tuners", "Neck", "Tuners ", 1, 0);
+        this.addQuestion(q27);
+        Question q28=new Question("Name the missing label in this image:",
+                "Nuts", "Frets", "Tuners", "Neck", "Frets", 1, 0);
+        this.addQuestion(q28);
+        Question q29=new Question("Name the missing label in this image:",
+                "Bridge", "Pick", "Pickguard", "Neck", "Bridge", 1, 0);
+        this.addQuestion(q29);
+        Question q30=new Question("Name the missing label in this image:",
+                "Bridge", "Pick", "Pickguard", "Neck", "Pickguard", 1, 0);
+        this.addQuestion(q30);
+        Question q31=new Question("Name the fret in this image:",
+                "4th fret", "7th fret", "10th fret ", "9th fret", "9th fret", 2, 0);
+        this.addQuestion(q31);
+        Question q32=new Question("Name the fret in this image:",
+                "3rd fret", "7th fret", "5th fret ","12th fret", "5th fret", 2, 0);
+        this.addQuestion(q32);
+        Question q33=new Question("What finger number is this?",
+                "1", "2", "3", "4", "4", 2, 0);
+        this.addQuestion(q33);
+        Question q34=new Question("What kind of musical notation is this?",
+                "Tab", "Treble", "Rock", "Jazz", "Tab", 2, 0);
+        this.addQuestion(q34);
+        Question q35=new Question("What do the x’s mean in this picture?",
+                "The note should note be played", "The string should be tapped",
+                "The string should be strummed lightly", "The string should be strummed hard",
+                "The note should note be played", 2, 0);
+        this.addQuestion(q35);
+        Question q36=new Question("What is the name of this chord?",
+                "D Major", "G Major", "A Minor", "E Minor", "G Major", 3, 0);
+        this.addQuestion(q36);
+        Question q37=new Question("What is the name of this chord?",
+                "D Major", "G Major", "A Minor", "E Minor", "D Major", 3, 0);
+        this.addQuestion(q37);
+        Question q38=new Question("What is the name of this chord?",
+                "D Major", "A Minor", "E Minor", "C Major", "C Major", 3, 0);
+        this.addQuestion(q38);
+        Question q39=new Question("What is the name of this chord?",
+                "D Major", "A Minor", "E Minor", "C Major", "E Minor", 3, 0);
+        this.addQuestion(q39);
+        Question q40=new Question("What is the name of this chord?",
+                "D Major", "A Minor", "E Minor", "C Major", "A Minor", 3, 0);
+        this.addQuestion(q40);
+        Question q41=new Question("What type of chord is this?",
+                "Power", "Chromatic", "Major", "Minor", "Power", 4, 0);
+        this.addQuestion(q41);
+        Question q42=new Question("What type of scale is this?",
+                "Major", "Power", "Chromatic", "Interval", "Major", 4, 0);
+        this.addQuestion(q42);
+        Question q43=new Question("What scale is this?",
+                "C Major", "C Chromatic", "D Power", "G Minor", "C Major", 4, 0);
+        this.addQuestion(q43);
+        Question q44=new Question("What is the name of the gaps between the notes?",
+                "Nuts", "Intervals", "Powers", "Majors", "Intervals", 4, 0);
+        this.addQuestion(q44);
+        Question q45=new Question("What size is the interval between B and C?",
+                "Half step", "Whole step", "Power step", "Slow step", "Half step", 4, 0);
+        this.addQuestion(q45);
+        Question q46=new Question("What is the name of this technique?",
+                "Vibrato", "Bend", "Hammer-on", "Slide", "Slide", 5, 0);
+        this.addQuestion(q46);
+        Question q47=new Question("What is the name of this technique?",
+                "Vibrato", "Pull-off", "Hammer-on", "Slide", "Pull-off", 5, 0);
+        this.addQuestion(q47);
+        Question q48=new Question("What is the name of this technique?",
+                "Vibrato", "Bend", "Bend", "Slide", "Vibrato", 5, 0);
+        this.addQuestion(q48);
+        Question q49=new Question("What is the name of this technique?",
+                "Vibrato", "Bend", "Hammer-on", "Slide", "Hammer-on", 5, 0);
+        this.addQuestion(q49);
+        Question q50=new Question("What is the name of this technique?",
+                "Pull-off", "Hammer-on", "Bend", "Vibrato", "Bend", 5, 0);
+        this.addQuestion(q50);
+*/
+
+
         Log.i("AYE", "Questions added!");
     }
 
@@ -329,8 +412,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_ANSWER2, question.getA2());
         values.put(KEY_ANSWER3, question.getA3());
         values.put(KEY_ANSWER4, question.getA4());
-        values.put(KEY_CORRECT, question.getCorrect());
-        values.put(KEY_CORRECT, question.getCorrect());
         values.put(KEY_CORRECT, question.getCorrect());
         values.put(KEY_QUESTIONLEVELID, question.getLevelID());
 
