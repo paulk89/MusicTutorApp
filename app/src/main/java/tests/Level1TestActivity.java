@@ -41,6 +41,7 @@ public class Level1TestActivity extends Activity {
     TextView question;
     ImageView imageView;
     RadioButton radio0, radio1, radio2, radio3;
+    RadioGroup radioGroup;
     Button butNext;
     int testLevel;
 
@@ -58,6 +59,7 @@ public class Level1TestActivity extends Activity {
         Collections.shuffle(questionList);
         txtQuestionNumber = (TextView)findViewById(R.id.QuestionNumber);
         question = (TextView)findViewById(R.id.question);
+        radioGroup = (RadioGroup)findViewById(R.id.radioGroup1);
         radio0 =(RadioButton)findViewById(R.id.radio0);
         radio1 =(RadioButton)findViewById(R.id.radio1);
         radio2 =(RadioButton)findViewById(R.id.radio2);
@@ -70,25 +72,30 @@ public class Level1TestActivity extends Activity {
         butNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RadioGroup grp=(RadioGroup)findViewById(R.id.radioGroup1);
-                RadioButton answer=(RadioButton)findViewById(grp.getCheckedRadioButtonId());
+                if (radioGroup.getCheckedRadioButtonId()== -1){
+                    Toast.makeText(getApplicationContext(),"Please an answer!", Toast.LENGTH_LONG).show();
+                }else {
+                    RadioButton answer = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
 
-                if(currentQ.getCorrect().equals(answer.getText()))
-                {
-                    score++;
+                    if (currentQ.getCorrect().equals(answer.getText())) {
+                        score++;
+                    }
+                    if (qid == 9) {
+                        butNext.setText("Finish Test");
+                    }
+                    if (qid < 10) {
+                        currentQ = questionList.get(qid);
+                        setQuestionView();
+                    } else {
+                        Intent intent = new Intent(Level1TestActivity.this, ResultActivity.class);
+                        Bundle b = new Bundle();
+                        b.putInt("score", score); //Your score
+                        b.putInt("testLevel", testLevel);
+                        intent.putExtras(b); //Put your score to your next Intent
+                        startActivity(intent);
+                        finish();
+                    }
                 }
-                if(qid<10){
-                    currentQ = questionList.get(qid);
-                    setQuestionView();
-                }else{
-                    Intent intent = new Intent(Level1TestActivity.this, MainMenuActivity.class);
-//                    Bundle b = new Bundle();
-//                    b.putInt("score", score); //Your score
-//                    intent.putExtras(b); //Put your score to your next Intent
-                    startActivity(intent);
-                    finish();
-                }
-
             }
         });
 
@@ -113,6 +120,8 @@ public class Level1TestActivity extends Activity {
 
         if (currentQ.getIsImageQuestion()) {
 
+            radioGroup.clearCheck();
+
             byte [] imageInByte = questionList.get(qid).getImageResource();
 
             ByteArrayInputStream imageStream = new ByteArrayInputStream(imageInByte);
@@ -130,6 +139,8 @@ public class Level1TestActivity extends Activity {
             qid++;
 
         }else {
+
+            radioGroup.clearCheck();
 
             imageView.setVisibility(View.GONE);
 

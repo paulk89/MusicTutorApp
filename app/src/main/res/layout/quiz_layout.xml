@@ -1,7 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:id="@+id/testContainer"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -46,7 +52,6 @@
                 android:id="@+id/radio0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:checked="true"
                 android:text="to clean it" />
             <RadioButton
                 android:id="@+id/radio1"
@@ -70,7 +75,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/radioGroup1"
-            android:text="Finish Test"
+            android:text="Next question"
             android:layout_centerInParent="true"/>
+        </RelativeLayout>
     </RelativeLayout>
-</RelativeLayout>
+</ScrollView>
