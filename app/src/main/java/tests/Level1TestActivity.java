@@ -80,9 +80,9 @@ public class Level1TestActivity extends Activity {
                     setQuestionView();
                 }else{
                     Intent intent = new Intent(Level1TestActivity.this, MainMenuActivity.class);
-                    Bundle b = new Bundle();
-                    b.putInt("score", score); //Your score
-                    intent.putExtras(b); //Put your score to your next Intent
+//                    Bundle b = new Bundle();
+//                    b.putInt("score", score); //Your score
+//                    intent.putExtras(b); //Put your score to your next Intent
                     startActivity(intent);
                     finish();
                 }

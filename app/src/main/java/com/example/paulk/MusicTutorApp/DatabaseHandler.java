@@ -345,7 +345,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         imageInByte = stream.toByteArray();
         //Image questions
         Question q27=new Question("Name the missing label in this image:",
-                "Nuts", "Frets", "Tuners", "Neck", "Tuners ", 1, imageInByte);
+                "Nuts", "Frets", "Tuners", "Neck", "Tuners", 1, imageInByte);
         this.addImageQuestion(q27);
 
 
