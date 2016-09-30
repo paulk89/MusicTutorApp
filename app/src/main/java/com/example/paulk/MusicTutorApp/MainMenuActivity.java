@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -34,11 +35,12 @@ public class MainMenuActivity extends Activity {
 
         SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
         final String currentUser = userDetails.getString("username", "");
+        int userID = userDetails.getInt("userID", 0);
 
         db = new DatabaseHandler(getApplicationContext());
         int currentLevel = db.getLevelID(currentUser);
         Toast.makeText(getApplicationContext(),
-                currentUser + " is at level " + currentLevel, Toast.LENGTH_LONG)
+                currentUser + " is at level " + currentLevel + " and their userID is " + userID, Toast.LENGTH_LONG)
                 .show();
 
       /*  int score = getIntent().getExtras().getInt("score");

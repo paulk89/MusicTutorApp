@@ -79,10 +79,13 @@ public class HomeActivity extends Activity {
                             .show();
                     dialog.dismiss();
 
+                    int userID = db.getUserID(userName);
+
                     SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
                     SharedPreferences.Editor edit = userDetails.edit();
                     edit.clear();
                     edit.putString("username", userName);
+                    edit.putInt("userID", userID);
                     edit.commit();
 
                     Intent main = new Intent(HomeActivity.this, MainMenuActivity.class);

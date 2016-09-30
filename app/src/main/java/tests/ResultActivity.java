@@ -30,6 +30,8 @@ public class ResultActivity extends Activity {
         int score= bundle.getInt("score");
         int testLevel = bundle.getInt("testLevel");
 
+
+
         float floatScore = (float)((score)/2.0f);
         String text = "Score: " + score + " Float score: " + floatScore + " Test Level: " + testLevel;
         Log.i("SCORE", text);

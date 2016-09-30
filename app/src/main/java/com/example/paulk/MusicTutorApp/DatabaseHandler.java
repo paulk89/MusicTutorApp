@@ -207,6 +207,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return password;
     }
 
+    public int getUserID(String username) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_USER, null, " USERNAME=?",
+                new String[] { username }, null, null, null);
+        if (cursor.getCount() < 1) {
+            cursor.close();
+            return -1;
+        }
+        cursor.moveToFirst();
+        int userID = cursor.getInt(cursor.getColumnIndex(KEY_USERID));
+        cursor.close();
+        return userID;
+    }
+
     public int getLevelID(String username) {
 
         /*SQLiteDatabase db = this.getReadableDatabase();
