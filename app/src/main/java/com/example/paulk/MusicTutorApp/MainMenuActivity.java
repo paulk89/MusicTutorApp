@@ -38,7 +38,7 @@ public class MainMenuActivity extends Activity {
         int userID = userDetails.getInt("userID", 0);
 
         db = new DatabaseHandler(getApplicationContext());
-        int currentLevel = db.getLevelID(currentUser);
+        int currentLevel = db.getLevelID(userID);
         Toast.makeText(getApplicationContext(),
                 currentUser + " is at level " + currentLevel + " and their userID is " + userID, Toast.LENGTH_LONG)
                 .show();

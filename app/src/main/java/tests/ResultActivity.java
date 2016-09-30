@@ -39,9 +39,19 @@ public class ResultActivity extends Activity {
 
         db = new DatabaseHandler(this);
         db.addScore(score, testLevel, userID);
+        int currentLevel;
+        currentLevel = db.getLevelID(userID);
+
+        String test = "The test level is " + testLevel + " and the current users level is " + currentLevel;
+        Log.i("TAG", test);
 
         if (score >= 8){
-            db.incrementLevel(userID);
+
+            if(currentLevel < 5) {
+                if (!(db.getLevelID(userID) > testLevel)) {
+                    db.incrementLevel(userID);
+                }
+            }
         }
 
         float floatScore = (float)((score)/2.0f);

@@ -182,6 +182,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(strSQL);
     }
 
+
+
     public void addScore(int score, int level, int userID) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -243,8 +245,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return userID;
     }
 
-    public int getLevelID(String username) {
+    public int getLevelID(int userID) {
 
+        int levelID = 0;
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selectQuery = "SELECT " + KEY_USERLEVELID + " FROM " + TABLE_USER + " WHERE "
+                + KEY_USERID + " = " + userID;
+
+        Cursor c = db.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        levelID = c.getInt(c.getColumnIndex(KEY_USERLEVELID));
+
+        c.close();
+        return levelID;
         /*SQLiteDatabase db = this.getReadableDatabase();
 
         String selectQuery = "SELECT * FROM " + TABLE_USER + " WHERE "
@@ -260,7 +273,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         cursor.close();
         return password;*/
 
-        SQLiteDatabase db = this.getReadableDatabase();
+      /*  SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_USER, null, " USERNAME=?",
                 new String[] { username }, null, null, null);
@@ -271,7 +284,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         cursor.moveToFirst();
         int currentLevel = cursor.getInt(cursor.getColumnIndex(KEY_USERLEVELID));
         cursor.close();
-        return currentLevel;
+        return currentLevel;*/
     }
 
     public void addQuestions() {
@@ -424,7 +437,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
         imageInByte = stream.toByteArray();
         Question q32=new Question("Name the fret in this image:",
-                "3rd fret", "7th fret", "5th fret ","12th fret", "5th fret", 2, imageInByte);
+                "3rd fret", "7th fret", "5th fret","12th fret", "5th fret", 2, imageInByte);
         this.addImageQuestion(q32);
 
         image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.finger_num_4th);
@@ -448,9 +461,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
         imageInByte = stream.toByteArray();
         Question q35=new Question("What do the x’s mean in this picture?",
-                "The note should note be played", "The string should be tapped",
+                "The note should not be played", "The string should be tapped",
                 "The string should be strummed lightly", "The string should be strummed hard",
-                "The note should note be played", 2, imageInByte);
+                "The note should not be played", 2, imageInByte);
         this.addImageQuestion(q35);
 
 
