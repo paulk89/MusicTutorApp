@@ -15,6 +15,7 @@ public class Question {
     private String a4;
     private String correct;
     private int levelID;
+    private boolean isImageQuestion;
     private byte[] imageResource;
 
     public Question(){}
@@ -116,5 +117,13 @@ public class Question {
 
     public void setImageResource(byte[] imageResource) {
         this.imageResource = imageResource;
+    }
+
+    public boolean isImageQuestion() {
+        return isImageQuestion;
+    }
+
+    public void setImageQuestion(boolean imageQuestion) {
+        isImageQuestion = imageQuestion;
     }
 }

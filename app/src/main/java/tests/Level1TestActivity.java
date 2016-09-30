@@ -36,7 +36,7 @@ public class Level1TestActivity extends Activity {
         db.getReadableDatabase();
 
         questionList = db.getAllQuestions();
-        byte [] imageInByte = questionList.get(20).getImageResource();
+        byte [] imageInByte = questionList.get(0).getImageResource();
 
         ByteArrayInputStream imageStream = new ByteArrayInputStream(imageInByte);
         Bitmap theImage = BitmapFactory.decodeStream(imageStream);
