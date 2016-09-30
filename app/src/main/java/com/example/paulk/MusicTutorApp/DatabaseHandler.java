@@ -240,6 +240,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void addQuestions() {
 
+
+        Bitmap image;
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        byte imageInByte[];
+
        // Text Questions
         Question q1=new Question("Where does the sound come out of on the body of an acoustic guitar?",
                 "Fretboard", "Neck", "Pickguard", "Sound hole", "Sound hole", 1);
@@ -323,96 +328,222 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 "Pull off", "Hammer on", "Bend", "Vibrato", "Hammer on", 5);
         this.addQuestion(q25);
 
-        Bitmap image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_acoustic_hstockgone);
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_acoustic_hstockgone);
+        stream = new ByteArrayOutputStream();
         image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-        byte imageInByte[] = stream.toByteArray();
+        imageInByte = stream.toByteArray();
 
         Question q26=new Question("Name the missing label in this image:",
                 "Bridge", "Pick", "Neck", "Headstock", "Headstock", 1, imageInByte);
         this.addImageQuestion(q26);
 
-/*
 
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_electric_tunersgone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         //Image questions
-        Question q26=new Question("Name the missing label in this image:",
-                "Bridge", "Pick", "Neck", "Headstock", "Headstock", 1, imageInByte);
-        this.addQuestion(q26);
         Question q27=new Question("Name the missing label in this image:",
                 "Nuts", "Frets", "Tuners", "Neck", "Tuners ", 1, imageInByte);
-        this.addQuestion(q27);
+        this.addImageQuestion(q27);
+
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_electric_fretsgone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q28=new Question("Name the missing label in this image:",
                 "Nuts", "Frets", "Tuners", "Neck", "Frets", 1, imageInByte);
-        this.addQuestion(q28);
+        this.addImageQuestion(q28);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_acoustic_bridgegone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q29=new Question("Name the missing label in this image:",
                 "Bridge", "Pick", "Pickguard", "Neck", "Bridge", 1, imageInByte);
-        this.addQuestion(q29);
+        this.addImageQuestion(q29);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_acoustic_pguardgone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q30=new Question("Name the missing label in this image:",
                 "Bridge", "Pick", "Pickguard", "Neck", "Pickguard", 1, imageInByte);
-        this.addQuestion(q30);
+        this.addImageQuestion(q30);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.fretboard_9thfret);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q31=new Question("Name the fret in this image:",
                 "4th fret", "7th fret", "10th fret ", "9th fret", "9th fret", 2, imageInByte);
-        this.addQuestion(q31);
+        this.addImageQuestion(q31);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.fretboard_5thfret);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q32=new Question("Name the fret in this image:",
                 "3rd fret", "7th fret", "5th fret ","12th fret", "5th fret", 2, imageInByte);
-        this.addQuestion(q32);
+        this.addImageQuestion(q32);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.finger_num_4th);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q33=new Question("What finger number is this?",
                 "1", "2", "3", "4", "4", 2, imageInByte);
-        this.addQuestion(q33);
+        this.addImageQuestion(q33);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.tab_lesson_1);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q34=new Question("What kind of musical notation is this?",
                 "Tab", "Treble", "Rock", "Jazz", "Tab", 2, imageInByte);
-        this.addQuestion(q34);
+        this.addImageQuestion(q34);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.tab_lesson_1);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q35=new Question("What do the x’s mean in this picture?",
                 "The note should note be played", "The string should be tapped",
                 "The string should be strummed lightly", "The string should be strummed hard",
                 "The note should note be played", 2, imageInByte);
-        this.addQuestion(q35);
+        this.addImageQuestion(q35);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.g_major_chord_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q36=new Question("What is the name of this chord?",
                 "D Major", "G Major", "A Minor", "E Minor", "G Major", 3, imageInByte);
-        this.addQuestion(q36);
+        this.addImageQuestion(q36);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.d_major_chord_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q37=new Question("What is the name of this chord?",
                 "D Major", "G Major", "A Minor", "E Minor", "D Major", 3, imageInByte);
-        this.addQuestion(q37);
+        this.addImageQuestion(q37);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.c_major_chord_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q38=new Question("What is the name of this chord?",
                 "D Major", "A Minor", "E Minor", "C Major", "C Major", 3, imageInByte);
-        this.addQuestion(q38);
+        this.addImageQuestion(q38);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.e_minor_chord_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q39=new Question("What is the name of this chord?",
                 "D Major", "A Minor", "E Minor", "C Major", "E Minor", 3, imageInByte);
-        this.addQuestion(q39);
+        this.addImageQuestion(q39);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.a_minor_chord_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q40=new Question("What is the name of this chord?",
                 "D Major", "A Minor", "E Minor", "C Major", "A Minor", 3, imageInByte);
-        this.addQuestion(q40);
+        this.addImageQuestion(q40);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.power_chord);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q41=new Question("What type of chord is this?",
                 "Power", "Chromatic", "Major", "Minor", "Power", 4, imageInByte);
-        this.addQuestion(q41);
+        this.addImageQuestion(q41);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.c_major_scale);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q42=new Question("What type of scale is this?",
                 "Major", "Power", "Chromatic", "Interval", "Major", 4, imageInByte);
-        this.addQuestion(q42);
+        this.addImageQuestion(q42);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.c_major_scale);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q43=new Question("What scale is this?",
                 "C Major", "C Chromatic", "D Power", "G Minor", "C Major", 4, imageInByte);
-        this.addQuestion(q43);
+        this.addImageQuestion(q43);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.note_intervals_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q44=new Question("What is the name of the gaps between the notes?",
                 "Nuts", "Intervals", "Powers", "Majors", "Intervals", 4, imageInByte);
-        this.addQuestion(q44);
+        this.addImageQuestion(q44);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.note_intervals_bc_gone);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q45=new Question("What size is the interval between B and C?",
-                "Half step", "Whole step", "Power step", "Slow step", "Half step", 4, 0);
-        this.addQuestion(q45);
+                "Half step", "Whole step", "Power step", "Slow step", "Half step", 4, imageInByte);
+        this.addImageQuestion(q45);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.slides);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q46=new Question("What is the name of this technique?",
-                "Vibrato", "Bend", "Hammer-on", "Slide", "Slide", 5, 0);
-        this.addQuestion(q46);
+                "Vibrato", "Bend", "Hammer-on", "Slide", "Slide", 5, imageInByte);
+        this.addImageQuestion(q46);
+
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.pulloff);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q47=new Question("What is the name of this technique?",
-                "Vibrato", "Pull-off", "Hammer-on", "Slide", "Pull-off", 5, 0);
-        this.addQuestion(q47);
+                "Vibrato", "Pull-off", "Hammer-on", "Slide", "Pull-off", 5, imageInByte);
+        this.addImageQuestion(q47);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.vibrato);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q48=new Question("What is the name of this technique?",
-                "Vibrato", "Bend", "Bend", "Slide", "Vibrato", 5, 0);
-        this.addQuestion(q48);
+                "Vibrato", "Bend", "Bend", "Slide", "Vibrato", 5, imageInByte);
+        this.addImageQuestion(q48);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.hammeron);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q49=new Question("What is the name of this technique?",
-                "Vibrato", "Bend", "Hammer-on", "Slide", "Hammer-on", 5, 0);
-        this.addQuestion(q49);
+                "Vibrato", "Bend", "Hammer-on", "Slide", "Hammer-on", 5, imageInByte);
+        this.addImageQuestion(q49);
+
+        image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.bends);
+        stream = new ByteArrayOutputStream();
+        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        imageInByte = stream.toByteArray();
         Question q50=new Question("What is the name of this technique?",
-                "Pull-off", "Hammer-on", "Bend", "Vibrato", "Bend", 5, 0);
-        this.addQuestion(q50);
-*/
+                "Pull-off", "Hammer-on", "Bend", "Vibrato", "Bend", 5, imageInByte);
+        this.addImageQuestion(q50);
+
+
 
 
         Log.i("AYE", "Questions added!");

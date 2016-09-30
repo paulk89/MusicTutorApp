@@ -256,9 +256,8 @@
     <string name="level5_lesson3_title">Lesson 3: Vibrato</string>
     <string name="level5_lesson3_tv1">Vibrato is a wavering/wobbling effect from sudden changes in pitch. This is achieved by wiggling the finger whilst a note is fretted. Vibrato can also be added with the whammy bar. The example below shows vibrato on the 12th fret of the B-string, followed by wide vibrato:</string>
 
-    <string name="level5_lesson4_title">Lesson 4: Arpeggiated Chords</string>
-    <string name="level5_lesson4_tv1">The term arpeggiated chords is sometimes used to describe chords that are played with anarpeggio. However, guitarists tend to use the term to describe a different technique altogether.
-                                    \nAn arpeggiated chord is where the plectrum or thumb is rolled across the strings slowly to articulate each individual note of the chord. The effect produced shouldn\'t sound like a strum or an arpeggio, more like a cross between the two. Below you will see an arpeggiated chord in published tablature:
+    <string name="level5_lesson4_title">Lesson 4: Bends</string>
+    <string name="level5_lesson4_tv1">String bending is a basic guitar technique, used a lot in blues and rock but also found a bit in most other styles (except classical). It is a technique that is mainly used on the electric guitar but can also be used on an acoustic if used well. The idea is to "bend" (push a string across or over the fingerboard with your left hand fingers) so that the string gets tighter and the pitch goes up. You can do a half bend which pushes the pitch up a semi-tone or a full bend which pushes the pitch up a tone. You can see bends here below as well as a 1 and a half bend which pushes the pitch up 3 semitones.
                                     </string>
 
     <string name="level5_lesson5_title">Lesson 5: Hammer-ons and Pull-offs</string>
