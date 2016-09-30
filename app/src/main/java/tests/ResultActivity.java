@@ -2,12 +2,14 @@ package tests;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.example.paulk.MusicTutorApp.DatabaseHandler;
 import com.example.paulk.MusicTutorApp.MainMenuActivity;
 import com.example.paulk.MusicTutorApp.R;
 
@@ -15,6 +17,8 @@ import com.example.paulk.MusicTutorApp.R;
  * Created by paulk on 30/09/2016.
  */
 public class ResultActivity extends Activity {
+
+    DatabaseHandler db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,15 @@ public class ResultActivity extends Activity {
         int score= bundle.getInt("score");
         int testLevel = bundle.getInt("testLevel");
 
+        SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
+        int userID = userDetails.getInt("userID", 0);
 
+        db = new DatabaseHandler(this);
+        db.addScore(score, testLevel, userID);
+
+        if (score >= 8){
+            db.incrementLevel(userID);
+        }
 
         float floatScore = (float)((score)/2.0f);
         String text = "Score: " + score + " Float score: " + floatScore + " Test Level: " + testLevel;

@@ -174,6 +174,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.insert(TABLE_USER, null, values);
     }
 
+    public void incrementLevel(int userID){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Log.i("TAG", "Level incremented!");
+        String strSQL = "UPDATE " + TABLE_USER + " SET levelID = levelID + 1 WHERE userID = " + userID;
+        db.execSQL(strSQL);
+    }
+
+    public void addScore(int score, int level, int userID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Log.i("ADD SCORE", "Add score sucessfully accessed");
+        ContentValues values = new ContentValues();
+        values.put(KEY_SCORE, score);
+        values.put(KEY_LEVEL, level);
+        values.put(KEY_SCOREUSERID, userID);
+
+        // Inserting Row
+        db.insert(TABLE_SCORE, null, values);
+    }
+
     public String getPassword(String username) {
 
         /*SQLiteDatabase db = this.getReadableDatabase();

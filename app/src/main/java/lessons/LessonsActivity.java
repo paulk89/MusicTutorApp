@@ -205,6 +205,16 @@ public class LessonsActivity extends FragmentActivity {
         finish();
     }
 
+    public void launchTest(View v){
+
+                Intent i = new Intent(LessonsActivity.this,
+                        Level1TestActivity.class);
+                i.putExtra("level", buttonLevelClicked);
+                startActivity(i);
+                finish();
+
+    }
+
 
     /*@Override
     public void onBackPressed() {
