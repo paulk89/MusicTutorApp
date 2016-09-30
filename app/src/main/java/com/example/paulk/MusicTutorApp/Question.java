@@ -119,11 +119,11 @@ public class Question {
         this.imageResource = imageResource;
     }
 
-    public boolean isImageQuestion() {
+    public boolean getIsImageQuestion() {
         return isImageQuestion;
     }
 
-    public void setImageQuestion(boolean imageQuestion) {
+    public void setIsImageQuestion(boolean imageQuestion) {
         isImageQuestion = imageQuestion;
     }
 }

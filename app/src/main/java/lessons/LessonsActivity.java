@@ -81,13 +81,15 @@ public class LessonsActivity extends FragmentActivity {
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }*/
+    private int buttonLevelClicked;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_screen_slide);
-        int buttonLevelClicked = getIntent().getExtras().getInt("buttonclick");
+        buttonLevelClicked = getIntent().getExtras().getInt("buttonclick");
         Toast.makeText(getApplicationContext(),"You came here by clicking level " + buttonLevelClicked, Toast.LENGTH_LONG).show();
         //initialsie the pager
         this.initialisePaging(buttonLevelClicked);
@@ -198,6 +200,7 @@ public class LessonsActivity extends FragmentActivity {
     public void level1Test(View view){
         Intent i = new Intent(LessonsActivity.this,
                 Level1TestActivity.class);
+        i.putExtra("level", buttonLevelClicked);
         startActivity(i);
         finish();
     }

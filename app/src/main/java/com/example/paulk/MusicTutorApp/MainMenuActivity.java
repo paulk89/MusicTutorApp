@@ -41,6 +41,11 @@ public class MainMenuActivity extends Activity {
                 currentUser + " is at level " + currentLevel, Toast.LENGTH_LONG)
                 .show();
 
+        int score = getIntent().getExtras().getInt("score");
+        String scoretext = "Your score was " + score;
+        Toast.makeText(getApplicationContext(),scoretext, Toast.LENGTH_LONG)
+                .show();
+
         /*Bundle extras = getIntent().getExtras();
         final String currentUser = extras.getString("currentUser");*/
 

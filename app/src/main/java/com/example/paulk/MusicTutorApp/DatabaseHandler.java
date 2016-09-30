@@ -582,12 +582,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
-    public List<Question> getAllQuestions() {
+    public List<Question> getAllQuestions(int level) {
         List<Question> quesList = new ArrayList<Question>();
 // Select All Query
-        String selectQuery = "SELECT * FROM " + TABLE_TESTIMAGEQUESTION;
+        String selectQueryImageQuestions = "SELECT * FROM " + TABLE_TESTIMAGEQUESTION + " WHERE levelID = " + level;
         dBase=this.getReadableDatabase();
-        Cursor cursor = dBase.rawQuery(selectQuery, null);
+        Cursor cursor = dBase.rawQuery(selectQueryImageQuestions, null);
 // looping through all rows and adding to list
         if (cursor.moveToFirst()) {
             do {
@@ -600,11 +600,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 quest.setA3(cursor.getString(5));
                 quest.setA4(cursor.getString(6));
                 quest.setCorrect(cursor.getString(7));
+                quest.setIsImageQuestion(true);
                 quesList.add(quest);
             } while (cursor.moveToNext());
         }
         cursor.close();
 // return quest list
+
+
+
+
+
+
         return quesList;
     }
 }

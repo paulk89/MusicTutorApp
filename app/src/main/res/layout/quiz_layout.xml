@@ -65,7 +65,7 @@
                 android:text="to add paint to it" />
         </RadioGroup>
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/next"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
