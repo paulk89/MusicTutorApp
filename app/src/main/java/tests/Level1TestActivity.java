@@ -24,6 +24,7 @@ import com.example.paulk.MusicTutorApp.R;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -54,6 +55,7 @@ public class Level1TestActivity extends Activity {
         db.getReadableDatabase();
 
         questionList = db.getAllQuestions(testLevel);
+        Collections.shuffle(questionList);
         txtQuestionNumber = (TextView)findViewById(R.id.QuestionNumber);
         question = (TextView)findViewById(R.id.question);
         radio0 =(RadioButton)findViewById(R.id.radio0);
@@ -75,7 +77,7 @@ public class Level1TestActivity extends Activity {
                 {
                     score++;
                 }
-                if(qid<5){
+                if(qid<10){
                     currentQ = questionList.get(qid);
                     setQuestionView();
                 }else{
@@ -126,6 +128,20 @@ public class Level1TestActivity extends Activity {
             radio3.setText(currentQ.getA4());
 
             qid++;
+
+        }else {
+
+            imageView.setVisibility(View.GONE);
+
+            txtQuestionNumber.setText("Question " + (qid + 1));
+            question.setText(currentQ.getQuestion());
+            radio0.setText(currentQ.getA1());
+            radio1.setText(currentQ.getA2());
+            radio2.setText(currentQ.getA3());
+            radio3.setText(currentQ.getA4());
+
+            qid++;
+
 
         }
     }

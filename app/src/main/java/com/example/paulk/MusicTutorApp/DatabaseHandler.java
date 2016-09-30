@@ -608,6 +608,25 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 // return quest list
 
 
+        String selectQueryQuestions = "SELECT * FROM " + TABLE_TESTQUESTION + " WHERE levelID = " + level;
+
+        Cursor cursor2 = dBase.rawQuery(selectQueryQuestions, null);
+// looping through all rows and adding to list
+        if (cursor2.moveToFirst()) {
+            do {
+                Question quest = new Question();
+                quest.setQuestionID(cursor2.getInt(0));
+                quest.setQuestion(cursor2.getString(1));
+                quest.setA1(cursor2.getString(2));
+                quest.setA2(cursor2.getString(3));
+                quest.setA3(cursor2.getString(4));
+                quest.setA4(cursor2.getString(5));
+                quest.setCorrect(cursor2.getString(6));
+                quest.setIsImageQuestion(false);
+                quesList.add(quest);
+            } while (cursor2.moveToNext());
+        }
+        cursor2.close();
 
 
 
