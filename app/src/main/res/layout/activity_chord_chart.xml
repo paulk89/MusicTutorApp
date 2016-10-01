@@ -25,8 +25,9 @@
         android:layout_above="@+id/chordgridlayout"
         android:paddingBottom="10dp"
         android:layout_height="wrap_content"
-        android:text="Basic must-know Chords"
-        android:textSize="@dimen/button_text_size"
+        android:gravity="center"
+        android:text="Tap on a chord to reveal the chart. Tap it again to hide it"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:layout_centerInParent="true"/>
 

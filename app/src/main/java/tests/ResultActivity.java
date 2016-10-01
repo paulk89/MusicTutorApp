@@ -89,15 +89,29 @@ public class ResultActivity extends Activity {
                 break;
             case 8:
             case 9:
-                scoreTextView.setText(score + " correct");
-                resultMessage.setText("Well done! You've passed!");
-                message.setText("You have unlocked the next level!");
+                if((db.getLevelID(userID) == 5) && (testLevel == 5)){
+
+                    scoreTextView.setText(score + " correct");
+                    resultMessage.setText("Well done! You've completed all the tests!");
+                    message.setText("Now see if you can get a perfect score in every test! If you've already done that, then keep using the tools in this app, you can continue practicing with the tools in this app!");
+                }else {
+                    scoreTextView.setText(score + " correct");
+                    resultMessage.setText("Well done! You've passed!");
+                    message.setText("You have unlocked the next level!");
+                }
                 break;
             case 10:
-                scoreTextView.setText(score + " correct");
-                resultMessage.setText("Wow! You aced that test! Well done!");
-                message.setText("You have unlocked the next level!");
 
+                if((db.getLevelID(userID) == 5) && (testLevel == 5)){
+
+                    scoreTextView.setText(score + " correct");
+                    resultMessage.setText("Well done! You've completed all the tests!");
+                    message.setText("Now see if you can get a perfect score in every test! If you've already done that, then keep using the tools in this app, you can continue practicing with the tools in this app!");
+                }else {
+                    scoreTextView.setText(score + " correct");
+                    resultMessage.setText("Wow! You aced that test! Well done!");
+                    message.setText("You have unlocked the next level!");
+                }
         }
     }
 

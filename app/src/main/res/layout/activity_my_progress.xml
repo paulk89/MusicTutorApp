@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="@color/background"
     android:layout_height="match_parent"
     android:padding="30dp">
 
@@ -13,14 +14,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             android:text="High Test Scores"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:padding="30dp"
+            android:padding="20dp"
             android:layout_below="@+id/highScoresTitle">
 
             <TextView
@@ -29,6 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
+                android:textColor="@color/white"
                 android:layout_alignParentLeft="true"
                 android:text="Level 1"/>
 
@@ -39,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:textSize="30sp"
+                android:textColor="@color/white"
                 android:text="/10"/>
 
             <TextView
@@ -48,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:layout_toLeftOf="@id/highScoreTV2"
+                android:textColor="@color/white"
                 android:text="- "/>
 
 
@@ -59,6 +64,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV1"
                 android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
                 android:text="Level 2"/>
 
             <TextView
@@ -69,6 +75,7 @@
                 android:layout_below="@+id/highScoreTV1"
                 android:layout_alignParentRight="true"
                 android:textSize="30sp"
+                android:textColor="@color/white"
                 android:text="/10"/>
 
             <TextView
@@ -79,6 +86,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV1"
                 android:layout_toLeftOf="@id/highScoreTV5"
+                android:textColor="@color/white"
                 android:text="- "/>
 
 
@@ -90,6 +98,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV4"
                 android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
                 android:text="Level 3"/>
 
             <TextView
@@ -99,6 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/highScoreTV4"
                 android:layout_alignParentRight="true"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:text="/10"/>
 
@@ -110,6 +120,7 @@
                 android:textSize="30sp"
                 android:text="- "
                 android:layout_below="@+id/highScoreTV4"
+                android:textColor="@color/white"
                 android:layout_toLeftOf="@id/highScoreTV5"
                 />
 
@@ -122,6 +133,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV7"
                 android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
                 android:text="Level 4"/>
 
             <TextView
@@ -132,6 +144,7 @@
                 android:layout_below="@+id/highScoreTV7"
                 android:layout_alignParentRight="true"
                 android:textSize="30sp"
+                android:textColor="@color/white"
                 android:text="/10"/>
 
             <TextView
@@ -142,6 +155,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV7"
                 android:layout_toLeftOf="@id/highScoreTV5"
+                android:textColor="@color/white"
                 android:text="- "
                />
 
@@ -153,6 +167,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV9"
                 android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
                 android:text="Level 5"/>
 
             <TextView
@@ -163,6 +178,7 @@
                 android:layout_below="@+id/highScoreTV9"
                 android:layout_alignParentRight="true"
                 android:textSize="30sp"
+                android:textColor="@color/white"
                 android:text="/10"/>
 
             <TextView
@@ -173,6 +189,7 @@
                 android:textSize="30sp"
                 android:layout_below="@+id/highScoreTV9"
                 android:layout_toLeftOf="@id/highScoreTV5"
+                android:textColor="@color/white"
                 android:text="- "
                 />
 

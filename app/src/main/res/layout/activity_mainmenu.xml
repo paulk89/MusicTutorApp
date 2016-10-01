@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/guitar"
+    android:background="@drawable/main_menu_background"
     android:padding="30dp"
     android:orientation="horizontal" >
 
@@ -15,7 +15,6 @@
         android:id="@+id/main_menu_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_message"
         android:textColor="#ffffff"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"

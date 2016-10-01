@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import lessons.LessonsActivity;
@@ -20,6 +21,7 @@ import lessons.LessonsActivity;
 public class MainMenuActivity extends Activity {
 
     Button logout, level1, level2, level3, level4, level5, practicalSupport, myProgress;
+    TextView welcomeView;
     DatabaseHandler db;
     Dialog dialog;
     private int currentLevel;
@@ -37,61 +39,35 @@ public class MainMenuActivity extends Activity {
         level5 = (Button) findViewById(R.id.level5_button);
         practicalSupport = (Button) findViewById(R.id.practical_support);
         myProgress = (Button) findViewById(R.id.myProgress);
+        welcomeView = (TextView)findViewById(R.id.main_menu_welcome);
 
 
         SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
         final String currentUser = userDetails.getString("username", "");
         int userID = userDetails.getInt("userID", 0);
 
+        welcomeView.setText("Welcome " + currentUser);
+
         db = new DatabaseHandler(getApplicationContext());
         currentLevel = db.getLevelID(userID);
-        Toast.makeText(getApplicationContext(),
-                currentUser + " is at level " + currentLevel + " and their userID is " + userID, Toast.LENGTH_LONG)
-                .show();
 
         setButtonLocks(currentLevel);
-
-      /*  int score = getIntent().getExtras().getInt("score");
-        String scoretext = "Your score was " + score;
-        Toast.makeText(getApplicationContext(),scoretext, Toast.LENGTH_LONG)
-                .show();*/
-
-        /*Bundle extras = getIntent().getExtras();
-        final String currentUser = extras.getString("currentUser");*/
-
-
-          /* if (currentLevel < 2) {
-                level2.setEnabled(false);
-                level3.setEnabled(false);
-                level4.setEnabled(false);
-                level5.setEnabled(false);
-            }*/
 
         logout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                    Toast.makeText(getApplicationContext(),
-                            currentUser + ", you have logged out Successfully", Toast.LENGTH_LONG)
-                            .show();
-                    Intent i = new Intent(MainMenuActivity.this,
-                            HomeActivity.class);
-                    startActivity(i);
-                    finish();
+                    showLogoutPrompt();
                 }
         });
 
         level1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-/*
-                Toast.makeText(getApplicationContext(),
-                        "Level 1 button clicked!", Toast.LENGTH_LONG)
-                        .show();*/
+
 
                 Intent i = new Intent(MainMenuActivity.this,
                         LessonsActivity.class);
                 i.putExtra("buttonclick", 1);
                 startActivity(i);
-                //finish();
 
             }
         });
@@ -103,9 +79,6 @@ public class MainMenuActivity extends Activity {
                         LessonsActivity.class);
                 i.putExtra("buttonclick", 2);
                 startActivity(i);
-                //finish();
-
-
             }
         });
 
@@ -116,9 +89,6 @@ public class MainMenuActivity extends Activity {
                         LessonsActivity.class);
                 i.putExtra("buttonclick", 3);
                 startActivity(i);
-                //finish();
-
-
             }
         });
 
@@ -129,9 +99,6 @@ public class MainMenuActivity extends Activity {
                         LessonsActivity.class);
                 i.putExtra("buttonclick", 4);
                 startActivity(i);
-                //finish();
-
-
             }
         });
 
@@ -142,9 +109,6 @@ public class MainMenuActivity extends Activity {
                         LessonsActivity.class);
                 i.putExtra("buttonclick", 5);
                 startActivity(i);
-                //finish();
-
-
             }
         });
 
@@ -158,7 +122,6 @@ public class MainMenuActivity extends Activity {
                 Intent i = new Intent(MainMenuActivity.this,
                         PracticalSupportActivity.class);
                 startActivity(i);
-                //finish();
             }
         });
 
@@ -172,7 +135,6 @@ public class MainMenuActivity extends Activity {
                 Intent i = new Intent(MainMenuActivity.this,
                         MyProgressActivity.class);
                 startActivity(i);
-                //finish();
             }
         });
     }
@@ -185,7 +147,6 @@ public class MainMenuActivity extends Activity {
             case 1:
                 level2.setEnabled(false);
                 level2.setBackgroundResource(R.drawable.main_button_disabled_layout);
-                //level2.setBackground(getDrawable(R.drawable.main_button_disabled_layout));
                 level3.setEnabled(false);
                 level3.setBackgroundResource(R.drawable.main_button_disabled_layout);
                 level4.setEnabled(false);
@@ -221,41 +182,38 @@ public class MainMenuActivity extends Activity {
         }
     }
 
-   /* public void logout(View v){
-        Intent i = new Intent(MainMenuActivity.this, HomeActivity.class);
-        startActivity(i);
-    }
+    private void showLogoutPrompt(){
 
-    public void cancelLogout(View v){
-        dialog.dismiss();
-    }*/
+        dialog = new Dialog(MainMenuActivity.this);
+        dialog.setContentView(R.layout.activity_logout_prompt);
+        dialog.setTitle("Logout?");
+        Button cancel = (Button)dialog.findViewById(R.id.cancel_logout);
+        Button ok_logout = (Button)dialog.findViewById(R.id.ok_logout);
+
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        ok_logout.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                Intent i = new Intent(MainMenuActivity.this, HomeActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        dialog.show();
+    }
 
     @Override
     public void onBackPressed() {
-            dialog = new Dialog(MainMenuActivity.this);
-            dialog.setContentView(R.layout.activity_logout_prompt);
-            dialog.setTitle("Logout?");
-            Button cancel = (Button)dialog.findViewById(R.id.cancel_logout);
-            Button ok_logout = (Button)dialog.findViewById(R.id.ok_logout);
-
-
-            cancel.setOnClickListener(new View.OnClickListener() {
-
-                public void onClick(View v) {
-                    dialog.dismiss();
-                }
-            });
-
-            ok_logout.setOnClickListener(new View.OnClickListener() {
-
-                public void onClick(View v) {
-
-                    Intent i = new Intent(MainMenuActivity.this, HomeActivity.class);
-                    startActivity(i);
-                }
-            });
-
-            dialog.show();
+           showLogoutPrompt();
         }
 
     @Override

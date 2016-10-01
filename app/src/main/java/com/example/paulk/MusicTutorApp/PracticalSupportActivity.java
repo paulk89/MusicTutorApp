@@ -56,6 +56,16 @@ public class PracticalSupportActivity extends Activity {
             }
         });
 
+        metronome.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent i = new Intent(PracticalSupportActivity.this,
+                        MetronomeActivity.class);
+                startActivity(i);
+                //finish();
+            }
+        });
+
         mainMenu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
