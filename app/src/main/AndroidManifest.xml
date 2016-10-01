@@ -66,6 +66,10 @@
             android:name="tests.ResultActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.example.paulk.MusicTutorApp.MyProgressActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
 
     </application>
 

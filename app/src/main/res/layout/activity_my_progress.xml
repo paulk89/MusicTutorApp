@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/highScoresTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:text="High Test Scores"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="30dp"
+            android:layout_below="@+id/highScoresTitle">
+
+            <TextView
+                android:id="@+id/highScoreTV1"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:text="Level 1"/>
+
+            <TextView
+                android:id="@+id/highScoreTV2"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:text="/10"/>
+
+            <TextView
+                android:id="@+id/highScoreTVScore"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_toLeftOf="@id/highScoreTV2"
+                android:text="- "/>
+
+
+            <TextView
+                android:id="@+id/highScoreTV4"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV1"
+                android:layout_alignParentLeft="true"
+                android:text="Level 2"/>
+
+            <TextView
+                android:id="@+id/highScoreTV5"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/highScoreTV1"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:text="/10"/>
+
+            <TextView
+                android:id="@+id/highScoreTVScore2"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV1"
+                android:layout_toLeftOf="@id/highScoreTV5"
+                android:text="- "/>
+
+
+            <TextView
+                android:id="@+id/highScoreTV6"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV4"
+                android:layout_alignParentLeft="true"
+                android:text="Level 3"/>
+
+            <TextView
+                android:id="@+id/highScoreTV7"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/highScoreTV4"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:text="/10"/>
+
+            <TextView
+                android:id="@+id/highScoreTVScore3"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="- "
+                android:layout_below="@+id/highScoreTV4"
+                android:layout_toLeftOf="@id/highScoreTV5"
+                />
+
+
+            <TextView
+                android:id="@+id/highScoreTV9"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV7"
+                android:layout_alignParentLeft="true"
+                android:text="Level 4"/>
+
+            <TextView
+                android:id="@+id/highScoreTV10"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/highScoreTV7"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:text="/10"/>
+
+            <TextView
+                android:id="@+id/highScoreTVScore4"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV7"
+                android:layout_toLeftOf="@id/highScoreTV5"
+                android:text="- "
+               />
+
+            <TextView
+                android:id="@+id/highScoreTV11"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV9"
+                android:layout_alignParentLeft="true"
+                android:text="Level 5"/>
+
+            <TextView
+                android:id="@+id/highScoreTV12"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/highScoreTV9"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:text="/10"/>
+
+            <TextView
+                android:id="@+id/highScoreTVScore5"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_below="@+id/highScoreTV9"
+                android:layout_toLeftOf="@id/highScoreTV5"
+                android:text="- "
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
