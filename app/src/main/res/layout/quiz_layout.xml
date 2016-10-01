@@ -28,8 +28,8 @@
 
         <TextView
             android:id="@+id/question"
-            android:text="What what what"
             android:paddingBottom="10dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/QuestionNumber"/>
@@ -71,8 +71,9 @@
         </RadioGroup>
         <Button
             android:id="@+id/next"
+            android:background="@drawable/main_button_layout"
             android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:layout_below="@+id/radioGroup1"
             android:text="Next question"

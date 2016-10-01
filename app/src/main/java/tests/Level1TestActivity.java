@@ -73,7 +73,7 @@ public class Level1TestActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (radioGroup.getCheckedRadioButtonId()== -1){
-                    Toast.makeText(getApplicationContext(),"Please an answer!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Please select an answer!", Toast.LENGTH_LONG).show();
                 }else {
                     RadioButton answer = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
 

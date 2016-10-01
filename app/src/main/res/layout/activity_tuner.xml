@@ -11,6 +11,7 @@
         android:text="Select a string to tune to"
         android:textSize="@dimen/button_text_size"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:textColor="@color/white"/>
 
     <LinearLayout
@@ -54,6 +55,7 @@
             android:layout_width="48dp"
             android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="g"/>
 
         <Button

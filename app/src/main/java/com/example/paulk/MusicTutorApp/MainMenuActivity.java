@@ -1,10 +1,12 @@
 package com.example.paulk.MusicTutorApp;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -19,6 +21,8 @@ public class MainMenuActivity extends Activity {
 
     Button logout, level1, level2, level3, level4, level5, practicalSupport, myProgress;
     DatabaseHandler db;
+    Dialog dialog;
+    private int currentLevel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +44,7 @@ public class MainMenuActivity extends Activity {
         int userID = userDetails.getInt("userID", 0);
 
         db = new DatabaseHandler(getApplicationContext());
-        int currentLevel = db.getLevelID(userID);
+        currentLevel = db.getLevelID(userID);
         Toast.makeText(getApplicationContext(),
                 currentUser + " is at level " + currentLevel + " and their userID is " + userID, Toast.LENGTH_LONG)
                 .show();
@@ -215,6 +219,51 @@ public class MainMenuActivity extends Activity {
 
 
         }
+    }
+
+   /* public void logout(View v){
+        Intent i = new Intent(MainMenuActivity.this, HomeActivity.class);
+        startActivity(i);
+    }
+
+    public void cancelLogout(View v){
+        dialog.dismiss();
+    }*/
+
+    @Override
+    public void onBackPressed() {
+            dialog = new Dialog(MainMenuActivity.this);
+            dialog.setContentView(R.layout.activity_logout_prompt);
+            dialog.setTitle("Logout?");
+            Button cancel = (Button)dialog.findViewById(R.id.cancel_logout);
+            Button ok_logout = (Button)dialog.findViewById(R.id.ok_logout);
+
+
+            cancel.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    dialog.dismiss();
+                }
+            });
+
+            ok_logout.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+
+                    Intent i = new Intent(MainMenuActivity.this, HomeActivity.class);
+                    startActivity(i);
+                }
+            });
+
+            dialog.show();
+        }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Log.i("Main Menu", "onResume fired!");
+        setButtonLocks(currentLevel);
+
     }
 }
 

@@ -17,13 +17,13 @@ public class TunerActivity extends Activity {
     Button mainMenu, lowE_button, a_button, d_button, g_button, b_button, highE_button;
 
     MediaPlayer lowE_sound, a_sound, d_sound, g_sound, b_sound, highE_sound;
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tuner);
 
-        //mainMenu = (Button) findViewById(R.id.main_menu2);
         lowE_button = (Button) findViewById(R.id.low_e);
         a_button = (Button) findViewById(R.id.a);
         d_button = (Button) findViewById(R.id.d);
@@ -31,98 +31,93 @@ public class TunerActivity extends Activity {
         b_button = (Button) findViewById(R.id.b);
         highE_button = (Button) findViewById(R.id.high_e);
 
-        lowE_sound = MediaPlayer.create(this,R.raw.lowe);
-        a_sound = MediaPlayer.create(this,R.raw.a);
-        d_sound = MediaPlayer.create(this,R.raw.d);
-        g_sound = MediaPlayer.create(this,R.raw.g);
-        b_sound = MediaPlayer.create(this,R.raw.b);
-        highE_sound = MediaPlayer.create(this,R.raw.highe);
-
-
-
-       /* mainMenu.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Toast.makeText(getApplicationContext(),
-                        "You have exited the tuner out Successfully", Toast.LENGTH_LONG)
-                        .show();
-                Intent i = new Intent(TunerActivity.this,
-                        MainMenuActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });*/
-
         lowE_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "Low e button selected", Toast.LENGTH_LONG)
-                        .show();
-                lowE_sound.start();
+                if (mp != null){
+                    stopPlaying();
+                }else {
+                    mp = MediaPlayer.create(TunerActivity.this, R.raw.lowe);
+                    mp.start();
+                }
             }
         });
 
         a_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "a button selected", Toast.LENGTH_LONG)
-                        .show();
-                a_sound.start();
+                if (mp != null){
+                    stopPlaying();
+                }else {
+                    mp = MediaPlayer.create(TunerActivity.this, R.raw.a);
+                    mp.start();
+                }
             }
         });
 
         d_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "d button selected", Toast.LENGTH_LONG)
-                        .show();
-                d_sound.start();
+                if (mp != null){
+                    stopPlaying();
+                }else {
+                    mp = MediaPlayer.create(TunerActivity.this, R.raw.d);
+                    mp.start();
+                }
             }
         });
 
         g_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "g button selected", Toast.LENGTH_LONG)
-                        .show();
-                g_sound.start();
+                if (mp != null){
+                    stopPlaying();
+                }else {
+                    mp = MediaPlayer.create(TunerActivity.this, R.raw.g);
+                    mp.start();
+                }
             }
         });
 
         b_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "b button selected", Toast.LENGTH_LONG)
-                        .show();
-                b_sound.start();
+                if (mp != null){
+                    stopPlaying();
+                }else {
+                    mp = MediaPlayer.create(TunerActivity.this, R.raw.b);
+                    mp.start();
+                }
             }
         });
 
         highE_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "d button selected", Toast.LENGTH_LONG)
-                        .show();
-                highE_sound.start();
+                if (mp != null){
+                    stopPlaying();
+                }else {
+                    mp = MediaPlayer.create(TunerActivity.this, R.raw.highe);
+                    mp.start();
+                }
             }
         });
+    }
+
+    private void stopPlaying() {
+        if (mp != null) {
+            mp.stop();
+            mp.release();
+            mp = null;
+        }
     }
 
     @Override
     protected void onPause(){
         super.onPause();
-        lowE_sound.release();
-        a_sound.release();
-        d_sound.release();
-        g_sound.release();
-        b_sound.release();
-        highE_sound.release();
+        if (mp != null) {
+            mp.release();
+        }
     }
 
 }

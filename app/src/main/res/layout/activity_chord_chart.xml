@@ -17,7 +17,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
     <TextView style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
@@ -25,7 +26,8 @@
         android:paddingBottom="10dp"
         android:layout_height="wrap_content"
         android:text="Basic must-know Chords"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/white"
         android:layout_centerInParent="true"/>
 
 
@@ -43,18 +45,21 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_1"
+                android:background="@drawable/main_button_layout"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:layout_marginRight="1dp"
+                android:layout_margin="1dp"
                 android:src="@drawable/a_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye" />
 
             <ImageButton
                 android:id="@+id/thumb_button_2"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -66,6 +71,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_3"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -77,6 +84,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_4"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -88,6 +97,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_5"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -99,6 +110,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_6"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -110,6 +123,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_7"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -121,6 +136,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_8"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -132,6 +149,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_9"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -143,6 +162,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_10"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -154,6 +175,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_11"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -165,6 +188,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_12"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -176,6 +201,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_13"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -187,6 +214,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_14"
+                android:layout_margin="1dp"
+                android:background="@drawable/main_button_layout"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -198,6 +227,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_15"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
@@ -209,6 +240,8 @@
 
             <ImageButton
                 android:id="@+id/thumb_button_16"
+                android:background="@drawable/main_button_layout"
+                android:layout_margin="1dp"
                 android:layout_width="@dimen/chord_activity_button_horizontal"
                 android:layout_height="@dimen/chord_activity_button_vertical"
                 grid:layout_columnWeight="1"
