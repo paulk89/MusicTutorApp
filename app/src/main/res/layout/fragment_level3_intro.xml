@@ -36,15 +36,19 @@
             android:layout_below="@id/level3_intro_tv1"
             android:text="@string/level3_intro_tv2"
             android:textColor="#ffffff"
+            android:layout_marginBottom="@dimen/padding_between_views"
             android:textSize="17sp"/>
 
 
         <Button
             android:id="@+id/level3TestButton"
-            android:layout_width="wrap_content"
+            android:background="@drawable/green_button_layout"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/level3_test"
             android:onClick="launchTest"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/white"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
             android:layout_below="@+id/level3_intro_tv2"
             android:layout_centerInParent="true"/>

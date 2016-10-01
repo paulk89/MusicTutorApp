@@ -24,7 +24,7 @@
     <Button
         android:id="@+id/level1_button"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -36,7 +36,7 @@
         android:id="@+id/level2_button"
         android:background="@drawable/main_button_layout"
         android:layout_marginBottom="@dimen/padding_between_buttons"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_centerHorizontal="true"
@@ -46,7 +46,7 @@
     <Button
         android:id="@+id/level3_button"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -57,7 +57,7 @@
     <Button
         android:id="@+id/level4_button"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -68,7 +68,7 @@
     <Button
         android:id="@+id/level5_button"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -79,7 +79,7 @@
     <Button
         android:id="@+id/practical_support"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -90,7 +90,7 @@
     <Button
         android:id="@+id/myProgress"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -101,7 +101,7 @@
     <Button
         android:id="@+id/logout"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"

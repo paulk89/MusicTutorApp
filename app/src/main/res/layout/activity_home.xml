@@ -9,7 +9,8 @@
     <Button
         android:id="@+id/buttonSignIN"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
@@ -19,12 +20,14 @@
     <Button
         android:id="@+id/buttonSignUP"
         android:background="@drawable/main_button_layout"
-        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
         android:layout_below="@+id/buttonSignIN"
         android:text="SignUp"
+        android:onClick="signUP"
         />
 
 </RelativeLayout>

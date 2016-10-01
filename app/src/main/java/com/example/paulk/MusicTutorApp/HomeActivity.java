@@ -43,7 +43,7 @@ public class HomeActivity extends Activity {
         btnSignIn = (Button) findViewById(R.id.buttonSignIN);
         btnSignUp = (Button) findViewById(R.id.buttonSignUP);
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        /*btnSignUp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
@@ -51,7 +51,7 @@ public class HomeActivity extends Activity {
                         SignUpActivity.class);
                 startActivity(intentSignUP);
             }
-        });
+        });*/
     }
 
     public void signIn(View V) {
@@ -72,10 +72,11 @@ public class HomeActivity extends Activity {
                 String userName = editTextUserName.getText().toString();
                 String password = editTextPassword.getText().toString();
                 String storedPassword = db.getPassword(userName);
+
                 Log.i("TAG", "Getting password for user : " + userName + ". Password is : " + storedPassword);
                 if (password.equals(storedPassword)) {
                     Toast.makeText(HomeActivity.this,
-                            "Congrats: Login Successful", Toast.LENGTH_LONG)
+                            "Login Successful!", Toast.LENGTH_LONG)
                             .show();
                     dialog.dismiss();
 
@@ -93,12 +94,59 @@ public class HomeActivity extends Activity {
                     startActivity(main);
                 } else {
                     Toast.makeText(HomeActivity.this,
-                            "User Name or Password does not match",
+                            "Username and Password do not match",
                             Toast.LENGTH_LONG).show();
                 }
             }
         });
 
+        dialog.show();
+    }
+
+    public void signUP(View v){
+
+        final Dialog dialog = new Dialog(HomeActivity.this);
+        dialog.setContentView(R.layout.activity_signup);
+        dialog.setTitle("Create Account");
+
+        final EditText editTextUserName = (EditText) dialog
+                .findViewById(R.id.editTextUserName);
+        final EditText editTextPassword = (EditText) dialog
+                .findViewById(R.id.editTextPassword);
+        final EditText editTextConfirmPassword = (EditText) dialog
+                .findViewById(R.id.editTextConfirmPassword);
+
+        Button btnCreateAccount = (Button) dialog.findViewById(R.id.buttonCreateAccount);
+
+        btnCreateAccount.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                String userName = editTextUserName.getText().toString();
+                String password = editTextPassword.getText().toString();
+                String confirmPassword = editTextConfirmPassword.getText()
+                        .toString();
+                if (userName.equals("") || password.equals("")
+                        || confirmPassword.equals("")) {
+
+                    Toast.makeText(getApplicationContext(), "Field has been left vacant",
+                            Toast.LENGTH_LONG).show();
+                }
+                if (!password.equals(confirmPassword)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Passwords do not match!", Toast.LENGTH_LONG)
+                            .show();
+                } else if ((!(userName.equals(""))) && (password.equals(confirmPassword))) {
+
+                    db.addUser(userName, password, 1);
+                    Toast.makeText(getApplicationContext(),
+                            "Account Successfully Created!", Toast.LENGTH_LONG)
+                            .show();
+                    dialog.dismiss();
+
+                }
+            }
+        });
         dialog.show();
     }
 
