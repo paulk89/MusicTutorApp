@@ -1,7 +1,9 @@
 package com.example.paulk.MusicTutorApp;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 /**
@@ -22,6 +24,28 @@ public class MyProgressActivity extends Activity {
         level3Score = (TextView)findViewById(R.id.highScoreTVScore3);
         level4Score = (TextView)findViewById(R.id.highScoreTVScore4);
         level5Score = (TextView)findViewById(R.id.highScoreTVScore5);
+
+        SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
+        int userID = userDetails.getInt("userID", 0);
+
+        db = new DatabaseHandler(this);
+        int level = db.getLevelID(userID);
+
+        //int level1HighScore = db.getHighScores(userID, 1);
+        //String stringLevel1Score = "" + level1HighScore;
+        int [] highScores = {0,0,0,0,0};
+
+        for (int i = 1; i <= level; i++){
+            highScores[i-1] = db.getHighScores(userID, i);
+        }
+
+        level1Score.setText(String.valueOf(highScores[0]));
+        level2Score.setText(String.valueOf(highScores[1]));
+        level3Score.setText(String.valueOf(highScores[2]));
+        level4Score.setText(String.valueOf(highScores[3]));
+        level5Score.setText(String.valueOf(highScores[4]));
+
+
 
     }
 }

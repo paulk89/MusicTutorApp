@@ -197,6 +197,32 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.insert(TABLE_SCORE, null, values);
     }
 
+
+    public int getHighScores(int userID, int level) {
+
+        int score = 0;
+        SQLiteDatabase db = this.getReadableDatabase();
+       String selectQuery = "SELECT MAX" +
+               "("+ KEY_SCORE +") AS highScore FROM "
+               + TABLE_SCORE + " where "
+               + KEY_SCOREUSERID
+               + " = "
+               + userID
+               + " AND "
+               + KEY_LEVEL
+               + " = "
+               + level;
+
+        //String selectQuery = "SELECT MAX(score) AS highScore FROM score where userID = 1 AND LEVEL = 1";
+        Cursor c = db.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        score = c.getInt(c.getColumnIndex("highScore"));
+
+        c.close();
+        return score;
+    }
+
+
     public String getPassword(String username) {
 
         /*SQLiteDatabase db = this.getReadableDatabase();
@@ -244,6 +270,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         cursor.close();
         return userID;
     }
+
+
 
     public int getLevelID(int userID) {
 
