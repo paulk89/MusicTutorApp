@@ -23,7 +23,7 @@ public class TunerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tuner);
 
-        mainMenu = (Button) findViewById(R.id.main_menu2);
+        //mainMenu = (Button) findViewById(R.id.main_menu2);
         lowE_button = (Button) findViewById(R.id.low_e);
         a_button = (Button) findViewById(R.id.a);
         d_button = (Button) findViewById(R.id.d);
@@ -40,7 +40,7 @@ public class TunerActivity extends Activity {
 
 
 
-        mainMenu.setOnClickListener(new View.OnClickListener() {
+       /* mainMenu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Toast.makeText(getApplicationContext(),
@@ -51,7 +51,7 @@ public class TunerActivity extends Activity {
                 startActivity(i);
                 finish();
             }
-        });
+        });*/
 
         lowE_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

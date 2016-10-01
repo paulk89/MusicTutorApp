@@ -73,29 +73,38 @@ public class HomeActivity extends Activity {
                 String password = editTextPassword.getText().toString();
                 String storedPassword = db.getPassword(userName);
 
-                Log.i("TAG", "Getting password for user : " + userName + ". Password is : " + storedPassword);
-                if (password.equals(storedPassword)) {
+                int userID = db.getUserID(userName);
+
+
+                if (userID == -1) {
                     Toast.makeText(HomeActivity.this,
-                            "Login Successful!", Toast.LENGTH_LONG)
+                            "User does not exist! Check the spelling! (Case senstive)", Toast.LENGTH_LONG)
                             .show();
-                    dialog.dismiss();
-
-                    int userID = db.getUserID(userName);
-
-                    SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
-                    SharedPreferences.Editor edit = userDetails.edit();
-                    edit.clear();
-                    edit.putString("username", userName);
-                    edit.putInt("userID", userID);
-                    edit.commit();
-
-                    Intent main = new Intent(HomeActivity.this, MainMenuActivity.class);
-                    main.putExtra("currentUser", userName);
-                    startActivity(main);
                 } else {
-                    Toast.makeText(HomeActivity.this,
-                            "Username and Password do not match",
-                            Toast.LENGTH_LONG).show();
+
+                    Log.i("TAG", "Getting password for user : " + userName + ". Password is : " + storedPassword);
+                    if (password.equals(storedPassword)) {
+                        Toast.makeText(HomeActivity.this,
+                                "Login Successful!", Toast.LENGTH_LONG)
+                                .show();
+                        dialog.dismiss();
+
+
+                        SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
+                        SharedPreferences.Editor edit = userDetails.edit();
+                        edit.clear();
+                        edit.putString("username", userName);
+                        edit.putInt("userID", userID);
+                        edit.commit();
+
+                        Intent main = new Intent(HomeActivity.this, MainMenuActivity.class);
+                        main.putExtra("currentUser", userName);
+                        startActivity(main);
+                    } else {
+                        Toast.makeText(HomeActivity.this,
+                                "Username and Password do not match",
+                                Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });

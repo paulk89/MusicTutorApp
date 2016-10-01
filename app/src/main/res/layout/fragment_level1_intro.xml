@@ -45,6 +45,7 @@
             android:layout_below="@+id/lv1_intro_iv1"
             android:textColor="#ffffff"
             android:text="@string/level1_intro"
+            android:layout_marginBottom="@dimen/padding_between_views"
             android:textSize="17sp"/>
 
         <Button
