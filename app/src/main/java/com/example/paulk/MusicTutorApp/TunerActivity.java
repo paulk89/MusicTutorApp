@@ -14,9 +14,8 @@ import android.widget.Toast;
  */
 public class TunerActivity extends Activity {
 
-    Button mainMenu, lowE_button, a_button, d_button, g_button, b_button, highE_button;
+    Button lowE_button, a_button, d_button, g_button, b_button, highE_button;
 
-    MediaPlayer lowE_sound, a_sound, d_sound, g_sound, b_sound, highE_sound;
     private MediaPlayer mp;
 
     @Override

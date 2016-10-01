@@ -3,8 +3,27 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:background="@color/background"
+    android:background="@drawable/home_background"
     android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/guitar_pal_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/home_welcome"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to GuitarPal"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/buttonSignIN"
@@ -14,6 +33,7 @@
         android:layout_height="@dimen/button_height"
         android:textSize="@dimen/button_text_size"
         android:layout_marginBottom="@dimen/padding_between_buttons"
+        android:layout_below="@+id/home_welcome"
         android:text="Login"
         android:onClick="signIn" />
 

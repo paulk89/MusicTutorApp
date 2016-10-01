@@ -23,7 +23,7 @@
         android:paddingLeft="8dp">
 
         <Button
-            android:id="@+id/low_e"
+            android:id="@+id/slow_button"
             android:background="@drawable/main_button_layout"
             android:layout_width="80dp"
             android:textSize="15sp"
@@ -32,7 +32,7 @@
             android:text="Slow"/>
 
         <Button
-            android:id="@+id/a"
+            android:id="@+id/medium_button"
             android:background="@drawable/main_button_layout"
             android:layout_width="80dp"
             android:textSize="15sp"
@@ -41,7 +41,7 @@
             android:text="Medium"/>
 
         <Button
-            android:id="@+id/d"
+            android:id="@+id/fast_button"
             android:background="@drawable/main_button_layout"
             android:layout_width="80dp"
             android:textSize="15sp"
