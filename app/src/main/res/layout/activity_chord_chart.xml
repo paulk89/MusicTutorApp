@@ -49,7 +49,7 @@
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
                 android:layout_marginRight="1dp"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/a_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye" />
 
@@ -60,7 +60,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/a_minor_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 2" />
 
@@ -71,7 +71,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/a7_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 3" />
 
@@ -82,7 +82,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_gravity="fill_horizontal"
                 grid:layout_rowWeight="1"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/b_minor_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 4" />
 
@@ -93,7 +93,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/b7_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 5" />
 
@@ -104,7 +104,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/c_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 6" />
 
@@ -115,7 +115,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/c7_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 7" />
 
@@ -126,7 +126,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/d_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 8" />
 
@@ -137,7 +137,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_gravity="fill_horizontal"
                 grid:layout_rowWeight="1"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/d_minor_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 9" />
 
@@ -148,7 +148,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/d7_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 10" />
 
@@ -159,7 +159,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/e_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 11" />
 
@@ -170,7 +170,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/e_minor_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 12" />
 
@@ -181,7 +181,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_rowWeight="1"
                 grid:layout_gravity="fill_horizontal"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/e7_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 13" />
 
@@ -192,7 +192,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_gravity="fill_horizontal"
                 grid:layout_rowWeight="1"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/f_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 14" />
 
@@ -203,7 +203,7 @@
                 grid:layout_columnWeight="1"
                 grid:layout_gravity="fill_horizontal"
                 grid:layout_rowWeight="1"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/g_major_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 15" />
 
@@ -214,17 +214,12 @@
                 grid:layout_columnWeight="1"
                 grid:layout_gravity="fill_horizontal"
                 grid:layout_rowWeight="1"
-                android:src="@drawable/cmajorthumb"
+                android:src="@drawable/g7_thumb"
                 android:scaleType="centerCrop"
                 android:contentDescription="Aye 16" />
 
         </android.support.v7.widget.GridLayout>
 
-    <!-- This initially-hidden ImageView will hold the expanded/zoomed version of the
-         images above. Without transformations applied, it takes up the entire screen.
-         To achieve the "zoom" animation, this view's bounds are animated from the
-         bounds of the thumbnail buttons above, to its final laid-out bounds. The implementation
-         of this animation is in the ZoomActivity class. -->
     <ImageView
         android:id="@+id/expanded_image"
         android:layout_width="match_parent"

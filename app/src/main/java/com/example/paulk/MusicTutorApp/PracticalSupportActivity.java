@@ -46,6 +46,16 @@ public class PracticalSupportActivity extends Activity {
             }
         });
 
+        strumPatterns.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent i = new Intent(PracticalSupportActivity.this,
+                        StrummingPatternsActivity.class);
+                startActivity(i);
+                //finish();
+            }
+        });
+
         mainMenu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 

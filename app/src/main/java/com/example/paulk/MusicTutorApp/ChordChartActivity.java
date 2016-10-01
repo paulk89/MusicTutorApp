@@ -46,7 +46,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb1View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb1View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb1View, R.drawable.a_major_chord);
             }
         });
 
@@ -54,7 +54,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb2View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb2View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb2View, R.drawable.a_minor_chord);
             }
         });
 
@@ -62,7 +62,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb3View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb3View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb3View, R.drawable.a_7_chord);
             }
         });
 
@@ -70,7 +70,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb4View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb4View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb4View, R.drawable.b_minor_chord);
             }
         });
 
@@ -78,7 +78,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb5View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb5View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb5View, R.drawable.b_7_chord);
             }
         });
 
@@ -86,7 +86,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb6View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb6View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb6View, R.drawable.c_major_chord);
             }
         });
 
@@ -94,7 +94,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb7View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb7View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb7View, R.drawable.c_7_chord);
             }
         });
 
@@ -102,7 +102,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb8View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb8View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb8View, R.drawable.d_major_chord);
             }
         });
 
@@ -110,7 +110,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb9View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb9View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb9View, R.drawable.d_minor_chord);
             }
         });
 
@@ -118,7 +118,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb10View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb10View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb10View, R.drawable.d_7_chord);
             }
         });
 
@@ -126,7 +126,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb11View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb11View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb11View, R.drawable.e_major_chord);
             }
         });
 
@@ -134,7 +134,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb12View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb12View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb12View, R.drawable.e_minor_chord);
             }
         });
 
@@ -142,7 +142,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb13View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb13View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb13View, R.drawable.e_7_chord);
             }
         });
 
@@ -150,7 +150,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb14View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb14View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb14View, R.drawable.f_major_chord);
             }
         });
 
@@ -158,7 +158,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb15View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb15View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb15View, R.drawable.g_major_chord);
             }
         });
 
@@ -166,7 +166,7 @@ public class ChordChartActivity extends FragmentActivity {
         thumb16View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb16View, R.drawable.cmajorchord);
+                zoomImageFromThumb(thumb16View, R.drawable.g_7_chord);
             }
         });
 
