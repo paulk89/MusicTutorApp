@@ -17,7 +17,7 @@ import lessons.LessonsActivity;
  */
 public class MainMenuActivity extends Activity {
 
-    Button logout, level1, level2, level3, level4, level5, practicalSupport;
+    Button logout, level1, level2, level3, level4, level5, practicalSupport, myProgress;
     DatabaseHandler db;
 
     @Override
@@ -32,6 +32,8 @@ public class MainMenuActivity extends Activity {
         level4 = (Button) findViewById(R.id.level4);
         level5 = (Button) findViewById(R.id.level5);
         practicalSupport = (Button) findViewById(R.id.practical_support);
+        myProgress = (Button) findViewById(R.id.myProgress);
+
 
         SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
         final String currentUser = userDetails.getString("username", "");
@@ -179,6 +181,21 @@ public class MainMenuActivity extends Activity {
                 //finish();
             }
         });
+
+        myProgress.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),
+                        "My Progress button clicked!", Toast.LENGTH_LONG)
+                        .show();
+
+                Intent i = new Intent(MainMenuActivity.this,
+                        MyProgressActivity.class);
+                startActivity(i);
+                //finish();
+            }
+        });
+
 
     }
 }
