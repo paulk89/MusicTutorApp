@@ -2,52 +2,76 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/background"
-    android:padding="30dp" >
+    android:background="@drawable/tuner_background_strings"
+    android:padding="10dp" >
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a string to tune to"
+        android:textSize="@dimen/button_text_size"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:paddingLeft="8dp">
 
         <Button
             android:id="@+id/low_e"
-            android:layout_width="50dp"
+            android:background="@drawable/main_button_layout"
+            android:layout_width="48dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
-            android:text="e"/>
+            android:layout_margin="2dp"
+            android:text="E"/>
 
         <Button
             android:id="@+id/a"
-            android:layout_width="50dp"
+            android:background="@drawable/main_button_layout"
+            android:layout_width="48dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="a"/>
 
         <Button
             android:id="@+id/d"
-            android:layout_width="50dp"
+            android:background="@drawable/main_button_layout"
+            android:layout_width="48dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="d"/>
 
         <Button
             android:id="@+id/g"
-            android:layout_width="50dp"
+            android:background="@drawable/main_button_layout"
+            android:layout_width="48dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
             android:text="g"/>
 
         <Button
             android:id="@+id/b"
-            android:layout_width="50dp"
+            android:background="@drawable/main_button_layout"
+            android:layout_width="48dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="b"/>
 
         <Button
             android:id="@+id/high_e"
-            android:layout_width="50dp"
+            android:background="@drawable/main_button_layout"
+            android:layout_width="48dp"
+            android:textSize="@dimen/button_text_size"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="e"/>
 
     </LinearLayout>
