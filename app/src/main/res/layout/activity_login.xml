@@ -24,8 +24,10 @@
 
     <Button
         android:id="@+id/buttonSignIn"
+        android:background="@drawable/main_button_layout"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/button_text_size"
         android:text="Sign In" />
 
 </LinearLayout>

@@ -26,11 +26,11 @@ public class MainMenuActivity extends Activity {
         setContentView(R.layout.activity_mainmenu);
 
         logout = (Button) findViewById(R.id.logout);
-        level1 = (Button) findViewById(R.id.level1);
-        level2 = (Button) findViewById(R.id.level2);
-        level3 = (Button) findViewById(R.id.level3);
-        level4 = (Button) findViewById(R.id.level4);
-        level5 = (Button) findViewById(R.id.level5);
+        level1 = (Button) findViewById(R.id.level1_button);
+        level2 = (Button) findViewById(R.id.level2_button);
+        level3 = (Button) findViewById(R.id.level3_button);
+        level4 = (Button) findViewById(R.id.level4_button);
+        level5 = (Button) findViewById(R.id.level5_button);
         practicalSupport = (Button) findViewById(R.id.practical_support);
         myProgress = (Button) findViewById(R.id.myProgress);
 
@@ -45,6 +45,8 @@ public class MainMenuActivity extends Activity {
                 currentUser + " is at level " + currentLevel + " and their userID is " + userID, Toast.LENGTH_LONG)
                 .show();
 
+        setButtonLocks(currentLevel);
+
       /*  int score = getIntent().getExtras().getInt("score");
         String scoretext = "Your score was " + score;
         Toast.makeText(getApplicationContext(),scoretext, Toast.LENGTH_LONG)
@@ -53,39 +55,13 @@ public class MainMenuActivity extends Activity {
         /*Bundle extras = getIntent().getExtras();
         final String currentUser = extras.getString("currentUser");*/
 
-        switch (currentLevel){
 
-            case 1:
+          /* if (currentLevel < 2) {
                 level2.setEnabled(false);
                 level3.setEnabled(false);
                 level4.setEnabled(false);
                 level5.setEnabled(false);
-                break;
-
-            case 2:
-                level3.setEnabled(false);
-                level4.setEnabled(false);
-                level5.setEnabled(false);
-                break;
-
-            case 3:
-                level4.setEnabled(false);
-                level5.setEnabled(false);
-                break;
-
-            case 4:
-                level5.setEnabled(false);
-                break;
-            default:
-                break;
-        }
-
-           if (currentLevel < 2) {
-                level2.setEnabled(false);
-                level3.setEnabled(false);
-                level4.setEnabled(false);
-                level5.setEnabled(false);
-            }
+            }*/
 
         logout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -195,8 +171,50 @@ public class MainMenuActivity extends Activity {
                 //finish();
             }
         });
+    }
+
+    private void setButtonLocks(int currentLevel){
 
 
+        switch (currentLevel) {
+
+            case 1:
+                level2.setEnabled(false);
+                level2.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                //level2.setBackground(getDrawable(R.drawable.main_button_disabled_layout));
+                level3.setEnabled(false);
+                level3.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                level4.setEnabled(false);
+                level4.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                level5.setEnabled(false);
+                level5.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                break;
+
+            case 2:
+                level3.setEnabled(false);
+                level3.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                level4.setEnabled(false);
+                level4.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                level5.setEnabled(false);
+                level5.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                break;
+
+            case 3:
+                level4.setEnabled(false);
+                level4.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                level5.setEnabled(false);
+                level5.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                break;
+
+            case 4:
+                level5.setEnabled(false);
+                level5.setBackgroundResource(R.drawable.main_button_disabled_layout);
+                break;
+            default:
+                break;
+
+
+        }
     }
 }
 

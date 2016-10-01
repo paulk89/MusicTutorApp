@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
@@ -8,16 +8,23 @@
 
     <Button
         android:id="@+id/buttonSignIN"
+        android:background="@drawable/main_button_layout"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginBottom="@dimen/padding_between_buttons"
         android:text="Login"
         android:onClick="signIn" />
 
     <Button
         android:id="@+id/buttonSignUP"
+        android:background="@drawable/main_button_layout"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginBottom="@dimen/padding_between_buttons"
+        android:layout_below="@+id/buttonSignIN"
         android:text="SignUp"
         />
 
-</LinearLayout>
+</RelativeLayout>

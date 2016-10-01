@@ -6,50 +6,75 @@
     android:padding="60dp"
     android:orientation="horizontal" >
 
-    <LinearLayout
-        android:orientation="vertical"
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
         <TextView
+            android:id="@+id/practical_support_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/practical_support"
+            android:text="@string/welcome_message"
             android:textColor="#ffffff"
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
             android:layout_marginBottom="25dp"
-            android:textSize="24.5sp" />
+            android:textSize="24.5sp"  />
 
         <Button
             android:id="@+id/tuner"
+            android:background="@drawable/main_button_layout"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:textSize="@dimen/button_text_size"
+            android:layout_marginBottom="@dimen/padding_between_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/practical_support_title"
             android:text="Tuner"/>
 
         <Button
             android:id="@+id/metronome"
+            android:background="@drawable/main_button_layout"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:textSize="@dimen/button_text_size"
+            android:layout_marginBottom="@dimen/padding_between_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tuner"
             android:text="Metronome"/>
 
         <Button
             android:id="@+id/chord_charts"
+            android:background="@drawable/main_button_layout"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:textSize="@dimen/button_text_size"
+            android:layout_marginBottom="@dimen/padding_between_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/metronome"
             android:text="Chord Charts"/>
 
         <Button
             android:id="@+id/strum_patterns"
+            android:background="@drawable/main_button_layout"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:textSize="@dimen/button_text_size"
+            android:layout_marginBottom="@dimen/padding_between_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/chord_charts"
             android:text="Strum Patterns"/>
 
         <Button
             android:id="@+id/main_menu"
+            android:background="@drawable/main_button_layout"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:textSize="@dimen/button_text_size"
+            android:layout_marginBottom="@dimen/padding_between_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/strum_patterns"
             android:text="Main Menu"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
