@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MusicTutorApp</string>
+    <string name="app_name">GuitarPal</string>
     <string name="welcome_message">Welcome back</string>
     <string name="practical_support">Practical Support</string>
     <string name="plectrum_lesson"><b>Lesson 4 - </b>A plectrum is a small flat tool used to pluck or strum a guitar. A pick (aka plectrum) is used to get the brightest and best sound from a guitar, especially in Pop and Rock music. \n\n
@@ -129,8 +129,8 @@
 
     <string name="level2_lesson4_title">Lesson 4: How to Read Guitar Chord Charts</string>
     <string name="level2_lesson4_tv1">A trick to learning chord charts is to stand your guitar so that the headstock is pointing directly up. Then look at 4 frets. That\'s your basic chord chart. The 6 vertical lines represent 6 strings, although, the names of the strings rarely ever appear on the actual chord chart itself. The horizontal lines represent the metal frets, but again, these numbers usually don\'t appear on the chord chart. The black dots represent where you put your fingers. The dots are number telling you what finger you should be placing there.</string>
-    <string name="level2_lesson4_tv2">It\s vital that you learn to read chord charts. And it is pretty easy once you get used to it. If you see an "0" above one of the vertical lines, it means that the open string is played. No finger should be placed on that string. If you see an "X" above one of the vertical lines, it means that particular string shouldn\'t be played at all. If you see a number next to the top horizontal line, it means that you should start forming the chord based on that numbered fret. In the example, left, you would start on the 7th fret (imagine the 7th fret as the nut of the guitar), putting a finger on the 8th fret of the 4th string and another finger on the 10th fret of the 3rd string.</string>
-    <string name="level2_lesson4_tv3">It\s absolutely vital that you know how to read chord charts, it will open so many doors for you as a guitarist becuase you will be able to learn any chord you wish once you know how</string>
+    <string name="level2_lesson4_tv2">It\s vital that you learn to read chord charts. And it is pretty easy once you get used to it. If you see an "0" above one of the vertical lines, it means that the open string is played. No finger should be placed on that string. If you see an "X" above one of the vertical lines, it means that particular string shouldn\'t be played at all. If you see a number next to the top horizontal line, it means that you should start forming the chord based on that numbered fret. In the example below, this is a chart of a D Major chord. You place 2nd finger on the 2nd fret of the first string, your 3rd finger on the 3rd fret of the 2nd string, your first finger on the second fret of the fourth string, play the third string open and mute the 5th and 6th strings.</string>
+    <string name="level2_lesson4_tv3">It\s absolutely vital that you know how to read chord charts, it will open so many doors for you as a guitarist because you will be able to learn any chord you wish once you know how</string>
 
 
 
