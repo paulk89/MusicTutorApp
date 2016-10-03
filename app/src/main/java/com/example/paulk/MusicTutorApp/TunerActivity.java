@@ -30,6 +30,7 @@ public class TunerActivity extends Activity {
         b_button = (Button) findViewById(R.id.b);
         highE_button = (Button) findViewById(R.id.high_e);
 
+        //set onclick listeners and create audio files
         lowE_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -103,6 +104,7 @@ public class TunerActivity extends Activity {
         });
     }
 
+    //stop media playing
     private void stopPlaying() {
         if (mp != null) {
             mp.stop();

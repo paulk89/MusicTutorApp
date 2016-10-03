@@ -28,32 +28,13 @@ public class HomeActivity extends Activity {
         db = new DatabaseHandler(this);
         db.getWritableDatabase();
 
-        /*Bitmap image = BitmapFactory.decodeResource(getResources(),R.drawable.android);
-        BitmapFactory.decodeFile()
-
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-
-        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-
-        byte imageInByte[] = stream.toByteArray();*/
-
         Log.i("TAG", "OnCreate fired in Home activity!!");
-
 
         btnSignIn = (Button) findViewById(R.id.buttonSignIN);
         btnSignUp = (Button) findViewById(R.id.buttonSignUP);
-
-        /*btnSignUp.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                Intent intentSignUP = new Intent(getApplicationContext(),
-                        SignUpActivity.class);
-                startActivity(intentSignUP);
-            }
-        });*/
     }
 
+    //prompt the user to sign in
     public void signIn(View V) {
         final Dialog dialog = new Dialog(HomeActivity.this);
         dialog.setContentView(R.layout.activity_login);
@@ -112,6 +93,7 @@ public class HomeActivity extends Activity {
         dialog.show();
     }
 
+    //prompt the user to create an account
     public void signUP(View v){
 
         final Dialog dialog = new Dialog(HomeActivity.this);
@@ -127,6 +109,7 @@ public class HomeActivity extends Activity {
 
         Button btnCreateAccount = (Button) dialog.findViewById(R.id.buttonCreateAccount);
 
+        //check credentails being entered and make sure no fields are left blank
         btnCreateAccount.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {

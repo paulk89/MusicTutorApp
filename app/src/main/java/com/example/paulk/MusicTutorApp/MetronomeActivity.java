@@ -23,6 +23,7 @@ public class MetronomeActivity extends Activity{
         medium = (Button) findViewById(R.id.medium_button);
         fast = (Button) findViewById(R.id.fast_button);
 
+        //set on click listensers and create audio files
         slow.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -62,6 +63,7 @@ public class MetronomeActivity extends Activity{
 
     }
 
+    //stop media playing
     private void stopPlaying() {
         if (mp != null) {
             mp.stop();

@@ -8,6 +8,7 @@ import android.os.Bundle;
  */
 public class StrummingPatternsActivity extends Activity{
 
+    //simple activity that displays the strumming patterns image view
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -8,8 +8,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a string to tune to"
+        android:text="Select a string to tune to! Tap button once to play the sound, tap again to stop"
         android:textSize="@dimen/button_text_size"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"/>

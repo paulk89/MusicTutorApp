@@ -115,10 +115,6 @@ public class MainMenuActivity extends Activity {
         practicalSupport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "Practical Support button clicked!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent i = new Intent(MainMenuActivity.this,
                         PracticalSupportActivity.class);
                 startActivity(i);
@@ -128,10 +124,6 @@ public class MainMenuActivity extends Activity {
         myProgress.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "My Progress button clicked!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent i = new Intent(MainMenuActivity.this,
                         MyProgressActivity.class);
                 startActivity(i);
@@ -139,8 +131,8 @@ public class MainMenuActivity extends Activity {
         });
     }
 
+    // set the required buttons to be disabled based on the users current level
     private void setButtonLocks(int currentLevel){
-
 
         switch (currentLevel) {
 
@@ -182,6 +174,7 @@ public class MainMenuActivity extends Activity {
         }
     }
 
+    //prompt to confirm log out
     private void showLogoutPrompt(){
 
         dialog = new Dialog(MainMenuActivity.this);

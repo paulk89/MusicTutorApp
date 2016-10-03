@@ -173,6 +173,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.insert(TABLE_USER, null, values);
     }
 
+    //method to increment users level in the database
     public void incrementLevel(int userID){
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -182,7 +183,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
-
+    //method to add users score in the database
     public void addScore(int score, int level, int userID) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -195,7 +196,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Inserting Row
         db.insert(TABLE_SCORE, null, values);
     }
-
 
     // get users highest score for a particular level
     public int getHighScores(int userID, int level) {
@@ -221,7 +221,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return score;
     }
 
-
+    //method to get users password from their username
     public String getPassword(String username) {
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -238,6 +238,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return password;
     }
 
+    //method to get the userID from the user name
     public int getUserID(String username) {
 
         SQLiteDatabase db = this.getReadableDatabase();

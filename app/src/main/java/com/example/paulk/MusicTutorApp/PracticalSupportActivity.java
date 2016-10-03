@@ -32,7 +32,6 @@ public class PracticalSupportActivity extends Activity {
                 Intent i = new Intent(PracticalSupportActivity.this,
                         TunerActivity.class);
                 startActivity(i);
-                //finish();
             }
         });
 
@@ -42,7 +41,6 @@ public class PracticalSupportActivity extends Activity {
                 Intent i = new Intent(PracticalSupportActivity.this,
                         ChordChartActivity.class);
                 startActivity(i);
-                //finish();
             }
         });
 
@@ -52,7 +50,6 @@ public class PracticalSupportActivity extends Activity {
                 Intent i = new Intent(PracticalSupportActivity.this,
                         StrummingPatternsActivity.class);
                 startActivity(i);
-                //finish();
             }
         });
 
@@ -62,29 +59,16 @@ public class PracticalSupportActivity extends Activity {
                 Intent i = new Intent(PracticalSupportActivity.this,
                         MetronomeActivity.class);
                 startActivity(i);
-                //finish();
             }
         });
 
         mainMenu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),
-                        "You have left the practical support area!", Toast.LENGTH_LONG)
-                        .show();
-
                 Intent openMainActivity= new Intent(PracticalSupportActivity.this, MainMenuActivity.class);
                 openMainActivity.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(openMainActivity);
 
-               /* Intent intent = new Intent(PracticalSupportActivity.this, MainMenuActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);*/
-
-               /* Intent i = new Intent(PracticalSupportActivity.this,
-                        MainMenuActivity.class);
-                startActivity(i);*/
                 finish();
             }
         });

@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 /**
- * Created by paulk on 29/09/2016.
+ * class to retrieve the context anywhere in the app
  */
 public class MyMusicTutorApp extends Application {
 

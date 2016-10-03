@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * Created by paulk on 28/06/2016.
  */
-public class Level1TestActivity extends Activity {
+public class TestActivity extends Activity {
 
     List<Question> questionList;
     int score = 0;
@@ -49,8 +49,12 @@ public class Level1TestActivity extends Activity {
         DatabaseHandler db = new DatabaseHandler(this);
         db.getReadableDatabase();
 
+        //get the questions for this level
         questionList = db.getAllQuestions(testLevel);
+
+        //shuffle questions randomly
         Collections.shuffle(questionList);
+
         txtQuestionNumber = (TextView)findViewById(R.id.QuestionNumber);
         question = (TextView)findViewById(R.id.question);
         radioGroup = (RadioGroup)findViewById(R.id.radioGroup1);
@@ -60,7 +64,9 @@ public class Level1TestActivity extends Activity {
         radio3 =(RadioButton)findViewById(R.id.radio3);
         butNext=(Button)findViewById(R.id.next);
 
+        //get the question in the first position
         currentQ = questionList.get(qid);
+        //set its view
         setQuestionView();
 
         butNext.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +87,7 @@ public class Level1TestActivity extends Activity {
                         currentQ = questionList.get(qid);
                         setQuestionView();
                     } else {
-                        Intent intent = new Intent(Level1TestActivity.this, ResultActivity.class);
+                        Intent intent = new Intent(TestActivity.this, ResultActivity.class);
                         Bundle b = new Bundle();
                         b.putInt("score", score); //Your score
                         b.putInt("testLevel", testLevel);
@@ -93,23 +99,9 @@ public class Level1TestActivity extends Activity {
             }
         });
 
-
-
-       /* //convert image to byte array
-        Bitmap image = BitmapFactory.decodeResource(getResources(),R.drawable.parts_of_acoustic);
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-        byte imageInByte[] = stream.toByteArray();
-
-        //convert image from byte array to bitmap
-        ByteArrayInputStream imageStream = new ByteArrayInputStream(imageInByte);
-        Bitmap theImage = BitmapFactory.decodeStream(imageStream);
-        imageView.setImageBitmap(theImage);*/
-
-        //imageView.setVisibility(View.GONE);
-
     }
 
+    //set the question view depending on whether its an image question or a text question
     private void setQuestionView() {
 
         if (currentQ.getIsImageQuestion()) {

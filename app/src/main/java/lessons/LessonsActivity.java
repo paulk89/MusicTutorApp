@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import tests.Level1TestActivity;
+import tests.TestActivity;
 import com.example.paulk.MusicTutorApp.R;
 
 import java.util.List;
@@ -90,11 +90,12 @@ public class LessonsActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_screen_slide);
         buttonLevelClicked = getIntent().getExtras().getInt("buttonclick");
-        Toast.makeText(getApplicationContext(),"You came here by clicking level " + buttonLevelClicked, Toast.LENGTH_LONG).show();
-        //initialsie the pager
+
+        //initialsie the view pager
         this.initialisePaging(buttonLevelClicked);
     }
 
+    // load the approriate level of lessons depending on what level the user has selected
     private void initialisePaging(int buttonClicked) {
 
         switch (buttonClicked) {
@@ -181,16 +182,6 @@ public class LessonsActivity extends FragmentActivity {
 
             }
     }
-   /* @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        if ((keyCode == KeyEvent.KEYCODE_BACK))
-        {
-            finish();
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-*/
 
     @Override
     public void onBackPressed() {
@@ -199,40 +190,24 @@ public class LessonsActivity extends FragmentActivity {
 
     public void level1Test(View view){
         Intent i = new Intent(LessonsActivity.this,
-                Level1TestActivity.class);
+                TestActivity.class);
         i.putExtra("level", buttonLevelClicked);
         startActivity(i);
         finish();
     }
 
+    //launch test activity and pass the appropriate test level value so the appropriate level
+    //of questions can be loaded form the database
     public void launchTest(View v){
 
                 Intent i = new Intent(LessonsActivity.this,
-                        Level1TestActivity.class);
+                        TestActivity.class);
                 i.putExtra("level", buttonLevelClicked);
                 startActivity(i);
                 finish();
-
     }
 
-
-    /*@Override
-    public void onBackPressed() {
-
-        if (mPager.getCurrentItem() == 0) {
-            // If the user is currently looking at the first step, allow the system to handle the
-            // Back button. This calls finish() on this activity and pops the back stack.
-            super.onBackPressed();
-        } else {
-            // Otherwise, select the previous step.
-            mPager.setCurrentItem(mPager.getCurrentItem() - 1);
-        }
-    }*/
-
-    /**
-     * A simple pager adapter that represents 5 Level1IntroFragment objects, in
-     * sequence.
-     */
+    //page adapter claass that handles the swiping of the fragments in the lessons
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 
         private List<Fragment> fragments;

@@ -28,15 +28,18 @@ public class MyProgressActivity extends Activity {
         SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userdetails", MODE_PRIVATE);
         int userID = userDetails.getInt("userID", 0);
 
+        //get users current level
         db = new DatabaseHandler(this);
         int level = db.getLevelID(userID);
 
         int [] highScores = {0,0,0,0,0};
 
+        //get highest score for each level
         for (int i = 1; i <= level; i++){
             highScores[i-1] = db.getHighScores(userID, i);
         }
 
+        //display data in the text views
         level1Score.setText(String.valueOf(highScores[0]));
         level2Score.setText(String.valueOf(highScores[1]));
         level3Score.setText(String.valueOf(highScores[2]));

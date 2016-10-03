@@ -58,17 +58,7 @@ public class ResultActivity extends Activity {
         String text = "Score: " + score + " Float score: " + floatScore + " Test Level: " + testLevel;
         Log.i("SCORE", text);
 
-
         ratingBar.setRating(floatScore);
-
-        /*float floatScore = ((score*100) / 10);
-        ratingBar.setMax(100);
-        ratingBar.setStepSize(0.01f);
-        ratingBar.setRating(floatScore);*/
-        /*ratingBar.setMax(100);
-        float floatScore = ((score*100) / 10);
-        ratingBar.setStepSize(0.5f);
-        ratingBar.setRating(floatScore);*/
 
         switch (score)
         {
