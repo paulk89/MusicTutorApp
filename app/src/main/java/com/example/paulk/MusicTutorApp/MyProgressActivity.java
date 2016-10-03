@@ -31,8 +31,6 @@ public class MyProgressActivity extends Activity {
         db = new DatabaseHandler(this);
         int level = db.getLevelID(userID);
 
-        //int level1HighScore = db.getHighScores(userID, 1);
-        //String stringLevel1Score = "" + level1HighScore;
         int [] highScores = {0,0,0,0,0};
 
         for (int i = 1; i <= level; i++){
@@ -44,8 +42,6 @@ public class MyProgressActivity extends Activity {
         level3Score.setText(String.valueOf(highScores[2]));
         level4Score.setText(String.valueOf(highScores[3]));
         level5Score.setText(String.valueOf(highScores[4]));
-
-
 
     }
 }

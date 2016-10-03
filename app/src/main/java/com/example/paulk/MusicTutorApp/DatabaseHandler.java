@@ -70,7 +70,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
     // Table Create Statements
-    // Todo table create statement
     private static final String CREATE_TABLE_USER = "CREATE TABLE "
             + TABLE_USER + "(" + KEY_USERID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + KEY_USERNAME + " TEXT, "
@@ -123,7 +122,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         dBase = db;
-
         db.execSQL(CREATE_TABLE_LEVEL);
         db.execSQL(CREATE_TABLE_USER);
         db.execSQL(CREATE_TABLE_TESTQUESTION);
@@ -162,6 +160,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
+    //method to add user to the database
     void addUser(String username, String password, int level) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -170,7 +169,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_PASSWORD, password);
         values.put(KEY_USERLEVELID, level);
 
-        // Inserting Row
+        // inserting row
         db.insert(TABLE_USER, null, values);
     }
 
@@ -198,6 +197,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
+    // get users highest score for a particular level
     public int getHighScores(int userID, int level) {
 
         int score = 0;
@@ -213,7 +213,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                + " = "
                + level;
 
-        //String selectQuery = "SELECT MAX(score) AS highScore FROM score where userID = 1 AND LEVEL = 1";
         Cursor c = db.rawQuery(selectQuery, null);
         c.moveToFirst();
         score = c.getInt(c.getColumnIndex("highScore"));
@@ -225,24 +224,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public String getPassword(String username) {
 
-        /*SQLiteDatabase db = this.getReadableDatabase();
-
-        String selectQuery = "SELECT * FROM " + TABLE_USER + " WHERE "
-                + KEY_USERNAME + " = " + username;
-
-        Cursor cursor = db.rawQuery(selectQuery, null);
-        if (cursor.getCount() < 1) {
-            cursor.close();
-            return "NOT EXIST";
-        }
-        cursor.moveToFirst();
-        String password = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD));
-        cursor.close();
-        return password;*/
-
         SQLiteDatabase db = this.getReadableDatabase();
-
-
 
         Cursor cursor = db.query(TABLE_USER, null, " USERNAME=?",
                 new String[] { username }, null, null, null);
@@ -317,10 +299,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void addQuestions() {
 
-
-        Bitmap image;
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        byte imageInByte[];
 
        // Text Questions
         Question q1=new Question("Where does the sound come out of on the body of an acoustic guitar?",
@@ -404,6 +382,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         Question q25=new Question("What technique is achieved by using a fretting hand finger to slam down onto a fret to sound a note without the need for plucking?",
                 "Pull off", "Hammer on", "Bend", "Vibrato", "Hammer on", 5);
         this.addQuestion(q25);
+
+        Bitmap image;
+        ByteArrayOutputStream stream;
+        byte imageInByte[];
 
         image = BitmapFactory.decodeResource(MyMusicTutorApp.getAppContext().getResources(),R.drawable.parts_of_acoustic_hstockgone);
         stream = new ByteArrayOutputStream();

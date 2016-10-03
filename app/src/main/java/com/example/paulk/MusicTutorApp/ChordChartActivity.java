@@ -17,11 +17,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
 /**
- * A sample showing how to zoom an image thumbnail to full-screen, by animating the bounds of the
- * zoomed image from the thumbnail bounds to the screen bounds.
  *
- * <p>In this sample, the user can touch one of two images. Touching an image zooms it in, covering
- * the entire activity content area. Touching the zoomed-in image hides it.</p>
  */
 public class ChordChartActivity extends FragmentActivity {
     /**
@@ -170,8 +166,6 @@ public class ChordChartActivity extends FragmentActivity {
             }
         });
 
-
-
         // Retrieve and cache the system's default "short" animation time.
         mShortAnimationDuration = getResources().getInteger(android.R.integer.config_shortAnimTime);
     }
@@ -181,17 +175,6 @@ public class ChordChartActivity extends FragmentActivity {
      * "Zooms" in a thumbnail view by assigning the high resolution image to a hidden "zoomed-in"
      * image view and animating its bounds to fit the entire activity content area. More
      * specifically:
-     *
-     * <ol>
-     *   <li>Assign the high-res image to the hidden "zoomed-in" (expanded) image view.</li>
-     *   <li>Calculate the starting and ending bounds for the expanded view.</li>
-     *   <li>Animate each of four positioning/sizing properties (X, Y, SCALE_X, SCALE_Y)
-     *       simultaneously, from the starting bounds to the ending bounds.</li>
-     *   <li>Zoom back out by running the reverse animation on click.</li>
-     * </ol>
-     *
-     * @param thumbView  The thumbnail view to zoom in.
-     * @param imageResId The high-resolution version of the image represented by the thumbnail.
      */
     private void zoomImageFromThumb(final View thumbView, int imageResId) {
         // If there's an animation in progress, cancel it immediately and proceed with this one.
@@ -249,7 +232,7 @@ public class ChordChartActivity extends FragmentActivity {
         expandedImageView.setPivotX(0f);
         expandedImageView.setPivotY(0f);
 
-        // Construct and run the parallel animation of the four translation and scale properties
+        // construct and run the parallel animation of the four translation and scale properties
         // (X, Y, SCALE_X, and SCALE_Y).
         AnimatorSet set = new AnimatorSet();
         set
@@ -275,7 +258,7 @@ public class ChordChartActivity extends FragmentActivity {
         set.start();
         mCurrentAnimator = set;
 
-        // Upon clicking the zoomed-in image, it should zoom back down to the original bounds
+        // when the zoomed-in image is clicked, it should zoom back down to the original bounds
         // and show the thumbnail instead of the expanded image.
         final float startScaleFinal = startScale;
         expandedImageView.setOnClickListener(new View.OnClickListener() {
@@ -285,7 +268,7 @@ public class ChordChartActivity extends FragmentActivity {
                     mCurrentAnimator.cancel();
                 }
 
-                // Animate the four positioning/sizing properties in parallel, back to their
+                // Animate the four positioning properties in parallel, back to their
                 // original values.
                 AnimatorSet set = new AnimatorSet();
                 set

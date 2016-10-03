@@ -1,13 +1,10 @@
 package tests;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -17,13 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.paulk.MusicTutorApp.DatabaseHandler;
-import com.example.paulk.MusicTutorApp.MainMenuActivity;
-import com.example.paulk.MusicTutorApp.MyMusicTutorApp;
 import com.example.paulk.MusicTutorApp.Question;
 import com.example.paulk.MusicTutorApp.R;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.util.Collections;
 import java.util.List;
 
@@ -48,7 +42,7 @@ public class Level1TestActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz_layout);
+        setContentView(R.layout.activity_test);
         testLevel = getIntent().getExtras().getInt("level");
         imageView = (ImageView)findViewById(R.id.questionImage);
 
